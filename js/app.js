@@ -147,6 +147,11 @@ function showView(viewId) {
         const overlay = document.getElementById('map-overlay');
         if (overlay) overlay.classList.add('hidden');
 
+        // Ensure canvas is sized correctly if it was hidden during init
+        if (window._mapInstance) {
+            window._mapInstance.resize();
+        }
+
     } else if (viewId === 'detail') {
         els.viewMap.classList.add('hidden');
         els.viewDetail.classList.remove('hidden');

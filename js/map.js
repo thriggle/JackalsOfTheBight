@@ -88,8 +88,15 @@ class StarMap {
 
     resize() {
         const parent = this.canvas.parentElement;
+        const wasHidden = this.canvas.width === 0 || this.canvas.height === 0;
+
         this.canvas.width = parent.clientWidth;
         this.canvas.height = parent.clientHeight;
+
+        if (wasHidden && this.canvas.width > 0) {
+            this.centerMap();
+        }
+
         this.draw();
     }
 
