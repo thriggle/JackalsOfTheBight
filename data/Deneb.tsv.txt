@@ -1,0 +1,387 @@
+Hex	Name	UWP	Bases	Remarks	Zone	PBG	W	Allegiance	Stars	{Ix}	(Ex)	[Cx]	N
+0201	Marz	A5848BB-8	S	Pa Ph Ri	A	601	8	Im	G4 V	{+1}	(576-2)	[893A]	BcCe
+0701	Taa	X651000-0		Ba Po Lt	A	001	9	Im	K6 V	{-3}	(600+3)	[0000]	B
+1001	Kfathvaedal	X000000-C		As Di Fo Va Ht	R	003	8	Im	K8 V	{-1}	(B00+3)	[0000]	B
+1301	Latros	X688000-0		Ba Lt	A	001	11	Im	A3 V A9 V	{-3}	(800+2)	[0000]	B
+1601	Gzigorlloe	X311000-A		Di Fo Fr Ic Sa	R	021	7	Im	M0 V BD M9 VI	{-1}	(A00+4)	[0000]	B
+2001	Filangger	X76A658-2		Fo Ho Ni Ri Wa Lt	R	322	17	Im	K9 IV BD BD BD K8 V	{-2}	(854+1)	[5441]	BC
+3201	Goukhsar	E563000-4		Di Fo Sa Lt	R	003	12	Im	G1 III G6 V	{-3}	(300+1)	[0000]	B
+0202	Carthage	B310751-D	S	Na Pi Ht	-	821	12	Im	K5 V M2 VI K8 VI	{+2}	(86E+1)	[797E]	BD
+0502	El D'Nah	E549000-8		Di Fo	R	012	12	Im	G8 V	{-3}	(600+1)	[0000]	B
+0602	Kirklend	A668310-A	N	Lo Tz	-	233	14	Im	M7 V M5 VI	{+1}	(C21+1)	[1439]	B
+0702	Dilex	X626000-0		Ba Ho Lt	A	012	8	Im	F5 V G5 V	{-3}	(700+2)	[0000]	B
+0902	Ghatsokie	DA86652-5	S	Ag Ni Ri Tz Lt	-	231	13	Im	M2 V	{-1}	(451-2)	[4552]	BC
+1202	Lengighdzuerz	X300000-B		Di Fo Sa Va	R	000	10	Im	K8 IV	{-1}	(B00-4)	[0000]	B
+1302	Kantra	X301000-9		Di Fo Ic Va	R	021	8	Im	F5 V	{-2}	(900+1)	[0000]	B
+1502	Mur	X100000-A		Di Fo Va	R	000	9	Im	G1 V D M1 VI	{-1}	(700+2)	[0000]	B
+1802	Dzoungdzi	X557000-2		Di Fo Lt	R	003	13	Im	K0 V	{-3}	(900-2)	[0000]	B
+1902	Noscius	X422000-8		Di Fo He Ho Po	R	032	14	Im	F4 V	{-3}	(C00+1)	[0000]	B
+2202	Gounuerz	X435000-A		Di Fo	R	031	13	Im	K0 V	{-1}	(E00-1)	[0000]	B
+2502	Tubb	X89A000-4		Di Fo Wa Lt	R	031	8	Im	K7 V	{-3}	(500+1)	[0000]	B
+2702	Fosfog	E575000-7		Di Fo Lk	R	010	9	Im	K3 V	{-3}	(700+1)	[0000]	B
+2802	Utsbesyult	A785776-D	N	Ag Cp Ga Ht Ri Tu Tz	-	930	12	Im	M9 V	{+4}	(A68+5)	[7B9G]	BCF
+0203	Enaaka	D777000-6		Di Fo Tu	R	002	11	Im	M7 III M3 VI	{-3}	(C00+4)	[0000]	B
+0303	Kiiga	D530620-7		De Na Ni Po Tz	-	902	13	Im	M8 V D BD	{-3}	(653+2)	[236C]	B
+0403	Gessert	E554000-7		Di Fo Ho	R	010	9	Im	G4 V	{-3}	(C00+3)	[0000]	B
+0503	Spectre	B100277-A	S	Co Lo Tz Va	-	612	12	Im	M6 V BD BD	{+1}	(711+4)	[133D]	B
+0803	Retion	E558000-4		Di Fo Lt	R	001	9	Im	G4 V K9 VI D	{-3}	(A00-3)	[0000]	B
+0903	Matsa	X434000-E		Co Di Fo Ht	R	010	7	Im	A6 V	{-1}	(A00+1)	[0000]	B
+1203	Naimar Station	X000000-A		As Di Fo Va	R	021	13	Im	G1 V	{-1}	(A00+2)	[0000]	B
+1303	Qi'iri	X554000-6		Co Di Fo	R	011	7	Im	G0 III M7 V	{-3}	(700-2)	[0000]	B
+1403	Qi'ire	E657000-6		Di Fo Ga Tu Tz	R	000	8	Im	M1 V BD	{-3}	(600+1)	[0000]	B
+1603	Gzonksoeg	X567000-4		Di Fo Lt	R	030	12	Im	K8 V	{-3}	(400-1)	[0000]	B
+1903	Fursuelgigz	X200000-8		Di Fo Va	R	022	9	Im	K4 V M9 VI	{-3}	(B00-4)	[0000]	B
+2403	Tchien	X696000-3		Di Fo Lk Tr Lt	R	003	17	Im	F3 V	{-3}	(700+1)	[0000]	B
+2603	Unekh	X200000-7		Co Di Fo Va	R	003	16	Im	G2 V	{-3}	(600+1)	[0000]	B
+2903	Metare	X424000-E		Di Fo Ht	R	004	10	Im	G5 V	{-1}	(A00-2)	[0000]	B
+0304	Riacon	B666375-8	N	Ga Lo	-	901	4	Im	G0 IV	{-1}	(620+1)	[3255]	B
+0404	Miwald	C533455-B	S	Ni Po	-	213	11	Im	K3 IV BD	{0}	(B35+1)	[3426]	B
+0504	Ash	A540856-9	S	De He Lk Ph Pi Po	-	200	9	Im	K9 V	{+1}	(A74+1)	[8945]	BDe
+0604	Carmel	X546000-0		Ba Lt	A	002	9	Im	G3 V G1 VI D	{-3}	(900-1)	[0000]	B
+1004	Sisi	X8D3000-8		Di Fo Lk	R	011	8	Im	G5 III G9 V	{-3}	(C00+1)	[0000]	B
+1504	Gila	X663000-5		Di Fo Lt	R	002	15	Im	K3 V	{-3}	(A00-2)	[0000]	B
+1704	Graek	X787997-0		Fo Ga Hi Pr Tu Lt	R	732	10	Im	M4 II	{-1}	(882+4)	[A851]	BcE
+1904	Marnig	X541000-3		Di Fo He Po Lt	R	032	14	Im	A5 V D	{-3}	(A00+2)	[0000]	B
+2204	Dofil	X593000-4		Di Fo Sa Lt	R	001	9	Im	M7 III BD	{-3}	(500+1)	[0000]	B
+2704	Talon	C54379A-7		Co Pi Po	-	712	8	Im	F5 V	{-1}	(664+5)	[9696]	BD
+2804	Akkip	E542000-8		Di Fo He Po	R	021	11	Im	G6 V K2 VI K9 VI	{-3}	(A00-4)	[0000]	B
+2904	Fel	X7A7000-A		Di Fl Fo Ho	R	001	6	Im	F5 V K5 VI	{-1}	(A00+2)	[0000]	B
+3004	Oluk Dzas	D563423-3		Ni Lt	-	533	18	Im	K7 V K6 V	{-3}	(733+4)	[1165]	B
+3104	Aerfor	D58485A-8	S	Pa Ph Ri	-	430	10	Im	G7 IV	{-1}	(874+1)	[577C]	BcCe
+0805	Jode	E9A6000-B		Di Fl Fo	R	003	9	Im	G6 V G0 VI	{-1}	(A00-2)	[0000]	B
+0905	Aksofouta	X5567A8-0		Ag Fo Lt	R	133	16	Im	K5 V BD	{-1}	(56A+4)	[6674]	BC
+1405	Anatre	D578752-7	S	Ag Co Pi	-	501	9	Im	F9 V K6 VI G2 VI	{-1}	(866+1)	[8648]	BCD
+1505	Lagut	C312588-A		Ic Ni	-	910	9	Im	G1 V	{0}	(A43+1)	[1557]	B
+1805	Cilnodan	D542000-5		Di Fo He Lk Po Lt	R	033	12	Im	M1 III	{-3}	(300+1)	[0000]	B
+1905	Ostov	E768520-4		Ag Ni Pr Lt	-	400	12	Im	G0 V	{-2}	(B44-3)	[6375]	BcC
+2105	Torrens	X100000-C		Di Fo Va Ht	R	011	15	Im	G1 V G1 VI D K8 VI	{-1}	(B00+1)	[0000]	B
+2405	Gagaridir	X420000-A		De Di Fo He Po Tz	R	004	14	Im	M0 V BD BD	{-1}	(D00-3)	[0000]	B
+2905	Ikhaba	D675000-5		Di Fo Lt	R	002	6	Im	G5 V G7 VI	{-3}	(400-1)	[0000]	B
+3005	Arleshanu	X562000-2		Di Fo Lt	R	000	8	Im	G8 V	{-3}	(A00+1)	[0000]	B
+0306	Saki	D576657-7	S	Ag Ni	-	710	10	Im	A3 V A8 V	{-2}	(650-2)	[7467]	BC
+0406	Pretoria	B6569AB-C	NS	Cp Ga Hi Ht Lk	A	811	11	Im	K5 V M5 VI K2 VI BD	{+4}	(D8E-2)	[9D7C]	BEF
+0906	Waalikii	X525000-B		Co Di Fo Lk Tz	R	013	10	Im	M8 V	{-1}	(D00+3)	[0000]	B
+1006	Kamisaraki	C554435-9	S	Ni Pa	-	301	6	Im	A0 V	{-1}	(835-4)	[533B]	Bc
+1306	Lome	E4247A9-8		Ho Lk Pi	-	521	13	Im	G0 V	{-2}	(C65+1)	[6558]	BD
+1406	Borlund	E554A7B-9		Co Hi	-	210	9	Im	M9 II BD M7 VI	{0}	(499+1)	[AA9D]	BE
+1606	Yef	E543000-5		Di Fo Po Lt	R	020	10	Im	A0 IV G5 V	{-3}	(600+2)	[0000]	B
+1706	Dunant	X311000-D		Co Di Fo Ic Ht	R	002	9	Im	K8 II	{-1}	(B00+4)	[0000]	B
+2406	Insi Kar	X311000-B		Di Fo Ic	R	011	14	Im	G3 V M0 VI	{-1}	(D00+1)	[0000]	B
+2506	Moskene	X200000-A		Di Fo Va	R	001	8	Im	M5 III	{-1}	(A00-1)	[0000]	B
+2906	Nurara	X5A5000-A		Di Fl Fo Tz	R	010	6	Im	M1 V	{-1}	(C00+1)	[0000]	B
+0207	Rubrak	C554586-7	S	Ag Ni	-	503	11	Im	K3 V D	{-1}	(345+4)	[7427]	BC
+0907	Malkei	B659836-8		Ho Ph Tz	-	920	12	Im	K9 V M2 VI	{0}	(877+1)	[D867]	Be
+2407	Syrenaica	E669000-5		Di Fo Sa Lt	R	021	11	Im	A5 III	{-3}	(900-2)	[0000]	B
+2807	Gabrael	C573674-8		Ni	-	400	13	Im	K8 II	{-2}	(554+1)	[3498]	B
+2907	Hammand	X736000-6		Di Fo	R	001	12	Im	G5 V D	{-3}	(500+1)	[0000]	B
+0108	New Ramma	D56557C-6	S	Ag Ni Pr Tz	-	420	8	Im	M4 V BD	{-2}	(443+1)	[7395]	BcC
+0208	Teh	D563100-6	S	Co Lo	-	500	9	Im	G7 VI	{-3}	(400-1)	[1142]	B
+0508	Caladib	B697257-A	N	Lo	-	304	12	Im	F4 IV	{+1}	(C11+1)	[5345]	B
+1208	Haniiwa	XA9A000-5		Di Fo Fr Oc Lt	R	021	10	Im	M1 V	{-3}	(600+2)	[0000]	B
+1508	Pek'e	X541000-7		Di Fo He Ho Po	R	011	7	Im	F7 V	{-3}	(800+4)	[0000]	B
+1608	Gaashushnu Li	X744000-5		Di Fo Lt	R	000	10	Im	K0 V	{-3}	(900+5)	[0000]	B
+1708	Remsen	B788455-B	S	Ni Pa	-	611	10	Im	F1 V	{+1}	(C36-1)	[254B]	Bc
+1808	Antra	A537847-D		Ph Ht	-	311	12	Im	G3 V G0 VI K0 VI	{+2}	(C78-1)	[9A7C]	Be
+2908	Wyn	E546000-2		Di Fo Lt	R	001	6	Im	G3 V	{-3}	(600+2)	[0000]	B
+3008	Taproban	X8A8000-B		Di Fl Fo	R	010	10	Im	G8 V	{-1}	(B00+3)	[0000]	B
+0209	Kretikaa	B200548-C		Ni Va Ht	-	222	12	Im	F7 V	{+1}	(A42+1)	[165C]	B
+0409	L'sis	A7648A8-8	N	Pa Ph Ri Tu	-	421	12	Im	G4 IV M0 V K0 V	{+1}	(A77+4)	[4967]	BcCe
+0509	Redi	E575579-5		Ag Ho Lk Ni Tz Lt	-	201	9	Im	K2 V	{-2}	(640-2)	[4351]	BC
+0609	Urnas	D4209DF-9	S	De He Hi In Na Po	A	320	10	Im	G1 III G5 V G2 V G7 V	{+1}	(68A-1)	[5A5C]	BE
+0709	Hylaxis	B7B2356-A	S	Fl He Lo	-	103	12	Im	K1 V BD M5 VI	{+1}	(A21-2)	[244D]	B
+0809	Therm	D9B4455-9	S	Fl Ni	-	101	11	Im	K3 V D M1 VI	{-2}	(A33-2)	[124C]	B
+1309	Lamas	X7A8000-C		Di Fl Fo Ht	R	001	6	Im	G9 V G6 VI M1 VI	{-1}	(700+4)	[0000]	B
+1409	Krisna	X84A000-A		Di Fo Ho Tz Wa	R	003	12	Im	K5 V M6 VI	{-1}	(700-5)	[0000]	B
+1509	Prolam	B769447-A	N	Ni	-	724	11	Im	F9 II	{+1}	(H36+1)	[2556]	B
+1609	Ansirk	E100000-F		Di Fo Va Ht	R	001	12	Im	K2 V	{-1}	(D00+2)	[0000]	B
+2109	Bangwe	X78A000-8		Di Fo Wa	R	001	9	Im	K5 V M1 VI M6 VI	{-3}	(300+1)	[0000]	B
+2309	Malory	X420000-7		De Di Fo He Po	R	000	9	Im	G3 V M2 VI	{-3}	(300+3)	[0000]	B
+2409	Haggard	E777000-5		Di Fo Tz Lt	R	001	10	Im	M3 V	{-3}	(A00+1)	[0000]	B
+0310	Horizon	E310798-8		Co Na Pi Tz	-	500	5	Im	M5 V	{-2}	(965-3)	[356A]	BD
+0510	Gra-Bie	C430222-9		Co De Lo Po	-	300	8	Im	G9 V	{-1}	(A10-1)	[117B]	B
+0710	Naali	C61657A-8	S	Co Ic Ni	-	430	10	Im	A8 V	{-2}	(944-1)	[A39B]	B
+0910	Gyrfal	C8B6599-9	S	Fl Ni	-	800	11	Im	K5 V M6 VI	{-1}	(242+1)	[4466]	B
+1710	Uakari	C534854-7		Co Ph Sa	-	921	11	Im	F4 III	{-1}	(C76+4)	[4789]	Be
+1810	Syr Darya	E557000-5		Co Di Fo Lk Tz Lt	R	001	14	Im	M4 V BD M2 V BD	{-3}	(800-3)	[0000]	B
+1910	Uramid	X545000-A		Co Di Fo	R	021	6	Im	G8 V M9 VI	{-1}	(C00+3)	[0000]	B
+2210	Mazirbe	D553652-5		Ni Po Lt	-	513	12	Im	A9 V A4 V K6 VI G1 VI	{-3}	(850-2)	[8347]	B
+2810	Tensas	D556515-3		Ag Ni Tz Lt	-	820	8	Im	M9 V	{-2}	(540+1)	[9344]	BC
+2910	Crozat	X410000-7		Di Fo	R	012	6	Im	G6 V K9 VI	{-3}	(600-1)	[0000]	B
+3110	Olokono	X6A5000-8		Di Fl Fo Ho	R	000	13	Im	G5 V K9 VI	{-3}	(C00-1)	[0000]	B
+0211	Suvfoto	D954846-6	S	Lk Pa Ph Tu	-	121	10	Im	G5 V G3 VI D	{-2}	(A75-1)	[5674]	Bce
+0311	Fennec	C556876-8	S	Pa Ph	-	111	10	Im	K6 V	{-1}	(974+3)	[8758]	Bce
+1011	Jessok	C623597-A		Ni Po	-	511	5	Im	F9 III	{0}	(945-1)	[A55B]	B
+1111	Zeen	B653678-7	S	Ni Po	-	830	13	Im	G6 V	{-1}	(552+1)	[B583]	B
+1311	Quanah	X567000-6		Di Fo	R	030	8	Im	G9 V K6 VI	{-3}	(600+4)	[0000]	B
+2011	Orenberg	B430655-D	N	De Na Ni Po Ht	-	813	14	Im	G6 IV K0 V	{+1}	(A57+1)	[773A]	B
+2111	Diiski	E66A000-8		Co Di Fo Wa	R	002	13	Im	K6 V	{-3}	(800+3)	[0000]	B
+2411	Nibel	X688000-3		Di Fo Lt	R	000	9	Im	M8 II M1 V BD	{-3}	(600-2)	[0000]	B
+3011	Corfinium	D543000-8		Co Di Fo Po	R	031	10	Im	F5 V	{-3}	(A00-2)	[0000]	B
+3111	Lamar	X410000-7		Di Fo Tz	R	001	9	Im	M0 VI	{-3}	(B00-2)	[0000]	B
+0412	Dhapura	E579744-6		Pi	-	600	9	Im	G1 V	{-2}	(665+2)	[B516]	BD
+0812	Cicus	E310323-7		Ho Lo	-	102	14	Im	G3 V	{-3}	(820+2)	[112A]	B
+0912	Kayu	E9B7555-9		Fl Ni	-	611	7	Im	G8 V D M3 VI	{-2}	(841+1)	[7357]	B
+1212	Prigojin	E100451-9		Ni Va	-	701	4	Im	F9 V	{-2}	(934-3)	[2247]	B
+1712	Petrarch	B55487A-7	NS	Pa Ph	-	102	7	Im	K4 V	{+1}	(B79-2)	[A934]	Bce
+2212	Imlaar	D677000-6	S	Di Fo Tr	R	000	9	Im	F2 V	{-3}	(500-3)	[0000]	B
+2412	Pagamin	E571000-7		Di Fo He Ho	R	002	11	Im	G3 V K2 VI	{-3}	(800+3)	[0000]	B
+2512	Niven	X9C4000-9		Di Fl Fo	R	011	15	Im	F6 V K3 VI	{-2}	(900+4)	[0000]	B
+2812	Og Bere'	D564577-4		Ag Lk Ni Pr Lt	-	911	7	Im	G6 V M8 V	{-2}	(640+1)	[7351]	BcC
+3112	Berth	X547000-4		Co Di Fo Lt	R	011	11	Im	M5 II	{-3}	(600-2)	[0000]	B
+0113	Saarinen	B566226-8		Lo Sa	-	931	15	Im	G5 V K6 VI	{-1}	(A10-1)	[3114]	B
+0713	Amirante	D31089B-7	S	Na Ph Pi	A	530	11	Im	A9 IV A3 V G6 VI	{-2}	(A79-4)	[B62B]	BDe
+0813	Makeni	E100554-9		Ni Va	-	702	6	Im	F4 V G5 VI	{-2}	(B43+2)	[6348]	B
+0913	Amarkimi	B546400-B	W	Ni Pa	-	931	12	Im	K4 V K0 VI	{+2}	(C34+4)	[565B]	Bc
+1213	Inar	A310778-C	N	Na Pi Ht	-	312	10	Im	K9 V BD BD	{+2}	(D67+1)	[A93B]	BD
+1313	Rayel	X693000-8		Di Fo Lk Tz	R	000	4	Im	M7 V BD	{-3}	(500-1)	[0000]	B
+1613	Urell	A100555-G	D	Co Ni Va Ht	-	620	12	Im	G1 V	{+3}	(B45-1)	[487H]	B
+1713	Stoyben	D313000-8	S	Di Fo Ic	R	021	13	Im	F1 V G2 V	{-3}	(700+3)	[0000]	B
+2013	Twinian	C404453-8	S	Ic Ni Va	-	611	11	Im	F8 V K5 VI	{-2}	(E34-1)	[3235]	B
+2413	Dunmag	X427000-C		Co Di Fo Sa Ht	R	002	7	Im	G7 V M4 VI	{-1}	(700-3)	[0000]	B
+2713	Wal-Ta-Ka	D560358-8	S	De Lo Sa	-	300	9	Im	K4 III	{-3}	(820+2)	[414B]	B
+2813	Doho	X696000-7		Di Fo	R	010	7	Im	G8 V	{-3}	(700-4)	[0000]	B
+2913	Atsah	X656737-2		Ag Fo Ga Tu Lt	R	901	8	Im	K8 V	{-1}	(866-2)	[8616]	BC
+3013	Ivora	X999000-3		Di Fo Lt	R	021	8	Im	A3 V G6 V A3 V	{-3}	(600-1)	[0000]	B
+3113	Prevsla	X543000-4		Di Fo Po Lt	R	000	9	Im	F7 IV	{-3}	(900-2)	[0000]	B
+3213	Salaam	X576000-4		Di Fo Ho Lt	R	021	15	Im	F4 V	{-3}	(900-2)	[0000]	B
+0214	Musayid	E544898-5		Pa Ph Pi Lt	-	401	6	Im	K6 V M8 VI	{-2}	(67A+1)	[4618]	BcDe
+0514	Marnie's World	AA9A386-B	N	Co Lo Oc	-	812	9	Im	K8 V	{+1}	(C21+1)	[545B]	B
+0814	Amritsar	C897576-8		Ag Ni Sa Tu	-	410	6	Im	K1 III	{-1}	(A41-2)	[1457]	BC
+0914	Otomisi	B5A557A-C	S	Fl Ho Ni Tz Ht	-	911	10	Im	K6 V BD	{+1}	(847+2)	[262E]	B
+1014	Mowebe	C748534-9		Ag Ho Ni	-	901	11	Im	G2 IV	{0}	(B42+1)	[954A]	BC
+1314	Modika	D550000-8		De Di Fo Ho Po	R	021	11	Im	G1 V	{-3}	(C00-5)	[0000]	B
+1614	Springarn	E564000-5		Di Fo Lt	R	012	15	Im	F3 IV	{-3}	(300-4)	[0000]	B
+1714	Andalia	E87A000-7		Di Fo Tz Wa	R	000	7	Im	M0 V	{-3}	(500-1)	[0000]	B
+1814	Karst	B876622-6	N	Ag Ni Tu	-	201	12	Im	G2 V K6 VI	{0}	(653+1)	[5644]	BC
+2014	Zinuun	E43679D-6			A	201	10	Im	F4 V G1 VI	{-2}	(764-1)	[85A6]	B
+2114	Kadidun	D5A2000-9	S	Di Fl Fo He Sa	R	002	13	Im	K5 II	{-2}	(800+3)	[0000]	B
+2414	Jurburk	D554000-B		Co Di Fo Tz	R	030	14	Im	M4 V BD	{-1}	(900+2)	[0000]	B
+0415	Pharos	B593425-8		Ho Ni	-	800	10	Im	F2 V M4 VI G9 VI K0 V	{-1}	(835-2)	[2388]	B
+0615	Anomaly Five	X100000-0		Ba Va Lt	A	011	14	Im	G6 V	{-3}	(900+1)	[0000]	B
+0715	Bahadur	A426110-E	N	Co Lo Ht	-	400	10	Im	K2 V BD	{+1}	(401+1)	[125E]	B
+0815	Pangumo	C552578-9	S	Fr Ni Po	-	802	13	Im	M5 V BD	{-1}	(441-2)	[643D]	B
+0915	Skold	B764201-B	N	Lo Tr	-	420	11	Im	G4 V K3 V	{+1}	(A11-4)	[334E]	B
+1115	Pecena	D547000-A		Di Fo Lk	R	032	11	Im	K4 V D	{-1}	(E00+2)	[0000]	B
+1415	Taillon	C78A633-9	S	Co Ni Ri Wa	-	111	8	Im	K2 IV M0 V	{0}	(C56+3)	[4668]	BC
+1615	Gaza	B430659-B	W	De Na Ni Po	-	621	15	Im	A9 II	{+2}	(C55-2)	[787A]	B
+2515	Kasmar	X631000-8		Di Fo Ho Po Tz	R	002	8	Im	K2 V	{-3}	(C00-3)	[0000]	B
+2615	Berora	X100000-D		Co Di Fo Va Ht	R	001	9	Im	K0 V K3 VI	{-1}	(700+2)	[0000]	B
+2715	Dophkah	D6477BB-4	S	Ag Pi Lt	A	423	12	Im	F9 V	{-1}	(566+4)	[9692]	BCD
+3015	Atadl	X310000-E		Di Fo Lk Ht	R	021	7	Im	F8 V	{-1}	(D00+1)	[0000]	B
+3115	Arabah	X877000-2		Di Fo Sa Tr Lt	R	020	12	Im	A9 V D	{-3}	(600-2)	[0000]	B
+0316	Magash	A4009A9-F	S	Cp Hi Ht In Na Va	-	103	14	Im	F2 V G0 V	{+4}	(A8A-5)	[BD9F]	BEF
+0516	Endimyon	X555410-3		Fo Ho Ni Pa Tz Lt	R	830	11	Im	K1 V	{-3}	(830-3)	[4164]	Bc
+0816	Coshecawat	D100658-8		Na Ni Sa Va	-	511	8	Im	G5 III	{-3}	(553-2)	[838B]	B
+1016	Liiri	B54297A-C	N	He Hi In Po Ht	-	302	8	Im	G2 V	{+4}	(A8D-2)	[4D7E]	BEf
+1116	Abydos	D435443-9	S	Lk Ni	-	102	6	Im	F9 V G3 VI	{-2}	(932+1)	[1259]	B
+1216	Lori	C544586-9		Ag Ni	-	521	8	Im	K2 V	{0}	(B43+5)	[6588]	BC
+1716	Reims	C6247AA-7	S	Co Pi	A	112	11	Im	F9 V	{-1}	(669+4)	[6619]	BD
+2016	Ugrik	E300000-0		Ba Va Lt	A	021	11	Im	G4 V D	{-3}	(700-1)	[0000]	B
+2116	Piram	E311772-7		Ic Na Pi	-	701	11	Im	K6 IV	{-2}	(865+2)	[4525]	BD
+2316	Giikusu	E64799D-8		Hi In Lk Tr Tz	A	511	12	Im	K2 V M1 VI M2 VI	{0}	(98C+2)	[C948]	BE
+2716	Errogel	D550579-5		Co De Ni Po Lt	-	801	10	Im	G3 V K2 VI G9 VI	{-3}	(741+2)	[5227]	B
+3016	Zerderu	D541000-7		Co Di Fo He Po Tz	R	001	10	Im	M5 V M9 V	{-3}	(600+1)	[0000]	B
+3116	Sherad	X000000-E		As Di Fo Ho Va Ht	R	001	7	Im	F3 V G8 VI M7 VI M8 VI	{-1}	(800-2)	[0000]	B
+0217	Umiikam	DAA6377-7		Co Fl Lo	-	833	12	Im	M6 II	{-3}	(820+2)	[5117]	B
+0417	Sui'tang	B55288D-A	N	Ph Po	A	120	9	Im	G8 IV M1 V	{+2}	(978-1)	[5A7C]	Be
+0517	Seleen	A310430-E	NS	Ni Ht	-	931	10	Im	G8 V G9 VI	{+2}	(B36-1)	[969H]	B
+0717	Rhinom	B77688B-8	N	Pa Ph Pi Sa Tu	-	700	9	Im	G4 V	{0}	(67B-2)	[4839]	BcDe
+0917	Kubishush	B8B6A88-F	N	Fl Hi In Ht	-	632	15	Im	G5 V	{+4}	(B9D-4)	[9E7F]	BEf
+1217	Clarissa	X536000-A		Co Di Fo	R	000	8	Im	K0 III	{-1}	(800-3)	[0000]	B
+1417	Starn	B000954-G	S	As Cp Hi Ho Ht In Na Va	-	331	11	Im	F8 V	{+5}	(C8E-4)	[8E9E]	BEF
+1717	Kennebec	E978000-6		Di Fo Lk	R	021	14	Im	K1 V M0 VI M1 VI	{-3}	(500+3)	[0000]	B
+1917	Donu-Na	C560875-8		De Fr Ph Ri	-	201	10	Im	G3 IV M9 VI	{0}	(676-5)	[7813]	BCe
+2017	Ruwenzori	E749000-7		Co Di Fo	R	012	11	Im	K2 V	{-3}	(500-3)	[0000]	B
+2117	Cunha	C626677-7	S	Ni	-	614	14	Im	G4 V M0 VI	{-2}	(950+1)	[3436]	B
+2317	Lan-Chou	D855686-6	S	Ag Ga Ni Tu	-	511	11	Im	G6 V D M6 VI	{-2}	(651+2)	[2426]	BC
+2717	Segan	D550778-6	S	De Po	-	202	7	Im	K2 V	{-2}	(466+1)	[9557]	B
+0218	Vanzeti	C52A500-D	S	Co Ni Ht	-	221	8	Im	G8 V	{0}	(A42+1)	[45AH]	B
+0518	Thengin	B5679A9-C	N	Hi Pr Ht	-	113	16	Im	G4 V	{+3}	(A85-2)	[DC5C]	BcE
+1018	Hessel	B658120-B	N	Ho Lo	-	801	5	Im	K8 IV K0 V	{+1}	(801-4)	[122E]	B
+1118	Karabeth	E663374-7		Lo	-	430	9	Im	G9 V G4 VI	{-3}	(720-4)	[4138]	B
+1218	Gaagir	X86A000-A		Di Fo Tz Wa	R	032	11	Im	M0 V	{-1}	(D00-5)	[0000]	B
+1318	Ciprien	X553000-7		Di Fo Fr Po	R	000	6	Im	M2 V	{-3}	(700-2)	[0000]	B
+1518	Trevith	E673000-5		Di Fo Lt	R	001	14	Im	G4 V K1 V K6 VI M8 VI	{-3}	(800+1)	[0000]	B
+1618	Ashasi	E9D5A85-B		Hi	-	831	8	Im	F6 IV G7 V G8 V D G7 V K8 V	{+1}	(A96+5)	[BB78]	BE
+1918	Shinorasus	E410000-E		Di Fo Ho Tz Ht	R	012	10	Im	K2 V M5 VI K6 VI	{-1}	(800+1)	[0000]	B
+2918	Khishuda	E856000-3		Di Fo Ga Tu Lt	R	001	6	Im	F3 V G9 VI	{-3}	(500+2)	[0000]	B
+0319	Cabrini	C565552-7	S	Ag Ni Pr	-	101	8	Im	F3 V	{-1}	(343+2)	[7466]	BcC
+0419	Ara Pacis	A437659-C		Co Ni Ht	-	510	9	Im	M3 II	{+1}	(A53-1)	[6769]	B
+0619	Sevas Topol	D9C4202-9		Co Fl Lo	A	311	9	Im	G2 V K7 VI	{-2}	(D10-1)	[115B]	B
+0819	Jehun	E667635-6		Ag Ga Ni Ri	-	431	10	Im	F9 IV	{-1}	(850-1)	[8543]	BC
+1319	Thane	D585477-7	S	Ni Pa	-	530	13	Im	G4 V	{-3}	(C30+5)	[6185]	Bc
+1419	Montcolm	D675000-7		Di Fo Tu	R	031	13	Im	G7 V K5 VI G5 VI	{-3}	(900+2)	[0000]	B
+1619	Neopidan	EA9A000-9		Co Di Fo Oc	R	010	11	Im	G6 V	{-2}	(700-4)	[0000]	B
+1719	Polizzi	B402596-D	N	Ho Ic Ni Va Ht	-	211	11	Im	A9 V F7 VI G7 VI	{+1}	(E44+4)	[4699]	B
+2019	Namidshur	B31067B-C	S	Na Ni Ht	-	223	13	Im	G5 V	{+1}	(B52-2)	[A75D]	B
+2519	Erita	E99A000-8		Di Fo Fr Wa	R	001	5	Im	M2 V	{-3}	(A00-1)	[0000]	B
+1220	Minde's Star	D435349-9	S	Ho Lo Tz	-	101	6	Im	K7 V K4 V	{-2}	(520+1)	[3179]	B
+1420	Quebraco	E78A000-5		Di Fo Wa Lt	R	020	13	Im	A5 V G1 VI	{-3}	(800+1)	[0000]	B
+1520	Kauai	BA89488-B	NS	Ni	-	803	12	Im	F9 V	{+2}	(936-1)	[469E]	B
+1620	Surisha	D682000-3		Di Fo Lt	R	030	12	Im	F1 V M4 VI	{-3}	(600-2)	[0000]	B
+2120	Teatro	E8A7000-8		Di Fl Fo Ho Sa	R	001	11	Im	F8 V G8 VI	{-3}	(600+1)	[0000]	B
+2220	Torm	C556341-9	S	Co Lo	-	302	8	Im	F6 V	{-1}	(520+1)	[2265]	B
+2520	Kiirindor	D546000-A		Di Fo Lk	R	001	10	Im	A1 V G9 VI	{-1}	(C00-1)	[0000]	B
+2820	Gampin	X66848B-3		Co Fo Ni Pa Lt	R	401	5	Im	A2 V	{-3}	(830+3)	[7152]	Bc
+0221	Mater Nova	B575743-9	S	Ag Pi	-	201	10	Im	G4 V M2 VI D	{+2}	(76C-4)	[3976]	BCD
+0921	Northammon	B764647-A	NS	Ag Ni Ri	-	800	11	Im	G4 V	{+4}	(559+1)	[AA6B]	BCf
+1221	Peres	X536000-6		Di Fo	R	001	14	Im	K1 V	{-3}	(700-2)	[0000]	B
+1821	Rolvaag	E580000-7		De Di Fo Lk	R	003	10	Im	G5 III	{-3}	(900-4)	[0000]	B
+2521	Geniishir	E310000-D		Di Fo Ht	R	003	13	Im	G6 V K1 VI G3 VI	{-1}	(700+1)	[0000]	B
+2721	Newpenton	X595000-3		Co Di Fo Lk Tz Lt	R	022	13	Im	M5 V	{-3}	(600+4)	[0000]	B
+0222	Breslow	D540641-4	S	De He Ni Po Lt	-	400	9	Im	G8 V K6 VI G9 VI	{-3}	(C50+2)	[7371]	B
+0422	Rouenet	C562211-9		Co Lo	-	710	10	Im	F4 III	{-1}	(A10-2)	[215C]	B
+0622	Mushinag	D575540-7	S	Ag Ni	-	430	11	Im	F1 IV	{-2}	(640+1)	[2363]	BC
+0922	Teyobald	B8B3622-B		Fl Ni	-	920	8	Im	K7 V BD	{+1}	(655+1)	[5717]	B
+1122	Vincennes	A8999A8-E		Cp Hi Ho Ht In	-	211	14	Im	G5 V M3 VI K0 VI	{+4}	(98E-2)	[BD3E]	BEF
+1522	Bumushe	C68A632-6	S	Ni Ri Wa	-	332	14	Im	A0 V	{-1}	(454+2)	[5563]	BC
+1722	Redemption	E540553-7		Co De He Ni Po Tz	-	921	9	Im	M0 V	{-3}	(743+3)	[3273]	B
+2322	Sage	D563000-7		Co Di Fo	R	030	10	Im	K7 V	{-3}	(800+1)	[0000]	B
+2522	Maelstrom	B79A832-C	NS	Ph Pi Tz Wa Ht	-	302	10	Im	K8 VI	{+3}	(67D+4)	[5B4A]	BDe
+0123	Rena	D596200-8	S	Lo	-	102	12	Im	F3 V	{-3}	(810+1)	[2119]	B
+0223	Daumier	B88A443-D	N	Ni Tz Wa Ht	-	232	13	Im	M1 V	{+1}	(C32+1)	[156B]	B
+0623	Araa	C566200-A	S	Lo	-	132	11	Im	G0 V	{0}	(E10+5)	[1215]	B
+1023	Irumunu	B7B3676-B	W	Fl Ni	-	423	11	Im	K7 V M0 VI M5 V M3 V	{+2}	(C54+1)	[983D]	B
+1123	Erisis	D679000-7		Co Di Fo	R	011	10	Im	G8 V	{-3}	(600+5)	[0000]	B
+1223	Montane	X683000-7		Di Fo	R	013	14	Im	F8 IV D	{-3}	(900+4)	[0000]	B
+1323	Al-Uqayr	E567000-5		Di Fo Lt	R	020	7	Im	K4 V M5 VI	{-3}	(700-1)	[0000]	B
+1623	HRD	A401441-F	N	Ic Ni Va Ht	-	403	6	Im	G5 IV	{+1}	(D35+1)	[456C]	B
+1823	Tetzel	E643000-B		Di Fo Po	R	031	14	Im	F8 II K3 V	{-1}	(D00-1)	[0000]	B
+1923	Liran	B000896-A		As Lk Na Ph Pi Va	-	700	13	Im	K8 V D D	{+2}	(577+2)	[BA6C]	BDe
+2023	Bruyere	C544777-5	S	Ag Ho Pi Sa Lt	-	900	12	Im	A2 IV	{0}	(46A+5)	[3757]	BCD
+2223	Byblos	C673846-7	S	Lk Ph Pi	-	900	7	Im	F2 V	{-1}	(A79-2)	[5738]	BDe
+2323	Azed Bek	D766000-A		Di Fo Ga	R	000	7	Im	F6 III M1 V	{-1}	(600+1)	[0000]	B
+2523	Exotrope	X300000-7		Co Di Fo Va	R	000	8	Im	G8 V	{-3}	(B00+4)	[0000]	B
+0124	Gulistan	CAB5436-7	S	Co Fl Lk Ni	-	801	10	Im	F1 V	{-2}	(831+1)	[4214]	B
+0224	Adapam	E796434-7		Ni Pa	-	602	14	Im	A4 V	{-3}	(433-2)	[5117]	Bc
+0524	Isurkun	A541379-A	N	He Lk Lo Po	-	802	12	Im	G6 III	{+1}	(B21+1)	[5456]	B
+0624	Helmuth	C846323-7	S	Lo Tr Tz	-	910	5	Im	K0 V	{-2}	(920-2)	[1133]	B
+0824	Tlaza	C303122-9		Co Ic Lo Tz Va	-	130	11	Im	M6 V BD	{-1}	(900+4)	[317D]	B
+1224	Achemadon	E547000-A		Di Fo	R	002	11	Im	G1 V	{-1}	(C00-3)	[0000]	B
+1324	Jonkeer	C5908B8-8	S	De He Ph Pi	-	133	12	Im	G7 V	{-1}	(C78-1)	[4768]	BDe
+1424	Sarden	E552575-7		Ni Po	-	212	12	Im	G9 IV G0 V	{-3}	(C43-4)	[9288]	B
+1524	Verd	E550000-6		De Di Fo Fr Po	R	000	7	Im	A4 V G3 VI	{-3}	(C00-3)	[0000]	B
+1824	Farraco	E200333-9		Ho Lo Tz Va	-	630	15	Im	K9 V M1 VI	{-2}	(D20+2)	[314C]	B
+2024	Minocoy	X422000-D		Di Fo He Po Ht	R	012	9	Im	G9 V	{-1}	(A00+1)	[0000]	B
+2224	Revoc	D9AA000-A		Di Fl Fo	R	001	12	Im	G0 V	{-1}	(B00-3)	[0000]	B
+2424	Ayers	X430000-A		De Di Fo Po	R	000	8	Im	G3 IV	{-1}	(900+3)	[0000]	B
+0525	Sejmal	C310655-B		Co Na Ni	-	432	9	Im	G8 V M0 VI G1 VI M0 VI	{0}	(C54+1)	[663E]	B
+0925	Ibix Donora	C432344-9		Co Lk Lo Po	-	300	7	Im	F6 V	{-1}	(C20-3)	[1256]	B
+1025	Frisgar	E4247A7-8		Pi	-	330	13	Im	F6 V G8 VI F8 VI	{-2}	(766+1)	[6588]	BD
+1925	Deneb	B537A98-A	N	Co Hi	-	630	12	Im	F1 V	{+3}	(79D-4)	[CD69]	BE
+2225	Usani	A552676-C	NS	Co Ni Po Tz Ht	-	633	14	Im	M0 V	{+2}	(G55+1)	[486D]	B
+2425	Hysyl	E540535-6		De He Ni Po	-	501	11	Im	G2 V	{-3}	(743+1)	[4245]	B
+0226	Wroclaw	C566772-7		Ag Ri	-	610	11	Im	F1 II	{+1}	(865-2)	[886A]	BC
+0626	Kernal	B5667B8-7		Ag Ho Ri Tz	-	111	13	Im	K5 V	{+2}	(567+3)	[5937]	BC
+0826	Imone	D9C4000-F		Di Fl Fo Ht	R	011	13	Im	G8 V	{-1}	(600-1)	[0000]	B
+1026	Burtrum	C53878B-8	S		-	720	8	Im	G4 V	{-1}	(86A+1)	[7688]	B
+1226	Bishop	B201514-D	S	Ic Ni Va Ht	-	901	5	Im	F9 V	{+1}	(C43-4)	[3649]	B
+1426	Kew	E512000-B		Di Fo Ho Ic Sa	R	010	10	Im	G8 II	{-1}	(B00-2)	[0000]	B
+1626	Risir	E430000-9		De Di Fo Po	R	022	11	Im	K7 V BD	{-2}	(B00-2)	[0000]	B
+1726	Woaros	X747000-5		Di Fo Lt	R	000	9	Im	F1 III	{-3}	(600+1)	[0000]	B
+1826	Eshamlii	E434000-B		Di Fo Lk Tz	R	003	14	Im	M3 VI	{-1}	(A00-1)	[0000]	B
+1926	Amshal	D687000-9		Di Fo Ga	R	011	8	Im	F6 III G3 V	{-2}	(E00-4)	[0000]	B
+2126	Arcanum	D43489E-6		Ho Ph	A	701	12	Im	A8 V	{-2}	(577+1)	[C633]	Be
+0327	Barbary	C57179B-5	S	Co He Lk Pi Tz Lt	A	201	9	Im	M8 V BD BD	{-1}	(763-4)	[C621]	BD
+0727	Shen-Yang	C665575-5	S	Ag Ga Ni Pr Tr Lt	-	310	10	Im	G1 V D G3 VI	{-1}	(542+5)	[6415]	BcC
+0827	Skopyeh	B500455-D		Ni Tz Va Ht	-	431	13	Im	M2 V	{+1}	(734+1)	[657A]	B
+1227	Taburi Nen	D546000-B		Di Fo	R	002	13	Im	K1 V	{-1}	(800+4)	[0000]	B
+1327	Medard	D421000-C		Di Fo He Po Ht	R	030	12	Im	G4 VI K2 VI	{-1}	(900-1)	[0000]	B
+1827	Prefecture	E430720-8		Co De Na Po	-	314	13	Im	G6 V M8 VI	{-2}	(B64+1)	[4577]	B
+1927	Thussar Ozoam	X545000-0		Ba Ho Tz Lt	A	001	10	Im	K4 V M6 VI M4 VI	{-3}	(B00+5)	[0000]	B
+2027	Avernus	E886534-4		Ag Ga Ni Pr Tr Lt	-	603	15	Im	F3 IV F9 V	{-2}	(543+4)	[4331]	BcC
+2127	Nusukha	E310000-7		Co Di Fo	R	011	12	Im	K9 V	{-3}	(A00+2)	[0000]	B
+0228	Rimkuku	D9A8887-7	S	Fl Ph Tz	-	411	12	Im	K1 VI BD K5 VI	{-2}	(476+2)	[A685]	Be
+0328	Dunstan	C649220-8	S	Lo	-	502	11	Im	G2 V	{-2}	(810+4)	[4117]	B
+0828	Burnham	D664000-8		Di Fo Tr	R	012	13	Im	F5 V	{-3}	(A00-2)	[0000]	B
+1128	Dekha	C100A75-F	S	Co Hi In Na Va Ht	-	313	15	Im	F1 V	{+3}	(A9B+1)	[ED5E]	BE
+1428	Condamine	C665572-7		Ag Ga Ni Pr Tu	-	501	11	Im	K6 IV	{-1}	(A45+1)	[6444]	BcC
+1628	Alaungpaya	C540744-8	S	Co De He Lk Pi Po	-	301	7	Im	K8 V K8 VI	{-1}	(667-3)	[9636]	BD
+1728	Monogan	E100532-8		Ni Va	-	501	6	Im	A0 Ib A2 V	{-3}	(443+1)	[3248]	B
+1928	Exile	X799000-0		Ba Lk Tz Lt	A	000	9	Im	K4 VI	{-3}	(B00+1)	[0000]	B
+2028	Nyassl	B300432-D	N	Ni Va Ht	-	310	9	Im	F6 II	{+1}	(634+1)	[357E]	B
+0229	Aziziyah	C86A676-8	S	Co Ni Ri Tz Wa	-	701	10	Im	M3 V	{-1}	(850+3)	[258A]	BC
+0529	Moltke	E646000-0		Ba Lt	A	031	11	Im	K0 V	{-3}	(C00-3)	[0000]	B
+0629	Askigaak	E549000-0		Ba Tz Lt	A	021	10	Im	M6 V BD	{-3}	(B00-2)	[0000]	B
+0729	Norg	E000000-D		As Di Fo Va Ht	R	000	4	Im	K6 V BD M8 V	{-1}	(800+5)	[0000]	B
+0929	Sipedon	E553676-6		Ni Po	-	700	5	Im	K4 III	{-3}	(950-2)	[5379]	B
+1229	Djar	C30079B-7	S	Na Pi Tz Va	A	530	11	Im	M4 V	{-1}	(964-1)	[8638]	BD
+1429	Ishiri	E565855-6		Pa Ph Ri	-	201	11	Im	A3 IV	{-1}	(475-1)	[A747]	BcCe
+1829	Bisistra	E557000-B		Di Fo	R	001	7	Im	K4 V	{-1}	(600+2)	[0000]	B
+0130	Chaosheo	E87A77C-5		Pi Wa Lt	-	330	10	Im	K7 II M7 V	{-2}	(564-1)	[4547]	BD
+0330	Canisus	C431787-8	S	Na Po	-	521	12	Im	G4 V	{-1}	(862+1)	[6647]	B
+0730	Sultana	E649000-9		Di Fo	R	010	10	Im	F2 V	{-2}	(700-3)	[0000]	B
+0830	Bukit Seng	X542000-8		Di Fo He Po	R	020	7	Im	F7 V M6 VI K2 VI G0 VI	{-3}	(B00-4)	[0000]	B
+0930	Arnyl	B683656-9	NS	Ni Ri Tu Tz	-	332	14	Im	M8 V BD	{+2}	(A57-1)	[784C]	BC
+1030	Prege	D79A000-9		Di Fo Wa	R	002	11	Im	K3 V	{-2}	(400+4)	[0000]	B
+1430	Eretaro	D9C4000-B		Di Fl Fo	R	023	14	Im	G8 V	{-1}	(D00+1)	[0000]	B
+1630	Brontitor	E9C4000-9		Di Fl Fo Ho	R	021	12	Im	G2 V K2 VI	{-2}	(600-3)	[0000]	B
+1730	Gatooma	E100575-7		Ho Ni Va	-	103	6	Im	K3 III	{-3}	(941-2)	[3234]	B
+1830	Ronsard	DA8967B-7	S	Co Ni Ri	-	621	13	Im	G5 V	{-2}	(953-1)	[5458]	BC
+1930	Turkoman	B9C6745-9		Fl Tz	A	400	6	Im	M3 V	{+1}	(569+2)	[6887]	B
+0431	Zyedl	E55147C-5		Ho Ni Po Lt	-	831	8	Im	F1 V G7 VI	{-3}	(731+3)	[4122]	B
+0531	Briaxis	C420477-B		Co De He Lk Ni Po Tz	-	200	9	Im	M4 V M9 VI	{0}	(733-3)	[443G]	B
+0731	Qevar	A432646-E	NS	Lk Na Ni Po Ht	-	600	12	Im	K2 V	{+2}	(758+3)	[585F]	B
+1231	Point Ay	C560544-9	S	De Ni Pr Tz	-	722	12	Im	M0 V BD	{-1}	(B43-4)	[341A]	Bc
+1831	Takahira	E9C5000-9		Di Fl Fo	R	000	10	Im	G6 VI	{-2}	(900+4)	[0000]	B
+2131	Javan	X77A000-A		Co Di Fo Sa Wa	R	000	10	Im	F3 V K0 VI	{-1}	(600-1)	[0000]	B
+3031	Asharam	E7627BD-2		Co Ri Lt	A	501	11	Im	K9 IV K9 V	{-1}	(A64+2)	[7633]	BC
+0332	Aosta	E669000-C		Di Fo Ht	R	010	10	Im	G4 V	{-1}	(600-1)	[0000]	B
+1032	Quinthept	D521000-A		Di Fo He Lk Po Tz	R	000	9	Im	M5 V BD	{-1}	(400-2)	[0000]	B
+1332	Giffert	E7A8000-D		Di Fl Fo Ht	R	003	11	Im	F5 V	{-1}	(500+3)	[0000]	B
+1432	Pashus	A432474-F	S	Ho Ni Po Ht	-	402	10	Im	F1 V F8 VI	{+1}	(535-2)	[752C]	B
+1532	Rajan	D87A000-B		Co Di Fo Wa	R	012	8	Im	K4 III	{-1}	(E00-3)	[0000]	B
+1732	Rif	X687000-6		Di Fo Ga Sa	R	030	12	Im	K5 V BD D	{-3}	(900-5)	[0000]	B
+1832	Kamlar	B587457-C	N	Co Ni Pa Tz Ht	-	501	8	Im	M3 VI	{+1}	(736-1)	[357D]	Bc
+0233	Inkekush	A540545-D	N	Co De He Ni Po Ht	-	301	4	Im	K2 V	{+1}	(745-2)	[A689]	B
+0633	Preslin	B430635-C	N	De Na Ni Po Ht	-	431	14	Im	K2 V BD BD	{+1}	(D53-5)	[875B]	B
+0833	Mephit	E9B8000-8		Co Di Fl Fo Tz	R	002	11	Im	M3 V	{-3}	(900-2)	[0000]	B
+0933	Echura	C683745-8	S	Ri Tr	-	300	10	Im	G6 V D D	{0}	(86A-4)	[6744]	BC
+1133	Keirei	X310000-B		Di Fo Ho	R	021	7	Im	K5 IV	{-1}	(B00-1)	[0000]	B
+1333	Shiiku	D651758-7	S	Po	-	601	5	Im	G1 V M7 VI	{-2}	(B67-2)	[4547]	B
+1433	Atab	C540789-8	S	De He Pi Po Sa	-	731	12	Im	G2 V M7 VI	{-1}	(C68+1)	[5663]	BD
+1633	Pikha	B738A75-C		Hi Ht	-	802	13	Im	A6 IV G5 VI D D	{+3}	(79E-2)	[AD7C]	BE
+1733	Imazura	C555546-8	S	Ag Ho Ni Sa	-	601	10	Im	A3 Ib G6 VI F5 V	{-1}	(644+1)	[8498]	BC
+0334	Furens	E8A9000-A		Di Fl Fo Sa	R	001	12	Im	G0 V	{-1}	(900-4)	[0000]	B
+0534	Maricutin	X764000-A		Di Fo	R	000	6	Im	A9 V F4 V	{-1}	(700+3)	[0000]	B
+0734	Raguseppe	B410531-A		Ho Ni	-	503	11	Im	G4 V	{+1}	(642+4)	[5669]	B
+1334	Giranima	D797873-6	S	Pa Ph Pi Tu	-	701	8	Im	K3 V K6 VI	{-2}	(678+1)	[8658]	BcDe
+2234	Catacomb	X8A7000-B		Di Fl Fo Lk	R	030	10	Im	G8 III M5 V K6 VI M4 VI	{-1}	(A00+2)	[0000]	B
+2734	Lorin Antune	X525000-0		Ba Co Sa Lt	A	031	12	Im	A2 V	{-3}	(500+4)	[0000]	B
+0235	Saguenay	E438000-E		Di Fo Tz Ht	R	000	8	Im	M7 V M0 VI BD	{-1}	(500+2)	[0000]	B
+0735	Kiangya	E7C2000-B		Di Fl Fo He	R	001	4	Im	G8 V G5 VI	{-1}	(600-3)	[0000]	B
+0935	Inquar	B8B5772-A	S	Co Fl Tz	-	620	13	Im	M6 V	{+2}	(969-3)	[8927]	B
+1035	Storm	DAD6000-A		Di Fo	R	012	11	Im	K8 IV	{-1}	(B00-2)	[0000]	B
+1135	Lilad	C547ACA-C		Co Hi In Tz Ht	A	502	6	Im	M2 V	{+3}	(69B+4)	[9D1C]	BE
+1235	Veldt	C567789-7	S	Ag Co Ri Sa	-	302	11	Im	K6 V M0 VI	{+1}	(267+2)	[7848]	BC
+1435	Quirinal	C651684-8		Co Ni Po Tz	-	130	12	Im	M2 V BD M3 VI	{-2}	(C54+3)	[A495]	B
+1635	Ibsen	D434520-7	S	Co Ni	-	310	7	Im	F2 III G3 V	{-3}	(843+3)	[8274]	B
+0336	Upuraku	B584579-8	W	Ag Co Lk Ni Pr	-	700	8	Im	F2 V G9 VI D	{+1}	(743+5)	[565C]	BcC
+0436	Endup	D69388C-6		Ph Pi	A	600	10	Im	G9 V K1 VI K0 VI M2 VI K5 VI	{-2}	(673-2)	[C638]	BDe
+0936	Tullyhome	D669776-5	S	Ri Sa Lt	-	431	14	Im	K5 II	{-1}	(768-3)	[6628]	BC
+1336	Dawn	XA9A000-C		Co Di Fo Oc Tz Ht	R	001	11	Im	M3 V BD	{-1}	(500-2)	[0000]	B
+1436	Isidor	D571000-8		Di Fo He	R	002	11	Im	A2 III F5 V	{-3}	(D00-3)	[0000]	B
+1636	Balzac	A552887-C	N	Lk Ph Po Ht	-	422	9	Im	F0 V	{+2}	(D7D+3)	[8A3E]	Be
+0237	Taman	E874000-5		Di Fo Lt	R	011	12	Im	F8 V K8 VI G9 VI	{-3}	(B00-1)	[0000]	B
+0737	Taomina	D421000-7		Di Fo He Po Sa	R	000	10	Im	G3 V M2 VI	{-3}	(400+1)	[0000]	B
+1137	Third Mu	DA7A000-C		Di Fo Oc Ht	R	021	16	Im	K0 V	{-1}	(A00+1)	[0000]	B
+1337	Unxava	X677000-7		Di Fo	R	020	13	Im	G2 V D	{-3}	(900+3)	[0000]	B
+0138	Iruku	B310443-9		Ni	-	602	10	Im	K9 IV D	{0}	(434-3)	[4457]	B
+0238	Nouakchat	E532000-6		Di Fo Ho Lk Po	R	030	14	Im	A9 V	{-3}	(B00+1)	[0000]	B
+0638	Brufort	D669000-6		Co Di Fo	R	003	14	Im	K5 V M7 VI	{-3}	(500+2)	[0000]	B
+1038	Timmer	C562635-7	S	Ni Ri	-	501	12	Im	G9 V K1 VI	{-1}	(851+1)	[2578]	BC
+1138	Ushashin	EA9A000-7		Di Fo Oc	R	023	12	Im	K5 IV	{-3}	(400+1)	[0000]	B
+1238	Muntgumree	B553435-9	NS	Ni Po	-	901	7	Im	F2 V	{+1}	(A34+1)	[9518]	B
+1338	Sorel	X539000-C		Di Fo Ht	R	030	11	Im	A0 V	{-1}	(B00+1)	[0000]	B
+0339	Tuwayk	B6728C9-A		He Ph Pi	A	601	11	Im	G2 V M2 V	{+2}	(87C+5)	[AA69]	BDe
+0439	Beaxon	D88AA79-C		Hi Wa Ht	-	903	14	Im	G6 V	{+1}	(896+1)	[AB1D]	BE
+0939	Sestos	D5A6859-9	S	Co Fl Ph	-	632	13	Im	G1 VI	{-1}	(878-1)	[674A]	Be
+1339	Zeng	D426000-C		Co Di Fo Sa Ht	R	001	10	Im	K0 V D	{-1}	(700+3)	[0000]	B
+1439	Breit-Tuve	X425000-B		Di Fo Ho Tz	R	001	6	Im	K0 V K6 VI	{-1}	(900-2)	[0000]	B
+1639	Uushadiiru	D551000-A		Di Fo Po Sa	R	001	12	Im	K3 V	{-1}	(500+1)	[0000]	B
+0440	Noghon	D797000-8		Di Fo Tu	R	001	4	Im	A9 II F3 V F0 V	{-3}	(500-1)	[0000]	B
+0740	Mtensc	D551000-8		Di Fo Po	R	020	11	Im	G9 VI	{-3}	(B00-1)	[0000]	B
+1140	Oriryu	B53658C-9	S	Ni Sa	A	800	10	Im	K8 III	{0}	(446+1)	[653C]	B
+1340	Agdarmi	B56679D-A		Ag Cp Ho Ri Sa	A	321	12	Im	K2 II	{+4}	(96B+3)	[6B7B]	BCF
+1440	Fessenden	C43577B-6			-	601	12	Im	G3 II M9 V	{-1}	(567-4)	[7689]	B
+1640	Jecife	A439552-H	N	Ni Ht	-	102	15	Im	F8 IV D	{+2}	(645+1)	[273E]	B

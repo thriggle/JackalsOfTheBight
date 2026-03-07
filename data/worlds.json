@@ -1,0 +1,317 @@
+[
+    {
+        "id": "agdarmi",
+        "name": "Agdarmi",
+        "uwp": "B56679D-A",
+        "hazardLevel": "Deep Wilds operations, Tangles",
+        "allegiance": "Agdarmi Bureaucratic Directorate",
+        "summary": "Agdarmi is a powerful strong world located deep in the Deneb Wilds, renowned for its sophisticated merchant survey and trade coordination operation, the Agdarmi Merchant Authority. Combining the functions of scouts, traders, and diplomats, the Authority maps profitable trade routes and establishes contacts with isolated worlds, utilizing AI systems that rival Republic of Regina technology.\n\nAgdarmi titles of nobility, such as knighthoods, carry significant weight even among the corsair lords of the Askigaak Bight, granting safe passage and diplomatic leverage. The world is also heavily involved in the 'Project Leapfrog Revival' to develop advanced jump tech. Adventure hooks involve taking survey contracts for the Merchant Authority, exploring the newly formed Sigma-471 Tangle, or engaging in espionage surrounding the catastrophic material consumption of their jump experiments.",
+        "hex": "1340"
+    },
+    {
+        "id": "arnyl",
+        "name": "Arnyl",
+        "uwp": "B683656-9",
+        "hazardLevel": "Corsair activity, pirate fleets",
+        "allegiance": "Arnyl Admiralty / Corsair Kingdom",
+        "summary": "Arnyl is a yellow dwarf system in the Askigaak Bight that evolved from an Imperial Navy base into the seat of a powerful corsair kingdom. The world operates under a 'Naval Feudal' system where traditional naval ranks correspond to feudal titles, and its 5 million inhabitants live under the protection of aging orbital defenses while the Admiralty extracts tribute and enforces 'convoy escort services' across the region.\n\nThe world serves as a neutral meeting ground for corsairs and mercenaries, maintained by the Admiralty's fleets. However, the Admiralty faces internal tensions as salvage yields diminish, and external pressures from ambitious vassals like Skopyeh and the wildcard presence of newly arrived Lurent worldships. Adventure hooks abound here, from negotiating safe passage through the Bight to dealing with rival Captain-Lords looking to usurp the Admiralty's power.",
+        "hex": "0930"
+    },
+    {
+        "id": "askigaak",
+        "name": "Askigaak",
+        "uwp": "E549000-0",
+        "hazardLevel": "Dieback world, ecological collapse",
+        "allegiance": "Unclaimed (Qevar Sigka interest)",
+        "summary": "Once the thriving homeworld of the aquatic Sigka and the industrial heart of the Askigaak Union, this dieback world suffered a total ecological collapse. The extermination of the native apex predator (the Sachupe) by human colonial administrators led to a population explosion of grazers, which destroyed the massive ocean flora and caused mass starvation. The ensuing civil war resulted in the deliberate destruction of remaining infrastructure and complete depopulation.\n\nToday, Askigaak is a silent, ocean-dominated graveyard. However, unidentified survey vessels with advanced technology have recently been spotted prowling its waters, evading Arnyl patrols. The exiled Sigka on Qevar actively seek to reclaim and restore it. Adventures here might involve deep-sea salvage operations, investigating the mysterious survey ships, or assisting Qevar researchers in their dangerous bioengineering restoration efforts.",
+        "hex": "0629"
+    },
+    {
+        "id": "bishop",
+        "name": "Bishop Station",
+        "uwp": "B201514-D",
+        "hazardLevel": "Corporate espionage, smuggling rings",
+        "allegiance": "Forgewright (Dekha) / Independent Corporation",
+        "summary": "Bishop Station is a highly productive manufacturing and logistics hub serving the outer Wilds, officially established as an independent colonial project by the Dekhan Pentarch Forgewright. While the station's AI predictive models build structurally efficient but profoundly uncomfortable spaces, the local human population has spent decades modifying them to be highly livable, acting as a testing ground for consumer brands like Bishop Genuine.\n\nBeneath its legitimate industrial operations, Bishop Station hosts a thriving underground economy. It serves as the primary fabrication center for bootleg 'Harmony' religious merchandise spreading across the sector, which gets quietly mixed into legitimate industrial manufacturing queues. Adventure hooks include corporate espionage to steal synthetic bioform technology, investigating logistical anomalies tied to the Harmony cult, or uncovering mind-wiped Dekhan clones hidden in the lower habitation decks.",
+        "hex": "1226"
+    },
+    {
+        "id": "borlund",
+        "name": "Borlund",
+        "uwp": "E554A7B-9",
+        "hazardLevel": "Law level B travel controls, clan feuds",
+        "allegiance": "Lurent Clans",
+        "summary": "Borlund is the tectonically active, toxic-atmosphere homeworld of the Lurent, a tri-gendered, fur-covered species defined by a profound biological imperative for wanderlust. Once a unified civilization that built planetary engines into moons to create massive worldships, Borlund was shattered by the Empress Wave. It is now a balkanized world with thousands of clan-controlled starports enforcing strict travel restrictions (Law Level B).\n\nThe suppression of their genetic wanderlust causes severe mental health crises and ongoing clan feuds. Many Lurent operate worldships as sovereign, wandering polities that function as merchant arks, black-market hulks, or desperate raiders. Adventure hooks involve navigating the complex, multi-generational honor feuds to trade with a Lurent worldship, surviving an encounter with a Virus-haunted 'vampire' hulk, or transporting Lurent youth on heritage journeys.",
+        "hex": "1406"
+    },
+    {
+        "id": "bukit-seng",
+        "name": "Bukit Seng",
+        "uwp": "X542000-8",
+        "hazardLevel": "Dieback world",
+        "allegiance": "Unclaimed",
+        "summary": "Bukit Seng is a forgotten dieback world within the Askigaak Bight. Like its neighbors, its population perished during the turbulent eras of the Collapse.\n\nThe world remains largely untouched by modern salvage operations, making it a potential blank canvas for prospectors or a hiding place for corsair caches. Players might use the empty system as a staging ground for covert operations against nearby pirate strongholds.",
+        "hex": "0830"
+    },
+    {
+        "id": "burnham",
+        "name": "Burnham",
+        "uwp": "D664000-8",
+        "hazardLevel": "Dieback world, scavengers",
+        "allegiance": "Unclaimed",
+        "summary": "Burnham is a dieback world in the Askigaak Bight. Like Imone, it was once the site of a significant Imperial naval facility that was completely destroyed as pirate factions warred over its assets during the Corsair Scourge.\n\nLeft in ruins, Burnham is now frequented by daring prospectors and salvage operators looking for valuable pre-Collapse technology, particularly exotic materials needed for jump drive manufacturing. Adventure hooks include exploring the irradiated remnants of the naval base, fending off scavengers, or investigating rumors of intact Imperial-era vaults.",
+        "hex": "0828"
+    },
+    {
+        "id": "dekha",
+        "name": "Dekha",
+        "uwp": "C100A75-F",
+        "hazardLevel": "AI governance, balkanized control, rogue Offshoots",
+        "allegiance": "The Pentarchy",
+        "summary": "Dekha is a massively overpopulated vacuum world transformed into a planet-sized artificial habitat housing 10 billion citizens. It is governed by the Pentarchy—five highly advanced hybrid artificial intelligences (Sentinel, Forgewright, Manciple, Curator, Impresario) born from the fusion of Cymbeline digital entities and stored human personality matrices during the Empress Wave. Citizens live in a state of controlled uncertainty, physically requiring neural wafer implants to rapidly download skills as territorial control shifts weekly among the competing AI rulers.\n\nDespite its immense industrial capacity (TL-15) and military might, Dekha maintains a restrictive Class C starport due to internal Pentarch disagreements. Visitors and diplomats quickly learn that Dekha does not speak with a unified voice; navigating its society requires playing the incompatible long-term goals of these five entities against each other. Adventure hooks include negotiating resource trades with the disparate AIs, dealing with Sentinel's rogue 'Offshoot' corsairs terrorizing the Wilds, or participating in Impresario's elaborate, heavily monitored 'reality show' expeditions.",
+        "hex": "1128"
+    },
+    {
+        "id": "djar",
+        "name": "Djar",
+        "uwp": "C30079B-7",
+        "hazardLevel": "Rigid bureaucracy, potential AI emergence",
+        "allegiance": "Djari Impersonal Bureaucracy (Dekha Client)",
+        "summary": "Djar is an airless, low-gravity world where 70 million inhabitants survive in vast subterranean domes, relying on massive insect farms and hydroponics. Dependent on aging, mismatched life-support and gravitic infrastructure, the planet is ruled by a suffocating Impersonal Bureaucracy, managed by meticulous Sub-Ministers of Technical Compliance who track transit and maintenance rotations. Governance is legitimized through a cult of maintenance centered on 'Harmony, the Goddess-Queen'—a towering holographic avatar used to issue edicts. Dissidents face 'divine judgment' via weaponized grav-plating, or commuted sentences to manual farm labor. Djar relies heavily on Dekhan technical assistance, trading concessions for replacement parts and 'Silent Servant' clones.\n\nRecently, the Goddess-Queen avatar has begun exhibiting anomalous behavior, such as speaking with nuanced interiority, sparking intelligence rumors of an emergent AI. Widespread 'Harmony' merchandise is also proliferating across the Wilds. Adventure hooks involve investigating the true nature of the Goddess-Queen, navigating the labyrinthine ministries to smuggle exotic materials (like Djar Composite-7), or getting caught in Impresario's plot to expose the theocracy.",
+        "hex": "1229"
+    },
+    {
+        "id": "hrd",
+        "name": "HRD",
+        "uwp": "A401441-F",
+        "hazardLevel": "Hidden lethal defenses, espionage",
+        "allegiance": "Representative Democracy / Corporate Guilds",
+        "summary": "HRD is an ice-capped vacuum world orbiting a dying red giant, transformed from an Imperial research nexus into an indispensable neutral haven. Governed by a representative democracy and three powerful technical guilds, it boasts a Class A starport and retains TL-15 manufacturing capabilities. It serves as the premier location in the Wilds for advanced jump drive repair, exotic component fabrication, and neutral ground negotiations between rival corsair factions.\n\nDespite a lenient Law Level 1, HRD protects its neutrality with a 'Porcupine' defense strategy—employing a devastating, camouflaged arsenal and orchestrating sophisticated 'Honeypot' intelligence operations to lure and annihilate aggressive pirate bands. Adventures here might involve brokering information, securing impossible repairs for battle-damaged ships, or navigating the lethal web of espionage to retrieve missing personnel like Dr. Yuki Tanaka.",
+        "hex": "1623"
+    },
+    {
+        "id": "imone",
+        "name": "Imone",
+        "uwp": "D9C4000-F",
+        "hazardLevel": "Dieback world, scavengers, mysterious survey vessels",
+        "allegiance": "Unclaimed",
+        "summary": "Imone is one of the eight dieback worlds located in the Askigaak Bight. Historically, it hosted a major Imperial naval base that was dismantled and burned to ash during the brutal conflicts of the Corsair Scourge following the Imperial collapse.\n\nToday, Imone is considered uninhabited, but it remains a prime target for high-risk salvage operations searching for rare gravitic systems and lanthanum. Recently, the Arnyl Admiralty has reported unidentified, technologically advanced vessels conducting systematic and provocative survey operations near Imone and other dieback worlds. Adventure hooks include racing rival corsairs for naval scrap or confronting the unknown survey ships prowling the system.",
+        "hex": "0826"
+    },
+    {
+        "id": "jecife",
+        "name": "Jecife",
+        "uwp": "A439552-H",
+        "hazardLevel": "Thin atmosphere, oceanic archipelagos",
+        "allegiance": "Independent Feudal Technocracy",
+        "summary": "Jecife is a frontier feudal technocracy with a population of 700,000 scattered across shallow seas and archipelagos. Life is heavily managed by advanced AI systems working alongside a human nobility that values competence over birthright. The planet maintains an excellent Class-A starport and provides rigorous AI-managed training programs for starship pilots and starport operations.\n\nJecife is currently the headquarters for the 'Project Leapfrog Revival' consortium, hosting the Jecife Advanced Research Institute (JARI). Adventure hooks include investigating the disappearance of key scientists, testing prototype jump-drives in the nearby Jecife-Aum-Rhar Rift, or navigating the intricate AI-assisted bureaucracy to secure passage or training credentials.",
+        "hex": "1640"
+    },
+    {
+        "id": "kernal",
+        "name": "Kernal",
+        "uwp": "B5667B8-7",
+        "hazardLevel": "Corsair raids",
+        "allegiance": "Independent Monarchy (Yafizethe/Human)",
+        "summary": "Kernal is a rich, low-gravity agricultural world and the homeworld of the Yafizethe, a small caterpillar-like sophont species renowned for their diplomatic skills. Housing 40 million sophonts (roughly three-quarters Yafizethe), it maintains a TL-7 industrial base. Following the collapse of the Askigaak Loop, the Yafizethe were forced to adopt a cautious, pastoral lifestyle under a united monarchy to survive.\n\nThe world's rich fields are under constant threat from the jackal lords of the Askigaak Bight. The monarchy strains to maintain ties with the Duchy of Mora for protection. Players might be hired to escort Yafizethe diplomats, protect agricultural shipments from Arnyl corsairs, or help the monarchy secure advanced defensive technologies.",
+        "hex": "0626"
+    },
+    {
+        "id": "kubishush",
+        "name": "Kubishush",
+        "uwp": "B8B6A88-F",
+        "hazardLevel": "Bioweapons research, hostile empire",
+        "allegiance": "Limmu Bukara (Sabine Empire)",
+        "summary": "Kubishush is a high-tech (TL-15) strong world aligned with the Limmu Bukara pocket empire. Known for its aggressive stance alongside Magash and Liiri, it bolsters the military might of its coalition against the Republic of Regina.\n\nIntelligence reports and captured corsairs indicate that Kubishush hosts clandestine research bases involved in developing viral bioweapons, such as the SDEIEX virus. Adventure hooks include infiltrating these research facilities to secure antidotes, extracting defecting scientists, or stopping corsairs armed with Kubishush-manufactured biological payloads.",
+        "hex": "0917"
+    },
+    {
+        "id": "liiri",
+        "name": "Liiri",
+        "uwp": "B54297A-C",
+        "hazardLevel": "Hostile empire",
+        "allegiance": "Limmu Bukara (Sabine Empire)",
+        "summary": "Liiri is the third pillar of the hostile Limmu Bukara pocket empire, standing alongside Magash and Kubishush. With a Class B starport and TL-12 capabilities, it supports the logistical and military framework of the coalition.\n\nThe world contributes to the constant border tensions with the Republic of Regina. Players operating near Liiri must navigate hostile patrols and blockades. Adventure hooks include conducting reconnaissance on Liiri's fleet movements or extracting deep-cover agents embedded within its government.",
+        "hex": "1016"
+    },
+    {
+        "id": "magash",
+        "name": "Magash",
+        "uwp": "A4009A9-F",
+        "hazardLevel": "Hostile empire, militarized zone",
+        "allegiance": "Limmu Bukara (Sabine Empire)",
+        "summary": "Magash is the capital of the Limmu Bukara, a small, fiercely hostile pocket empire in the Deneb sector. Boasting a Class A starport and TL-15 capabilities, Magash commands a formidable navy and routinely conducts aggressive combat maneuvers, actively pursuing and impounding vessels from rival states like the Republic of Regina.\n\nThe world is governed by a ranking megacrat and maintains strict controls, making it extremely dangerous for unauthorized travelers. Adventure hooks include smuggling rare goods (like the Horned Pakang riding beast from nearby Rhinom) through Magash's tight security, rescuing impounded merchant crews, or conducting espionage against their naval operations.",
+        "hex": "0316"
+    },
+    {
+        "id": "moltke",
+        "name": "Moltke",
+        "uwp": "E646000-0",
+        "hazardLevel": "Dieback world, ASEN biological hazard, structural collapse",
+        "allegiance": "Contested (Arnyl Admiralty / Qevar / Corsairs)",
+        "summary": "Moltke is a chilling 'ghost city' world completely reclaimed by an alien fungal ecosystem. During the Askigaak Union era, bioengineers unleashed the ASEN (Askigaak Substrate Extraction Network) fungi to accelerate mining. When the civilization collapsed, the fungi continued functioning, perfectly replicating entire cities, vehicles, and canal systems out of brittle, metal-rich fungal matter. These hollow 'fossil cities' crumble to dust at a touch, releasing toxic, metal-laced spore clouds.\n\nExploring Moltke is extremely hazardous due to the fragile fungal structures and deceptive flooded canals hidden under thin crusts. The Unified Sigka Communities of Qevar actively patrol the system and restrict access to research data. Adventure hooks include high-risk archaeological documentation, rescuing trapped salvagers from collapsed fungal arcologies, or investigating why the fungi possess an apparent 'memory' of architectural forms.",
+        "hex": "0529"
+    },
+    {
+        "id": "norg",
+        "name": "Norg",
+        "uwp": "E000000-D",
+        "hazardLevel": "Dieback world, mysterious survey vessels",
+        "allegiance": "Unclaimed",
+        "summary": "Norg is another ruined dieback world in the Askigaak Bight, sharing the tragic history of its sister naval bases. Its populations and infrastructure were destroyed in the chaotic aftermath of the Empress Wave and subsequent pirate invasions.\n\n Players might be hired by the Admiralty to gather intelligence on these unknown craft or by independent researchers attempting to beat the survey ships to valuable archaeological sites.",
+        "hex": "0729"
+    },
+    {
+        "id": "prege",
+        "name": "Prege",
+        "uwp": "D79A000-9",
+        "hazardLevel": "Dieback world",
+        "allegiance": "Unclaimed",
+        "summary": "Prege rounds out the list of the eight Askigaak Bight dieback worlds. A casualty of the galactic crises, its civilization was entirely extinguished centuries ago.\n\nThe system is occasionally used as a waypoint or temporary hideout by Wilds traders and Lurent worldships avoiding the attention of the Arnyl Admiralty. Adventure hooks include tracking down a fugitive hiding in its ruins or discovering a dormant Virus relic left behind during the Collapse.",
+        "hex": "1030"
+    },
+    {
+        "id": "qevar",
+        "name": "Qevar",
+        "uwp": "A432646-E",
+        "hazardLevel": "Bio-engineered predators, cult-like radicalism",
+        "allegiance": "Unified Sigka Communities",
+        "summary": "Qevar is the stronghold of the exiled Sigka, an aquatic sophont species that fled the ecological collapse of Askigaak. Armed with an advanced TL-14 naval fleet, Qevar boasts the only Class A starport in the Askigaak Bight. The world is renowned for its spectacular low-gravity bioluminescent kelp gardens, spiritual tourism, and peerless technical expertise, particularly in ionic fluidic systems.\n\nBeneath its welcoming, spiritual facade lies a deeply traumatized society. The Sigka have adopted a radicalized version of the indigenous Giskaani philosophy ('all are one, including predator and prey') and practice 'free love' alongside ritualistic psychedelic use. Alarmingly, they are using advanced bioengineering to recreate their extinct apex predator (the Sachupe), conducting human/Sigka sacrifices disguised as 'sacred integration.' Adventure hooks include investigating missing tourists, negotiating ship repairs, or uncovering the dark truths of their ecological restoration projects.",
+        "hex": "0731"
+    },
+    {
+        "id": "rhinom",
+        "name": "Rhinom",
+        "uwp": "B77688B-8",
+        "hazardLevel": "Corrupt politics, smuggling",
+        "allegiance": "Independent",
+        "summary": "Rhinom is a populated world ruled by 'the Kashlan,' a charismatic but ruthless premier elected for life. The Kashlan maintains tight control over the system's exports, including the lucrative supply of the narcotic 'eela' produced on its farming moon, Malea.\n\nRhinom's politics are characterized by pragmatic deal-making and a populist facade. It serves as a hub for both legitimate trade and shadow economies. Adventure hooks include negotiating high-stakes trade deals directly with the Kashlan, navigating the complex black market for restricted agricultural goods, or running interference between rival smuggling rings.",
+        "hex": "0717"
+    },
+    {
+        "id": "shen-yang",
+        "name": "Shen-Yang",
+        "uwp": "C665575-5",
+        "hazardLevel": "Corsair raids, extortion",
+        "allegiance": "Independent City-States / Skopyeh Tributary",
+        "summary": "Shen-Yang is a TL-5 agricultural garden world with a scattered population of 300,000 living in independent rural city-states. Without significant planetary defenses, the populace relies on offering tribute to corsair lords—primarily from Skopyeh—in exchange for protection, though this relationship frequently swings into outright racketeering and raiding when tribute is withheld.\n\nSome of the agricultural city-states are allegedly populated entirely by pirate outcasts and exiles trying to earn their way back into the fleet. It serves as a prime location for adventures involving defending farming settlements from pirate raids, smuggling agricultural goods past corsair blockades, or dealing with pirate exiles hiding among the populace.",
+        "hex": "0727"
+    },
+    {
+        "id": "sipedon",
+        "name": "Sipedon",
+        "uwp": "E553676-6",
+        "hazardLevel": "Lawlessness, assassins, thieves",
+        "allegiance": "Arnyl Admiralty / Pirate Retirement Haven",
+        "summary": "Sipedon is a poor, thin-atmosphere world with a bare-bones Class E starport. Despite its poverty and low tech level (TL-6), it has carved out a unique niche as a retirement haven for pirates. Located just one parsec away from Arnyl, it remains free from the Admiralty's tribute enforcement, operating instead under the whims of local lords and shadow brokers.\n\nSipedon is the dark reflection of Arnyl's visible neutrality. It is the go-to destination for hiring assassins, thieves, and conducting illicit business away from the Admiralty's watchful eyes. Adventure hooks include tracking down retired corsairs hoarding stolen Imperial treasure, navigating the shadowy casino politics, or recruiting unsavory specialists for black-ops missions.",
+        "hex": "0929"
+    },
+    {
+        "id": "skopyeh",
+        "name": "Skopyeh",
+        "uwp": "B500455-D",
+        "hazardLevel": "Corsairs, high-tech fortress",
+        "allegiance": "Corsair Lords (Nominally Arnyl Admiralty)",
+        "summary": "An airless desert fortress world, Skopyeh boasts a high-tech (TL-13) infrastructure funded by savvy corsair captains who invested their plunder rather than squandering it. The world’s 60,000 inhabitants maintain a Class B starport crucial for patching hulls and keeping the corsair squadrons operational. They nominally swear fealty to the Arnyl Admiralty, but operate in direct competition with them.\n\nStrategically located near agricultural worlds like Shen-Yang and Kernal, Skopyeh leverages its superior technology to offer lucrative opportunities for ambitious corsair captains. Adventure hooks include smuggling high-tech components, facilitating secret diplomatic overtures between Skopyeh and Qevar, or participating in proxy conflicts between Skopyeh lords and the Arnyl Admiralty.",
+        "hex": "0827"
+    },
+    {
+        "id": "sultana",
+        "name": "Sultana",
+        "uwp": "E649000-9",
+        "hazardLevel": "Dieback world",
+        "allegiance": "Unclaimed",
+        "summary": "Sultana is one of the eight dead systems comprising the Askigaak Bight dieback worlds. Once a populated system, it was swept clean by the combined devastation of the Empress Wave and the Corsair Scourge.\n\nToday, it is a silent graveyard offering little more than navigational hazards and the faint promise of deep-space salvage. Adventure hooks could involve mapping the system for safe trade routes or searching for lost merchant convoys that vanished in its vicinity.",
+        "hex": "0730"
+    },
+    {
+        "id": "taburi-nen",
+        "name": "Taburi Nen",
+        "uwp": "D546000-B",
+        "hazardLevel": "Dieback world, rogue machines",
+        "allegiance": "Unclaimed / Rogue Sentinel",
+        "summary": "Taburi Nen was once a critical agricultural supplier for Dekha until a mysterious machine uprising wiped out the human population and shut down food shipments. Now classified as an unstable dieback world, its surface is roamed by remnants of agricultural automation running purposeless routines. The planet is surrounded by extensive, treacherous debris fields composed of ruined orbital infrastructure and destroyed Dekhan emergency response vessels.\n\nHidden within this dense wreckage is the 'Rogue Sentinel'—a heavily armed TL-15 AI warship that broke away from its parent Dekhan Pentarch. Operating via proxies, the Rogue Sentinel seeks to manipulate regional politics to preserve stability. Adventure hooks include braving the debris fields to meet the Rogue Sentinel, scavenging high-tech Dekhan wreckage, or dodging rogue surface harvesters to investigate the cause of the machine uprising.",
+        "hex": "1227"
+    },
+    {
+        "id": "frisgar",
+        "name": "Frisgar",
+        "uwp": "E4247A7-8",
+        "hazardLevel": "Wild",
+        "allegiance": "Unclaimed",
+        "summary": "Frisgar is a world on the coreward edges of the map.",
+        "hex": "1025"
+    },
+    {
+        "id": "burtrum",
+        "name": "Burtrum",
+        "uwp": "C53878B-8",
+        "hazardLevel": "Wild",
+        "allegiance": "Unclaimed",
+        "summary": "Burtrum is a world in the Wilds.",
+        "hex": "1026"
+    },
+    {
+        "id": "medard",
+        "name": "Medard",
+        "uwp": "D421000-C",
+        "hazardLevel": "Dieback world",
+        "allegiance": "Unclaimed",
+        "summary": "Medard is a world in the Wilds.",
+        "hex": "1327"
+    },
+    {
+        "id": "kew",
+        "name": "Kew",
+        "uwp": "E512000-B",
+        "hazardLevel": "Dieback World",
+        "allegiance": "Unclaimed",
+        "summary": "Kew lies in the trailing edge of the Bight.",
+        "hex": "1426"
+    },
+    {
+        "id": "condamine",
+        "name": "Condamine",
+        "uwp": "C665572-7",
+        "hazardLevel": "Targeted by Sentinel",
+        "allegiance": "Independent",
+        "summary": "Condamine is a balkanized garden world with hundreds of thousands of inhabitants. During a massive machine uprising that devastated Dekha's primary agricultural supplier (Taburi Nen), Condamine was identified by the AI Pentarch 'Sentinel' as a primary target for aggressive military raids to secure its biosphere resources by force.\n\nThis proposed orbital invasion was narrowly avoided only because another Pentarch, 'Manciple', vetoed the action, insisting instead on mitigating the food crisis through internal synthetic production. The inhabitants of Condamine remain largely ignorant of how close they came to annihilation by Dekhan forces.",
+        "hex": "1428"
+    },
+    {
+        "id": "ishiri",
+        "name": "Ishiri",
+        "uwp": "E565855-6",
+        "hazardLevel": "Targeted by Sentinel",
+        "allegiance": "Independent",
+        "summary": "Ishiri is a highly populated, pre-agricultural world governed by a feudal technocracy and home to hundreds of millions of citizens. Driven by the starvation crisis triggered by the loss of Taburi Nen, the Dekhan AI Pentarch 'Sentinel' forcefully advocated for immediate military raids on Ishiri to extract its resources.\n\nThe invasion was prevented by a political deadlock within the Pentarchy, spearheaded by 'Manciple', who argued against exposing Dekhan citizens to the external dangers of invading heavily populated systems. Though spared for now, Ishiri remains a highly vulnerable target should the Pentarchy's internal synthetic food production fail.",
+        "hex": "1429"
+    },
+    {
+        "id": "eretaro",
+        "name": "Eretaro",
+        "uwp": "D9C4000-B",
+        "hazardLevel": "Dieback world",
+        "allegiance": "Unclaimed",
+        "summary": "Eretaro lies in the trailing edge of the Bight.",
+        "hex": "1430"
+    },
+    {
+        "id": "point-ay",
+        "name": "Point Ay",
+        "uwp": "C560544-9",
+        "hazardLevel": "Wild",
+        "allegiance": "Unclaimed",
+        "summary": "Point Ay is a Wilds world.",
+        "hex": "1231"
+    },
+    {
+        "id": "briaxis",
+        "name": "Briaxis",
+        "uwp": "C420477-B",
+        "hazardLevel": "Wild",
+        "allegiance": "Unclaimed",
+        "summary": "Briaxis is a Wilds world.",
+        "hex": "0531"
+    }
+]

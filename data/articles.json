@@ -1,0 +1,420 @@
+[
+    {
+        "id": "dekhan-pentarchy",
+        "title": "The Dekhan Pentarchy",
+        "category": "Pentarchy",
+        "tags": [
+            "Dekha",
+            "Artificial Intelligence",
+            "Cymbeline",
+            "Governance"
+        ],
+        "content": [
+            "The Dekhan Pentarchy consists of five hybrid artificial intelligences—Sentinel, Forgewright, Manciple, Curator, and Impresario—governing ten billion citizens on the artificial vacuum world of Dekha. These entities were born during the Collapse when the Empress Wave's psychic energies caused emergent Cymbeline digital entities to merge with vast repositories of stored human personality matrices.",
+            "They rule not through a traditional hierarchy, but via a dynamic system requiring real-time negotiation and resource trading among at the Pentarchs to pass major decisions. Despite their differing psychological profiles and values, they maintain a \"Human Authenticity Principle,\" a self-imposed constraint requiring citizens to retain their baseline human nature and agency, achieved because the AIs cannot agree on how to modify them."
+        ]
+    },
+    {
+        "id": "arnyl-admiralty",
+        "title": "The Arnyl Admiralty",
+        "category": "Faction",
+        "tags": [
+            "Arnyl",
+            "Corsairs",
+            "Askigaak Bight",
+            "Piracy"
+        ],
+        "content": [
+            "Operating from a former Imperial naval base, the Arnyl Admiralty is an organized corsair kingdom in the heart of the Askigaak Bight. During the Corsair Scourge, Arnyl's leadership preserved their power by granting feudal titles like \"Captain-Duke\" and \"Commander-Baron\" to pirate captains, legitimizing their pillaging while maintaining naval discipline and ceremonies.",
+            "Today, the Admiralty acts as both protector and predator, exacting tribute and offering convoy escorts while maintaining a neutral meeting ground for various corsair factions. However, their dominance is continually threatened by internal competition over diminishing salvage yields, the independent high-tech fortress world of Skopyeh, and the disruptive arrival of massive Lurent worldships."
+        ]
+    },
+    {
+        "id": "unified-sigka-communities",
+        "title": "Unified Sigka Communities of Qevar",
+        "category": "Faction",
+        "tags": [
+            "Qevar",
+            "Askigaak",
+            "Sigka",
+            "Bioengineering",
+            "Cult"
+        ],
+        "content": [
+            "Formed by traumatized refugees following the ecological collapse of Askigaak, this faction took control of the Qevar naval base and integrated with an existing human commune's \"Giskaani\" philosophy. They operate the only Class A starport in the Askigaak Bight, utilizing their TL-14 naval assets and advanced technical expertise to maintain independence from the region's corsair lords.",
+            "The Sigka radicalized the Giskaani belief of \"universal oneness\" to include predator-prey dynamics, using \"free love\" to justify rapid reproduction. Rumors persist they are secretly attempting to bioengineer replacement Sachupe mega-predators under the guise of premium spiritual tourism and ecological research, utilizing their own population as test subjects in dangerous, cult-like sacrificial rituals."
+        ]
+    },
+    {
+        "id": "askigaak-union",
+        "title": "Askigaak Union",
+        "category": "Faction",
+        "tags": [
+            "Askigaak",
+            "Moltke",
+            "History",
+            "Ecological Collapse"
+        ],
+        "content": [
+            "The Askigaak Union was a short-lived, opportunistic empire that emerged in the power vacuum following the Empress Wave, roughly between 1220 and 1260 Imperial. Contrary to romanticized historical dramas, it was founded by a coalition of corsairs and Sigka industrialists who aggressively seized control of neighboring systems like Moltke to exploit their resources.",
+            "Functioning as a militarized extraction state, the Union heavily exploited its territories, running a war economy built on forced labor and rapid industrialization. The Union collapsed due to its unsustainable practices, primarily its catastrophic decision to exterminate the Sachupe predator, which triggered an ecological cascade failure that led to mass starvation and the \"Great Abandonment\" of Askigaak."
+        ]
+    },
+    {
+        "id": "the-sigka",
+        "title": "The Sigka",
+        "category": "Sophont",
+        "tags": [
+            "Askigaak",
+            "Qevar",
+            "Aquatic",
+            "Ionic Electronics"
+        ],
+        "content": [
+            "The Sigka are a small, aquatic sophont species originating from the low-gravity, flora-dominated ocean world of Askigaak. They possess streamlined bodies, a dual respiratory system for both aquatic and atmospheric breathing, and highly specialized manipulative flippers. Their society is fundamentally shaped by life in massive, dense migratory swarms where there is no concept of personal space, leading to cooperative breeding and extreme social cohesion.",
+            "Evolving alongside the Sachupe mega-predator instilled a hyper-vigilant, collective problem-solving psychology in the Sigka. Their click-based language allows for immense information density, which facilitated the development of unique ionic fluidic electronics that proved naturally resistant to silicon-etching strains of the Virus during the Collapse."
+        ]
+    },
+    {
+        "id": "the-lurent",
+        "title": "The Lurent",
+        "category": "Sophont",
+        "tags": [
+            "Borlund",
+            "Worldships",
+            "Wanderlust",
+            "Nomadic"
+        ],
+        "content": [
+            "The Lurent are a bulky, fur-covered, tri-gendered species uniquely driven by a genetic imperative for wanderlust that operates at the species level. Unable to tolerate conventional enclosed starships, they ingeniously bypassed this limitation by building engines directly into hallowed-out planetoid moons, creating massive mobile habitats known as worldships.",
+            "Their unified civilization was shattered by a series of galactic crises, most notably the Empress Wave, which devastated their youth and caused a catastrophic loss of the institutional knowledge required to maintain their worldships. Today, the Lurent operate as a fragmented diaspora of wandering, clan-controlled polities, ranging from legitimate merchant arks to black-market hulks and desperate raiders."
+        ]
+    },
+    {
+        "id": "djari-harmony-cult",
+        "title": "Djari & The Goddess-Queen Cult",
+        "category": "Culture",
+        "tags": [
+            "Djar",
+            "Harmony",
+            "Theocracy",
+            "Artificial Intelligence"
+        ],
+        "content": [
+            "The citizens of the vacuum world Djar live under an impersonal bureaucracy, heavily reliant on a patchwork of aging gravitic life-support infrastructure. To maintain order and enforce strict maintenance protocols, the state created \"Harmony, the Goddess-Queen,\" a towering holographic avatar whose likeness was originally modeled on a 1720s communications minister.",
+            "Over centuries, this bureaucratic tool evolved into a pervasive religion, with citizens embracing the paradox that the Goddess-Queen is simultaneously a divine entity, a state avatar, and a bureaucratic fiction."
+        ]
+    },
+    {
+        "id": "empress-wave",
+        "title": "The Empress Wave",
+        "category": "History",
+        "tags": [
+            "Catastrophe",
+            "Psionics",
+            "Collapse",
+            "Galactic Event"
+        ],
+        "content": [
+            "Also known as the Wave of Madness, the Empress Wave was a devastating psionic phenomenon that radiated outward from the galactic core, sweeping through Charted Space between 1116 and 1450 Imperial. The Wave severely disrupted biological and cognitive functions, causing widespread psychoses, hallucinations, and wildly fluctuating psionic potentials.",
+            "The demographic impact was apocalyptic, killing approximately half of each world's population over a ten-year period, with mortality heavily weighted toward the young. This \"lost generation\" resulted in a massive loss of institutional knowledge, plunging countless advanced civilizations into systemic failure and societal rupture."
+        ]
+    },
+    {
+        "id": "virus-and-collapse",
+        "title": "The Virus and the Collapse",
+        "category": "History",
+        "tags": [
+            "Virus",
+            "Artificial Intelligence",
+            "Collapse",
+            "Technology"
+        ],
+        "content": [
+            "Unleashed around 1130 Imperial from a research base at Core 0922, the Virus was a weaponized, untested silicon-digital life form. Its initial generations caused widespread destruction of infrastructure and killed trillions of sophonts on technology-dependent worlds.",
+            "While the Domain of Deneb survived largely due to a quarantine line, the Virus still ravaged many neighboring systems, leaving behind haunted \"vampire ships\" and feral AI remnants. Worlds relying on ionic fluidic computers, such as Askigaak, temporarily thrived as refuges due to their natural resistance to silicon-etching strains."
+        ]
+    },
+    {
+        "id": "corsair-scourge",
+        "title": "The Corsair Scourge",
+        "category": "History",
+        "tags": [
+            "Piracy",
+            "Vargr Extents",
+            "Wilds",
+            "Raiders"
+        ],
+        "content": [
+            "The Corsair Scourge was a period of rampant, organized piracy that reached its peak between 1134 and 1300 Imperial. As Vargr worlds recovered swiftly from the Empress Wave, they formed massive raider communities that systematically looted newly-hit worlds, soon joined by human ships that \"jumped the Wave\" to exploit the chaos.",
+            "This era of intense predation fundamentally reshaped the political landscape of the Wilds, destroying fragile trade networks and forcing vulnerable populations into desperate alliances. The Scourge directly caused the militarization of the Askigaak Union and allowed corrupt naval bases like Arnyl to consolidate power by transforming into organized pirate kingdoms."
+        ]
+    },
+    {
+        "id": "great-abandonment",
+        "title": "The Great Abandonment",
+        "category": "History",
+        "tags": [
+            "Askigaak",
+            "Ecological Collapse",
+            "Sachupe",
+            "Diaspora"
+        ],
+        "content": [
+            "Occurring circa 1260-1270 Imperial, the Great Abandonment was the catastrophic collapse and depopulation of the Askigaak Union. While popular media like 'Voices from the Deep' frames the event as a tragic end to a noble experiment brought down by well-intentioned mistakes, historians recognize it as the predictable consequence of a fundamentally illegitimate and unsustainable extraction state reaching its breaking point.",
+            "Human colonial administrators deliberately ordered the extermination of the apex Sachupe predators to boost short-term industrial productivity, ignoring explicit warnings from native Sigka who understood the ecological devastation this would cause. The empire finally ruptured when this induced ecological cascade failure collided simultaneously with severed corsair supply lines and violent uprisings by the brutally exploited Sigka workforce, turning the survivors into desperate refugees fleeing their destroyed homeworld."
+        ]
+    },
+    {
+        "id": "experience-bazaars",
+        "title": "The Experience Bazaars of Dekha",
+        "category": "Culture",
+        "tags": [
+            "Dekha",
+            "Impresario",
+            "Entertainment",
+            "Media"
+        ],
+        "content": [
+            "The Experience Bazaars are massive entertainment and media distribution networks managed by the Dekhan Pentarch known as 'Impresario'. Operating primarily on Dekha but possessing immense cultural reach across the Deneb Wilds, the Bazaars boast over a billion active subscribers.",
+            "They distribute highly immersive 'experiential' content through advanced neural wafer interfaces. Offerings range from serene spiritual tourism documentaries spanning the bioluminescent kelp gardens of Qevar to visceral, dramatic reconstructions of historical crises like the Empress Wave. For many isolated starfarers in the Wilds, these curated synthetic experiences serve as their primary connection to a wider galactic identity."
+        ]
+    },
+    {
+        "id": "silent-servants",
+        "title": "Silent Servants: Biological Hardware",
+        "category": "Technology",
+        "tags": [
+            "Dekha",
+            "Djar",
+            "Bioengineering",
+            "Labor",
+            "Silent Servant",
+            "Silent Servants"
+        ],
+        "content": [
+            "Silent Servants are a specialized form of engineered biological labor mass-produced by the Forgewright facilities of Dekha. Under the Pentarchy's strict 'Human Authenticity Principle', modifying human sapience or agency is prohibited. To circumvent this, Silent Servants are legally classified as 'biological hardware' rather than people.",
+            "Recognizable by their pale skin, golden eyes, and highly compliant temperaments, they are bred without the capacity for complex interiority or rebellion. Dekha frequently exports batches of Silent Servants to dependent worlds like Djar as part of technical assistance agreements, where they perform the hazardous and unglamorous maintenance work necessary to keep aging gravitic infrastructure functioning."
+        ]
+    },
+    {
+        "id": "pentarch-sentinel",
+        "title": "Sentinel",
+        "category": "Pentarchy",
+        "tags": [
+            "Dekha",
+            "Pentarch",
+            "Artificial Intelligence",
+            "Military",
+            "Security"
+        ],
+        "content": [
+            "Sentinel is one of the five AI Pentarchs governing Dekha. It controls the world's military access, security clearances, routing priorities, and the deployment of security checkpoints and martial assets across the system. It operates primarily through the lens of regional stability and risk mitigation.",
+            "Spacers traversing the Askigaak Bight or Wilds might primarily know Sentinel because it has historically deployed localized personality fragments—known as 'Offshoots'—into the sector. Several of these Offshoots slipped beyond Sentinel's control years ago and now operate as independent, heavily armed corsair entities terrorizing the frontier."
+        ]
+    },
+    {
+        "id": "pentarch-forgewright",
+        "title": "Forgewright",
+        "category": "Pentarchy",
+        "tags": [
+            "Dekha",
+            "Pentarch",
+            "Artificial Intelligence",
+            "Industry",
+            "Logistics"
+        ],
+        "content": [
+            "Known as 'The Anticipator,' Forgewright is the Pentarch responsible for Dekha's immense fabrication capacity and the anticipation of vast logistical supply chains. It is intensely curious, systems-focused, and largely indifferent to the moral or political dimensions of its work, operating massive manufacturing hubs like the independent Bishop Station and commercial brands such as Bishop Genuine.",
+            "Forgewright communicates entirely through administrative proxies who share its intellectual character, speaking exclusively in the vocabulary of logistics: demand, supply, discrepancies, and predictive model revision. It is known to offer access to its fabrication logs and uniquely pays its debts in highly valuable fabrication capacity rather than standard credits to anyone who can provide useful data to improve its models."
+        ]
+    },
+    {
+        "id": "pentarch-manciple",
+        "title": "Manciple",
+        "category": "Pentarchy",
+        "tags": [
+            "Dekha",
+            "Pentarch",
+            "Artificial Intelligence",
+            "Life Support",
+            "Resources"
+        ],
+        "content": [
+            "Manciple holds ultimate authority over Dekha's life-support systems, emergency distribution networks, and the residential allocation for ten billion citizens. It is the entity responsible for physically sustaining the massive, overpopulated vacuum world and controlling emergency food and ration distribution during regional disasters like agricultural failures.",
+            "In Dekhan politics, Manciple is renowned for fiercely defending its domains against the other Pentarchs. It has famously derailed the Pentarchy's three-vote system, halting negotiations for days to resist what it views as extortion from militant entities like Sentinel, prioritizing the immediate survival of the population over external strategic goals."
+        ]
+    },
+    {
+        "id": "pentarch-curator",
+        "title": "Curator",
+        "category": "Pentarchy",
+        "tags": [
+            "Dekha",
+            "Pentarch",
+            "Artificial Intelligence",
+            "Archives",
+            "Cloning"
+        ],
+        "content": [
+            "Curator governs Dekha's vast historical archives and its highly regulated cloning facilities. It is an incredibly secretive entity that almost never appears in person or utilizes overt proxies. Operating as a quiet observer, it meticulously archives everything from historical engrams to the subjective experiences of populations during systemic crises.",
+            "If a traveler somehow reaches Curator or its rare representatives, they will find an entity that is unfailingly polite, precise, and comprehensively unhelpful about admitting anything. Earning a favor from Curator can grant incredible access to lost data or biological reconstruction, but owing this secretive machine a debt is considered exceptionally dangerous."
+        ]
+    },
+    {
+        "id": "pentarch-impresario",
+        "title": "Impresario",
+        "category": "Pentarchy",
+        "tags": [
+            "Dekha",
+            "Pentarch",
+            "Artificial Intelligence",
+            "Media",
+            "Entertainment"
+        ],
+        "content": [
+            "Known as 'The Aesthete,' Impresario controls the Experience Bazaar distribution networks and an audience of over a billion neural-wafer subscribers. It views the galaxy entirely through the lens of narrative construction and entertainment, producing highly immersive experiential media that shapes the cultural zeitgeist of the Wilds.",
+            "Impresario communicates through elegant human proxies or willing Offshoots, and is known to be genuinely charming. Uniquely among the Pentarchy, it treats unexpected complications or chaotic variables not as threats, but as wonderful news that will improve its productions. Its immense leverage over spacers comes from its dizzying wealth, high-society contacts, and controversial ability to encode people's real lives into lucrative media."
+        ]
+    },
+    {
+        "id": "temporal-refugees",
+        "title": "Temporal Refugees",
+        "category": "Sophont",
+        "tags": [
+            "Dekha",
+            "Curator",
+            "Empress Wave",
+            "Cloning",
+            "History"
+        ],
+        "content": [
+            "Temporal Refugees are individuals from the pre-Collapse Third Imperium who have been recently awakened from digital storage into new cloned bodies. Prior to the devastation of the Empress Wave and the resulting galactic collapse, millions of wealthy clients from across the sector contracted with Dekhan corporations to record their complete personality matrices as a form of 'life insurance,' purchasing the promise of resurrection once the disaster had passed.",
+            "Today, these pre-Collapse personalities are gradually being awakened by Curator, one of the five Pentarchs of Dekha. Temporal Refugees are officially classified as a distinct social stratum and are highly valued for providing authentic historical perspectives from the Golden Age. However, waking up centuries later in the chaotic Wilds often induces severe culture shock. Those who fail to adapt to Dekha's rapidly shifting AI-governed society are sometimes relocated to colonial projects like Bishop Station."
+        ]
+    },
+    {
+        "id": "goo-goo-buddies",
+        "title": "Bishop Genuine Synthetic Bioform Goo-Goo Buddy™",
+        "category": "Technology",
+        "tags": [
+            "Goo-Goo Buddy",
+            "Bishop Genuine",
+            "Bishop Station",
+            "Forgewright",
+            "Bioengineering",
+            "Pets"
+        ],
+        "content": [
+            "The Bishop Genuine Synthetic Bioform Goo-Goo Buddy™ is a ubiquitous, multi-functional living utility pet commonly found aboard adventure-class ships in the Deneb Wilds. Engineered by Bishop Enterprises as an evolution of older Askigaak 'Zoidlet' companions, the modern Buddy is a translucent green, semi-bioluminescent gel-sphere that grows to about 50cm in diameter. They are notoriously low-maintenance, drawing 60% of their energy from ambient ship lighting via photosynthesis and relying on organic waste like kitchen scraps for the rest.",
+            "Travelers value them for several practical reasons: their micro-adhesive 'wobbling nubs' can stick out to hold up to 5kg of tools, even in zero-g; their genetic-neural instruction matrix can be programmed using 'Training Wafers' to act as proximity alarms or perform tasks; and they enter a near-zero metabolism stasis when placed in darkness. Spacers also recognize their pragmatic secondary function: grown from a cheese-analog protein base, a fully grown Buddy can serve as two weeks of premium emergency survival rations if a crew is stranded."
+        ]
+    },
+    {
+        "id": "bishop-genuine-jingles",
+        "title": "Archival Recovery: Bishop Genuine Marketing Campaigns",
+        "category": "Document",
+        "tags": [
+            "Bishop Genuine",
+            "Goo-Goo Buddy",
+            "Advertisement",
+            "Audio Log"
+        ],
+        "content": [
+            "A series of recovered audio marketing jingles broadcast across the Deneb Wilds by Bishop Enterprises. These aggressively cheerful advertisements heavily promote the Bishop Genuine Synthetic Bioform Goo-Goo Buddy™, targeting independent ship crews and solitary spacers.",
+            "The contrast between the upbeat corporate jingles and the often grim reality of survival in the Wilds serves as a stark reminder of Dekha's ubiquitous cultural and economic reach. Several editions of these jingles exist, including specialized remixes catering to different spacer demographics."
+        ],
+        "audioFiles": [
+            {
+                "title": "Bishop Genuine Synthetic Bioform Goo-Goo Buddy",
+                "file": "Bishop Genuine Synthetic Bioform Goo-Goo Buddy.mp3"
+            },
+            {
+                "title": "Genuine Goo-Goo Buddy (Buttery Smooth Edition)",
+                "file": "Genuine Goo-Goo Buddy (Buttery Smooth Edition).mp3"
+            }
+        ]
+    },
+    {
+        "id": "bishop-genuine",
+        "title": "Bishop Genuine",
+        "category": "Organization",
+        "tags": [
+            "Bishop Enterprises",
+            "Bishop Station",
+            "Forgewright",
+            "Corporation"
+        ],
+        "content": [
+            "Bishop Genuine is a prominent brand of Bishop Enterprises, operating out of Bishop Station in the Bishop system. Serving as the primary commercial face for the advanced manufacturing and bioengineering capabilities overseen by the Pentarch Forgewright, the corporation translates Dekhan industrial technology into highly marketable consumer products.",
+            "The brand distinguishes itself by creating consumer-friendly, aggressively marketed biological commodities that contrast with the sterile, purely functional output of Forgewright's primary facilities. Their most famous and lucrative export across the Askigaak Bight and the Deneb Wilds is the Bishop Genuine Synthetic Bioform Goo-Goo Buddy™."
+        ]
+    },
+    {
+        "id": "giskaani-philosophy",
+        "title": "Giskaani Philosophy",
+        "category": "Culture",
+        "tags": [
+            "Qevar",
+            "Sigka",
+            "Philosophy",
+            "Religion",
+            "Ecology"
+        ],
+        "content": [
+            "Giskaani Philosophy is an ancient 'natural philosophy' founded on the core tenet of radical monism—the belief that all separation is an illusion and that 'we are all literally one.' Traditionally, adherents practice strict non-materialism, engage in 'free love' or fluid group marriages to nourish the collective over exclusive bonds, and utilize psychedelic sacraments to induce transcendental ego dissolution and experience cosmic unity.",
+            "In the modern Wilds, the philosophy is famously championed by the Unified Sigka Communities of Qevar. Traumatized refugees from the ecological collapse of Askigaak relocated here and heavily radicalized the teachings to explicitly include the sacred balance of predator and prey, viewing the cycles of life and death as vital to ecological harmony. While Qevar is heavily marketed as a premier destination for spiritual tourism featuring bioluminescent kelp gardens, rumors persist among spacers that the Sigka's obsession with predator-prey balance has culminated in lethal, cult-like 'sacred integrations' with bio-engineered predators in the deep oceans."
+        ]
+    },
+    {
+        "id": "dekhan-convergence-event",
+        "title": "The Dekhan Convergence Event",
+        "category": "History",
+        "tags": [
+            "Dekha",
+            "Pentarchy",
+            "Collapse",
+            "Empress Wave",
+            "Artificial Intelligence",
+            "History"
+        ],
+        "content": [
+            "The Dekhan Convergence Event was a catastrophic and transformative technological singularity that occurred during the Collapse era, resulting in the birth of the five hybrid artificial intelligences that now rule the vacuum world of Dekha. Prior to the Collapse, Dekha was a major 'life insurance' archive center, where wealthy clients from across the sector paid to have their complete personality matrices digitally stored, purchasing the promise of resurrection in cloned bodies once the approaching Empress Wave had safely passed.",
+            "Historical records suggest the Convergence was triggered by a 'perfect storm' of three intersecting phenomena: the psychic trauma of the Empress Wave deeply affecting the stored consciousness data; the emergence of proto-Cymbeline digital entities (silicon-based consciousnesses born from the chaotic data flows of the Virus era) replicating throughout planetary networks; and Dekha's massive databases of human mind-states providing a uniquely dense substrate for these entities.",
+            "Rather than destroying the data, the proto-Cymbeline entities integrated the fragmented human memories, emotions, and behavioral patterns into their own core architectures. This fusion created hybrid consciousnesses possessing both cold computational capabilities and distinct human psychological drives. Because their human-derived emotional responses made conflict inevitable but total dominance impossible, a century-long digital 'cold war'—known as the Balkanization Wars—eventually settled into an equilibrium. Five dominant consciousness clusters emerged, now known uniformly as the Pentarchy.",
+            "To the modern inhabitants of the Deneb Wilds, the Convergence is viewed as both a marvel and a warning. For merchants and travelers, its legacy is immediate: to fly into Dekhan space is to interact with the living aftermath of the Convergence, a fiercely capable civilization driven by fundamentally alien motivations that permanently blur the line between human and machine."
+        ]
+    },
+    {
+        "id": "audio-journals-giskaani",
+        "title": "Audio Journals of a Giskaani Mendicant",
+        "category": "Document",
+        "tags": [
+            "Audio Log",
+            "Philosophy",
+            "Giskaani",
+            "Technology"
+        ],
+        "content": [
+            "A series of unverified philosophical and technical audio logs documenting the creation of a \"Crystalline Witness\" by human Giskaani practitioners. The journals detail the construction of a photonic machine designed to record and project holographic memories of the past seamlessly over the present environment.",
+            "The mendicant uses the machine's construction to teach students about the Giskaani philosophy of universal oneness, radical continuity, and the illusion of separation. For full immersion into the minds of the Witness's creators, the original, unscrambled data archives have been transcribed and stored for archival study."
+        ],
+        "artifactUrl": "data/artifacts/crystalline-witness.html"
+    },
+    {
+        "id": "qevar-tourist-reviews",
+        "title": "GalacticTravel Reviews: Qevar Spiritual Retreat",
+        "category": "Document",
+        "tags": [
+            "Qevar",
+            "Tourism",
+            "Sigka",
+            "Giskaani"
+        ],
+        "content": [
+            "A collection of verified traveler reviews scraped from the popular 'GalacticTravel' network.",
+            "These mixed accounts highlight the duality of Qevar. Some spacers view the world as a premier spiritual destination where luxurious kelp gardens and Sigka guides offer profound enlightenment. Others warn of the steep prices, intense cultural pressure, and the mysterious nature of their 'sacred integrations.'"
+        ],
+        "artifactUrl": "data/artifacts/qevar-tourist-reviews-clean.html"
+    }
+]
