@@ -41,7 +41,7 @@ class StarMap {
     }
 
     loadData(worlds) {
-        const distantNames = ['agdarmi', 'borlund', 'magash', 'jecife', 'hrd', 'kubishush', 'liiri', 'rhinom'];
+        const distantNames = ['agdarmi', 'borlund', 'magash', 'jecife', 'hrd', 'kubishush', 'liiri', 'rhinom', 'mora', 'regina', 'vincennes'];
         const mapWorlds = [];
         const distantWorlds = [];
 

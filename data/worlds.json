@@ -156,7 +156,7 @@
         "id": "norg",
         "name": "Norg",
         "uwp": "E000000-D",
-        "hazardLevel": "Dieback world, mysterious survey vessels",
+        "hazardLevel": "Dieback world",
         "allegiance": "Unclaimed",
         "summary": "Norg is another ruined dieback world in the Askigaak Bight, sharing the tragic history of its sister naval bases. Its populations and infrastructure were destroyed in the chaotic aftermath of the Empress Wave and subsequent pirate invasions.\n\n Players might be hired by the Admiralty to gather intelligence on these unknown craft or by independent researchers attempting to beat the survey ships to valuable archaeological sites.",
         "hex": "0729"
@@ -313,5 +313,32 @@
         "allegiance": "Unclaimed",
         "summary": "Briaxis is a Wilds world.",
         "hex": "0531"
+    },
+    {
+        "id": "mora",
+        "name": "Mora",
+        "uwp": "AA99A9D-C",
+        "hazardLevel": "Strict matriarchy, state-sanctioned piracy",
+        "allegiance": "The Matriarchy of Mora",
+        "summary": "Mora is a powerful, independent 'Strong World' and the historical *de facto* capital of the Spinward Marches. In the Galaxiad era, Mora steadfastly refuses to join the Republic of Regina, instead styling itself as 'The Matriarchy'. The society is a strict global monoculture governed by an oligarchic matriarchy where men face severely restricted rights.\n\nDuring the collapse of the Third Imperium, Mora instituted a policy of 'Rescue' to secure Imperial technology, which over centuries devolved into state-sanctioned espionage and piracy across the Wilds. The Duchy of Mora issues 'Letters of Salvage' to heavily armed, subsidized salvage ships. Despite its hostility to external corporate control, Mora is a vital economic engine for the Deneb Wilds, hosting massive 'Wild Trader Auctions' and chaotic shadow markets.",
+        "hex": "SPIN 3124"
+    },
+    {
+        "id": "regina",
+        "name": "Regina",
+        "uwp": "A788976-G",
+        "hazardLevel": "Corporate Oligarchy",
+        "allegiance": "Republic of Regina",
+        "summary": "The Republic of Regina is an advanced, progressive pocket empire (TL-16 to TL-17) founded after the collapse of the Third Imperium. While operating as a democracy with an elected Senate, it retains strong Imperial trappings, with its Nobility holding significant authority and wealth. Culturally, it embraces psionics, fully integrates Artificial Intelligences (Cyms), and features a highly diverse population including Humans, Vargr, Aslan, and the native trisexual Amindii.\n\nThe Republic exists as a civilized haven bordered by the ungoverned 'Wilds'. Its Naval squadrons heavily patrol its borders against Vargr incursions and the hostile Limmu Bukara empire. While maintaining a somewhat insular stance, Regina relies on 'Wild Traders' to exploit the Deneb Wilds and salvage resources. Additionally, the Republic of Regina Intelligence Service (RISS) actively monitors the Wilds.",
+        "hex": "SPIN 1910"
+    },
+    {
+        "id": "vincennes",
+        "name": "Vincennes",
+        "uwp": "A899A8E-E",
+        "hazardLevel": "Post-Collapse Warfare, Corsair Activity",
+        "allegiance": "League of Deneb and Vincennes",
+        "summary": "During the Third Imperium, Vincennes was a major industrial powerhouse, whose economic might heavily influenced neighboring worlds like Dekha. Following the Collapse, Vincennes became a core member of the \"League of Deneb and Vincennes,\" establishing a powerful polity that actively engaged in military expeditions against neighbors like the Askigaak Union.\n\nBy the late Galaxiad era, the space around Vincennes had become increasingly perilous. A notable historic event occurred recently in 1883 when corsairs cornered the Lurent worldship *Stone Horizon* in the Vincennes Oort cloud. Unable to defeat the superior corsair technology, the Lurent deliberately rammed the massive worldship into the pirate carrier, sacrificing the ship and Clan Yavrek to allow civilian craft to escape.",
+        "hex": "1122"
     }
 ]
