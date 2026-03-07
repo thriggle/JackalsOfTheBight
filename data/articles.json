@@ -2,7 +2,7 @@
     {
         "id": "dekhan-pentarchy",
         "title": "The Dekhan Pentarchy",
-        "category": "Pentarchy",
+        "category": "Faction",
         "tags": [
             "Dekha",
             "Artificial Intelligence",
@@ -12,6 +12,21 @@
         "content": [
             "The Dekhan Pentarchy consists of five hybrid artificial intelligences—Sentinel, Forgewright, Manciple, Curator, and Impresario—governing ten billion citizens on the artificial vacuum world of Dekha. These entities were born during the Collapse when the Empress Wave's psychic energies caused emergent Cymbeline digital entities to merge with vast repositories of stored human personality matrices.",
             "They rule not through a traditional hierarchy, but via a dynamic system requiring real-time negotiation and resource trading among at the Pentarchs to pass major decisions. Despite their differing psychological profiles and values, they maintain a \"Human Authenticity Principle,\" a self-imposed constraint requiring citizens to retain their baseline human nature and agency, achieved because the AIs cannot agree on how to modify them."
+        ]
+    },
+    {
+        "id": "askigaak-bight",
+        "title": "The Askigaak Bight",
+        "category": "Faction",
+        "tags": [
+            "Askigaak Bight",
+            "Region",
+            "Corsair Kingdoms",
+            "Dieback Worlds"
+        ],
+        "content": [
+            "The Askigaak Bight is a volatile star cluster located on the rimward and trailing edge of the Star Lane subsector within the Deneb Wilds. Known as the Askigaak Loop during the Imperial era, the Bight is currently composed of six inhabited worlds—Kernal, Shen-Yang, Skopyeh, Sipedon, Arnyl, and Qevar—as well as eight depopulated 'dieback' systems. It is a region defined by the tension between entrenched corsair kingdoms, high-tech resistance movements, and the lingering scars of systemic collapse.",
+            "During the Third Imperium, the region was a secure center of commercial trade and Imperial naval coordination. Its decline began with the galactic crises of the post-Imperial era, making its concentrated naval assets a target for intense infighting. Today, the Askigaak Bight is a fragmented region governed by competing socio-political forces, including the Arnyl Admiralty, the independent fortress world of Skopyeh, and the resistance of Qevar controlled by the Unified Sigka Communities."
         ]
     },
     {
