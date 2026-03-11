@@ -60,6 +60,7 @@ body {
     overflow-y: auto;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
     z-index: 10;
+    padding-bottom: 40px;
 }
 
 .sidebar-header {
@@ -741,4 +742,22 @@ input:checked+.slider:before {
     text-shadow: 0 0 2px rgba(165, 243, 252, 0.3);
     font-family: var(--font-main);
     font-size: 1.05rem;
+}
+
+/* Footer injected by disclaimer.js */
+.footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+    background-color: rgba(9, 10, 15, 0.9);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    border-top: 1px solid var(--border-color);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
 }

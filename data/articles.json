@@ -296,7 +296,7 @@
     {
         "id": "temporal-refugees",
         "title": "Temporal Refugees",
-        "category": "Sophont",
+        "category": "Culture",
         "tags": [
             "Dekha",
             "Curator",
@@ -328,7 +328,7 @@
     },
     {
         "id": "bishop-genuine-jingles",
-        "title": "Archival Recovery: Bishop Genuine Marketing Campaigns",
+        "title": "Bishop Genuine Marketing Campaigns",
         "category": "Document",
         "tags": [
             "Bishop Genuine",
@@ -346,7 +346,7 @@
                 "file": "Bishop Genuine Synthetic Bioform Goo-Goo Buddy.mp3"
             },
             {
-                "title": "Genuine Goo-Goo Buddy (Buttery Smooth Edition)",
+                "title": "Genuine Goo-Goo Buddy",
                 "file": "Genuine Goo-Goo Buddy (Buttery Smooth Edition).mp3"
             }
         ]
@@ -432,5 +432,21 @@
             "These mixed accounts highlight the duality of Qevar. Some spacers view the world as a premier spiritual destination where luxurious kelp gardens and Sigka guides offer profound enlightenment. Others warn of the steep prices, intense cultural pressure, and the mysterious nature of their 'sacred integrations.'"
         ],
         "artifactUrl": "data/artifacts/qevar-tourist-reviews-clean.html"
+    },
+    {
+        "id": "the-yafizethe",
+        "title": "The Yafizethe",
+        "category": "Sophont",
+        "tags": [
+            "Kernal",
+            "Diplomats",
+            "Agriculture",
+            "Moltke",
+            "Askigaak Union"
+        ],
+        "content": [
+            "The native inhabitants of Kernal are a small sophont species known as the Yafizethe, who visually resemble large caterpillars. During the Imperial era, the Yafizethe were highly regarded as skilled diplomats and negotiators. They formed a powerful alliance with the Sigka of Askigaak, establishing a rare non-human coalition that wielded significant political and military influence within the Third Imperium. Later, during the wartime expansion of the Askigaak Union (circa 1248 IY), Yafizethe refugees from Kernal made up a notable portion of the massive labor and refugee population on the industrial world of Moltke.",
+            "Following the collapse of Askigaak and the rise of the corsair lords in the Askigaak Bight, the Yafizethe have receded from their former interstellar prominence. To survive in the dangerous post-collapse environment, they have been forced to adopt a \"cautiously pastoral lifestyle\" on their low-gravity, agricultural homeworld. Today, the Yafizethe live under a united monarchy. Their government struggles to maintain diplomatic ties with the nearby Duchy of Mora while constantly facing the threat of raids from the corsair lords of the Bight, who covet Kernal's rich agricultural yields."
+        ]
     }
 ]
