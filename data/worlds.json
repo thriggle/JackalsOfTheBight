@@ -117,33 +117,6 @@
         "hex": "0626"
     },
     {
-        "id": "kubishush",
-        "name": "Kubishush",
-        "uwp": "B8B6A88-F",
-        "hazardLevel": "Bioweapons research, hostile empire",
-        "allegiance": "Limmu Bukara (Sabine Empire)",
-        "summary": "Kubishush is a high-tech (TL-15) strong world aligned with the Limmu Bukara pocket empire. Known for its aggressive stance alongside Magash and Liiri, it bolsters the military might of its coalition against the Republic of Regina.\n\nIntelligence reports and captured corsairs indicate that Kubishush hosts clandestine research bases involved in developing viral bioweapons, such as the SDEIEX virus. Adventure hooks include infiltrating these research facilities to secure antidotes, extracting defecting scientists, or stopping corsairs armed with Kubishush-manufactured biological payloads.",
-        "hex": "0917"
-    },
-    {
-        "id": "liiri",
-        "name": "Liiri",
-        "uwp": "B54297A-C",
-        "hazardLevel": "Hostile empire",
-        "allegiance": "Limmu Bukara (Sabine Empire)",
-        "summary": "Liiri is the third pillar of the hostile Limmu Bukara pocket empire, standing alongside Magash and Kubishush. With a Class B starport and TL-12 capabilities, it supports the logistical and military framework of the coalition.\n\nThe world contributes to the constant border tensions with the Republic of Regina. Players operating near Liiri must navigate hostile patrols and blockades. Adventure hooks include conducting reconnaissance on Liiri's fleet movements or extracting deep-cover agents embedded within its government.",
-        "hex": "1016"
-    },
-    {
-        "id": "magash",
-        "name": "Magash",
-        "uwp": "A4009A9-F",
-        "hazardLevel": "Hostile empire, militarized zone",
-        "allegiance": "Limmu Bukara (Sabine Empire)",
-        "summary": "Magash is the capital of the Limmu Bukara, a small, fiercely hostile pocket empire in the Deneb sector. Boasting a Class A starport and TL-15 capabilities, Magash commands a formidable navy and routinely conducts aggressive combat maneuvers, actively pursuing and impounding vessels from rival states like the Republic of Regina.\n\nThe world is governed by a ranking megacrat and maintains strict controls, making it extremely dangerous for unauthorized travelers. Adventure hooks include smuggling rare goods (like the Horned Pakang riding beast from nearby Rhinom) through Magash's tight security, rescuing impounded merchant crews, or conducting espionage against their naval operations.",
-        "hex": "0316"
-    },
-    {
         "id": "moltke",
         "name": "Moltke",
         "uwp": "E646000-0",
@@ -178,15 +151,6 @@
         "allegiance": "Unified Sigka Communities",
         "summary": "Qevar is the stronghold of the exiled Sigka, an aquatic sophont species that fled the ecological collapse of Askigaak. Armed with an advanced TL-14 naval fleet, Qevar boasts the only Class A starport in the Askigaak Bight. The world is renowned for its spectacular low-gravity bioluminescent kelp gardens, spiritual tourism, and peerless technical expertise, particularly in ionic fluidic systems.\n\nBeneath its welcoming, spiritual facade lies a deeply traumatized society. The Sigka have adopted a radicalized version of the indigenous Giskaani philosophy ('all are one, including predator and prey') and practice 'free love' alongside ritualistic psychedelic use. Alarmingly, they are using advanced bioengineering to recreate their extinct apex predator (the Sachupe), conducting human/Sigka sacrifices disguised as 'sacred integration.' Adventure hooks include investigating missing tourists, negotiating ship repairs, or uncovering the dark truths of their ecological restoration projects.",
         "hex": "0731"
-    },
-    {
-        "id": "rhinom",
-        "name": "Rhinom",
-        "uwp": "B77688B-8",
-        "hazardLevel": "Corrupt politics, smuggling",
-        "allegiance": "Independent",
-        "summary": "Rhinom is a populated world ruled by 'the Kashlan,' a charismatic but ruthless premier elected for life. The Kashlan maintains tight control over the system's exports, including the lucrative supply of the narcotic 'eela' produced on its farming moon, Malea.\n\nRhinom's politics are characterized by pragmatic deal-making and a populist facade. It serves as a hub for both legitimate trade and shadow economies. Adventure hooks include negotiating high-stakes trade deals directly with the Kashlan, navigating the complex black market for restricted agricultural goods, or running interference between rival smuggling rings.",
-        "hex": "0717"
     },
     {
         "id": "shen-yang",
@@ -340,5 +304,59 @@
         "allegiance": "League of Deneb and Vincennes",
         "summary": "During the Third Imperium, Vincennes was a major industrial powerhouse, whose economic might heavily influenced neighboring worlds like Dekha. Following the Collapse, Vincennes became a core member of the \"League of Deneb and Vincennes,\" establishing a powerful polity that actively engaged in military expeditions against neighbors like the Askigaak Union.\n\nBy the late Galaxiad era, the space around Vincennes had become increasingly perilous. A notable historic event occurred recently in 1883 when corsairs cornered the Lurent worldship *Stone Horizon* in the Vincennes Oort cloud. Unable to defeat the superior corsair technology, the Lurent deliberately rammed the massive worldship into the pirate carrier, sacrificing the ship and Clan Yavrek to allow civilian craft to escape.",
         "hex": "1122"
+    },
+    {
+        "id": "lilad",
+        "name": "Lilad",
+        "uwp": "C547ACA-C",
+        "hazardLevel": "Heavily Defended",
+        "allegiance": "Lilad Group",
+        "summary": "Lilad is the largest moon of the massive gas giant Kuleshidur. Its enormous population lives almost entirely in 160 massive beanstalk arcologies anchored to the seafloor and stretching up into geostationary orbit. The system lacks a central highport; instead, each populated moon has its own small port. Lilad is highly self-contained, and the local defense flotillas are notoriously lethal to unauthorized raiders and intruders.",
+        "hex": "1135"
+    },
+    {
+        "id": "deneb",
+        "name": "Deneb",
+        "uwp": "B537A98-A",
+        "hazardLevel": "Wilds/Deadly",
+        "allegiance": "Wild",
+        "summary": "Deneb was historically the capital of the Deneb Sector, an advanced trade center and the homeworld of the amphibious Nenlat. By the Galaxiad era, the world has fallen into the lawless Wilds, having suffered immense tragedy and population loss during the Empress Wave, though its massive arcologies still house tens of billions of inhabitants. Travel here is considered deadly due to rampant corsair activity in the region.",
+        "hex": "1925"
+    },
+    {
+        "id": "magash",
+        "name": "Magash",
+        "uwp": "A4009A9-F",
+        "hazardLevel": "Hostile empire, militarized zone",
+        "allegiance": "Limmu Bukara",
+        "summary": "Magash is the capital of the Limmu Bukara (the Sabine Empire), a small, fiercely hostile pocket empire in the Deneb sector led by megacrat Shegami Ushkashaar. Boasting a Class A starport and TL-15 capabilities, Magash commands a formidable navy and routinely conducts aggressive combat maneuvers, actively pursuing and impounding vessels from rival states like the Republic of Regina.\n\nThe world is governed by a ranking megacrat and maintains strict controls, making it extremely dangerous for unauthorized travelers. Adventure hooks include smuggling rare goods (like the Horned Pakang riding beast from nearby Rhinom) through Magash's tight security, rescuing impounded merchant crews, or conducting espionage against their naval operations.",
+        "hex": "0316"
+    },
+    {
+        "id": "kubishush",
+        "name": "Kubishush",
+        "uwp": "B8B6A88-F",
+        "hazardLevel": "Bioweapons research, hostile empire",
+        "allegiance": "Limmu Bukara",
+        "summary": "Kubishush is a high-tech (TL-15) strong world aligned with the Limmu Bukara pocket empire. Known for its aggressive stance alongside Magash and Liiri, it bolsters the military might of its coalition against the Republic of Regina.\n\nIntelligence reports and captured corsairs indicate that Kubishush hosts clandestine research bases involved in developing viral bioweapons, such as the SDEIEX virus. Adventure hooks include infiltrating these research facilities to secure antidotes, extracting defecting scientists, or stopping corsairs armed with Kubishush-manufactured biological payloads.",
+        "hex": "0917"
+    },
+    {
+        "id": "liiri",
+        "name": "Liiri",
+        "uwp": "B54297A-C",
+        "hazardLevel": "Hostile empire",
+        "allegiance": "Limmu Bukara",
+        "summary": "Liiri is the third pillar of the hostile Limmu Bukara pocket empire, standing alongside Magash and Kubishush. With a Class B starport and TL-12 capabilities, it supports the logistical and military framework of the coalition.\n\nThe world contributes to the constant border tensions with the Republic of Regina. Players operating near Liiri must navigate hostile patrols and blockades. Adventure hooks include conducting reconnaissance on Liiri's fleet movements or extracting deep-cover agents embedded within its government.",
+        "hex": "1016"
+    },
+    {
+        "id": "rhinom",
+        "name": "Rhinom",
+        "uwp": "B77688B-8",
+        "hazardLevel": "Corrupt politics, smuggling",
+        "allegiance": "Independent",
+        "summary": "Rhinom is a populated world ruled by 'the Kashlan,' a charismatic but ruthless premier elected for life. The Kashlan maintains tight control over the system's exports, including the lucrative supply of the narcotic 'eela' produced on its farming moon, Malea.\n\nRhinom's politics are characterized by pragmatic deal-making and a populist facade. It serves as a hub for both legitimate trade and shadow economies. Adventure hooks include negotiating high-stakes trade deals directly with the Kashlan, navigating the complex black market for restricted agricultural goods, or running interference between rival smuggling rings. It is on the edge of the Limmu Bukara (Sabine Empire).",
+        "hex": "0717"
     }
 ]

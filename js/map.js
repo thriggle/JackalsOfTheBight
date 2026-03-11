@@ -41,17 +41,56 @@ class StarMap {
     }
 
     loadData(worlds) {
-        const distantNames = ['agdarmi', 'borlund', 'magash', 'jecife', 'hrd', 'kubishush', 'liiri', 'rhinom', 'mora', 'regina', 'vincennes'];
+        const distantCategories = {
+            coreward: [
+                'vincennes', 'hrd', 'borlund',
+                {
+                    id: 'limmu-bukara',
+                    title: 'The Limmu Bukara',
+                    worlds: ['kubishush', 'magash', 'liiri']
+                },
+                'rhinom'
+            ],
+            rimward: ['agdarmi', 'jecife', 'lilad'],
+            spinward: ['mora', 'regina'],
+            trailing: ['deneb']
+        };
+
         const mapWorlds = [];
-        const distantWorlds = [];
+        const distantWorlds = { coreward: [], rimward: [], spinward: [], trailing: [] };
 
         this.minCol = 99; this.maxCol = 0;
         this.minRow = 99; this.maxRow = 0;
 
         worlds.forEach(w => {
-            if (distantNames.includes(w.name.toLowerCase())) {
-                distantWorlds.push(w);
-            } else if (w.hex && w.hex.length === 4) {
+            const nameLower = w.name.toLowerCase();
+            let isDistant = false;
+
+            for (const [dir, items] of Object.entries(distantCategories)) {
+                for (const item of items) {
+                    if (typeof item === 'string') {
+                        if (item === nameLower) {
+                            distantWorlds[dir].push(w);
+                            isDistant = true;
+                            break;
+                        }
+                    } else if (item.worlds) {
+                        if (item.worlds.includes(nameLower)) {
+                            let group = distantWorlds[dir].find(g => g.id === item.id);
+                            if (!group) {
+                                group = { isGroup: true, ...item, worldData: [] };
+                                distantWorlds[dir].push(group);
+                            }
+                            group.worldData.push(w);
+                            isDistant = true;
+                            break;
+                        }
+                    }
+                }
+                if (isDistant) break;
+            }
+
+            if (!isDistant && w.hex && w.hex.length === 4) {
                 w.col = parseInt(w.hex.substring(0, 2), 10);
                 w.row = parseInt(w.hex.substring(2, 4), 10);
                 if (w.col < this.minCol) this.minCol = w.col;
@@ -71,18 +110,67 @@ class StarMap {
     }
 
     populateDistantWorlds(distantWorlds) {
-        const listContainer = document.getElementById('distant-worlds-list');
-        if (!listContainer) return;
+        const directions = ['coreward', 'rimward', 'spinward', 'trailing'];
 
-        listContainer.innerHTML = '';
-        distantWorlds.forEach(w => {
-            const btn = document.createElement('button');
-            btn.className = 'distant-world-btn';
-            btn.innerHTML = `<span>${w.name}</span> <span class="hex-badge">${w.hex}</span>`;
-            btn.onclick = () => {
-                window.location.hash = '#world/' + w.id;
-            };
-            listContainer.appendChild(btn);
+        directions.forEach(dir => {
+            const block = document.getElementById(`distant-${dir}`);
+            const listContainer = document.getElementById(`list-${dir}`);
+
+            if (!block || !listContainer) return;
+
+            const itemsInDir = distantWorlds[dir];
+
+            if (itemsInDir && itemsInDir.length > 0) {
+                block.classList.remove('hidden');
+                listContainer.innerHTML = '';
+
+                itemsInDir.forEach(item => {
+                    if (item.isGroup) {
+                        const groupDiv = document.createElement('div');
+                        groupDiv.className = 'distant-group closed';
+
+                        const header = document.createElement('div');
+                        header.className = 'distant-group-header';
+
+                        const titleBtn = document.createElement('button');
+                        titleBtn.className = 'group-title';
+                        titleBtn.textContent = item.title;
+                        titleBtn.onclick = () => window.location.hash = '#article/' + item.id;
+
+                        const toggleBtn = document.createElement('button');
+                        toggleBtn.className = 'group-toggle';
+                        toggleBtn.innerHTML = '▼';
+                        toggleBtn.onclick = () => {
+                            groupDiv.classList.toggle('closed');
+                        };
+
+                        header.appendChild(titleBtn);
+                        header.appendChild(toggleBtn);
+                        groupDiv.appendChild(header);
+
+                        const groupList = document.createElement('div');
+                        groupList.className = 'distant-group-list';
+                        item.worldData.forEach(w => {
+                            const btn = document.createElement('button');
+                            btn.className = 'distant-world-btn nested';
+                            btn.innerHTML = `<span>${w.name}</span> <span class="hex-badge">${w.hex || ''}</span>`;
+                            btn.onclick = () => this.handleWorldClick(w);
+                            groupList.appendChild(btn);
+                        });
+
+                        groupDiv.appendChild(groupList);
+                        listContainer.appendChild(groupDiv);
+                    } else {
+                        const btn = document.createElement('button');
+                        btn.className = 'distant-world-btn';
+                        btn.innerHTML = `<span>${item.name}</span> <span class="hex-badge">${item.hex || ''}</span>`;
+                        btn.onclick = () => this.handleWorldClick(item);
+                        listContainer.appendChild(btn);
+                    }
+                });
+            } else {
+                block.classList.add('hidden');
+            }
         });
     }
 
@@ -157,6 +245,65 @@ class StarMap {
             this.draw();
         });
 
+        // Touch events for panning and zooming
+        this.canvas.addEventListener('touchstart', (e) => {
+            if (e.touches.length === 1) {
+                this.isDragging = true;
+                this.lastMouse = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+            } else if (e.touches.length === 2) {
+                this.isDragging = false;
+                this.initialPinchDistance = Math.hypot(
+                    e.touches[0].clientX - e.touches[1].clientX,
+                    e.touches[0].clientY - e.touches[1].clientY
+                );
+                this.initialScale = this.scale;
+            }
+        });
+
+        this.canvas.addEventListener('touchmove', (e) => {
+            e.preventDefault(); // Prevent default browser panning
+            if (this.isDragging && e.touches.length === 1) {
+                const dx = e.touches[0].clientX - this.lastMouse.x;
+                const dy = e.touches[0].clientY - this.lastMouse.y;
+                this.offsetX += dx;
+                this.offsetY += dy;
+                this.lastMouse = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+                this.draw();
+            } else if (e.touches.length === 2) {
+                const currentDistance = Math.hypot(
+                    e.touches[0].clientX - e.touches[1].clientX,
+                    e.touches[0].clientY - e.touches[1].clientY
+                );
+
+                // Calculate zoom based on pinch
+                const zoomFactor = currentDistance / this.initialPinchDistance;
+                const newScale = Math.max(0.2, Math.min(3, this.initialScale * zoomFactor));
+
+                // Simplified zoom centering (center of the screen)
+                const mouseX = this.canvas.width / 2;
+                const mouseY = this.canvas.height / 2;
+                const worldX = (mouseX - this.offsetX) / this.scale;
+                const worldY = (mouseY - this.offsetY) / this.scale;
+
+                this.scale = newScale;
+                this.offsetX = mouseX - worldX * this.scale;
+                this.offsetY = mouseY - worldY * this.scale;
+
+                this.draw();
+            }
+        }, { passive: false });
+
+        this.canvas.addEventListener('touchend', (e) => {
+            if (e.touches.length < 2) {
+                if (e.touches.length === 1) {
+                    this.isDragging = true;
+                    this.lastMouse = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+                } else {
+                    this.isDragging = false;
+                }
+            }
+        });
+
         // Click handler for worlds
         this.canvas.addEventListener('click', (e) => {
             // Don't trigger click if we just dragged
@@ -190,6 +337,7 @@ class StarMap {
         else if (world.allegiance.includes('Dekha') || world.allegiance.includes('Pentarchy')) allegianceColor = this.colors.dekha;
 
         overlay.innerHTML = `
+      <button class="overlay-close" onclick="document.getElementById('map-overlay').classList.add('hidden')">&times;</button>
       <h2 class="overlay-title" style="color: ${allegianceColor}">${world.name}</h2>
       <div class="overlay-uwp">${world.uwp} | ${world.hex}</div>
       <div class="overlay-badges">
@@ -309,6 +457,47 @@ class StarMap {
         }
 
         this.ctx.restore();
+        this.updateDistantBlocksPositions();
+    }
+
+    updateDistantBlocksPositions() {
+        if (this.worlds.length === 0) return;
+
+        const midCol = (this.minCol + this.maxCol) / 2;
+        const midRow = (this.minRow + this.maxRow) / 2;
+
+        const anchors = {
+            coreward: this.getHexCenter(midCol, this.minRow - 4),
+            rimward: this.getHexCenter(midCol, this.maxRow + 4),
+            spinward: this.getHexCenter(this.minCol - 6, midRow),
+            trailing: this.getHexCenter(this.maxCol + 6, midRow)
+        };
+
+        for (const [dir, pos] of Object.entries(anchors)) {
+            const block = document.getElementById(`distant-${dir}`);
+            if (block && !block.classList.contains('hidden')) {
+                const screenX = pos.x * this.scale + this.offsetX;
+                const screenY = pos.y * this.scale + this.offsetY;
+
+                if (dir === 'coreward') {
+                    block.style.left = `${screenX}px`;
+                    block.style.top = `${screenY}px`;
+                    block.style.transform = 'translate(-50%, -100%)';
+                } else if (dir === 'rimward') {
+                    block.style.left = `${screenX}px`;
+                    block.style.top = `${screenY}px`;
+                    block.style.transform = 'translate(-50%, 0%)';
+                } else if (dir === 'spinward') {
+                    block.style.left = `${screenX}px`;
+                    block.style.top = `${screenY}px`;
+                    block.style.transform = 'translate(-100%, -50%)';
+                } else if (dir === 'trailing') {
+                    block.style.left = `${screenX}px`;
+                    block.style.top = `${screenY}px`;
+                    block.style.transform = 'translate(0%, -50%)';
+                }
+            }
+        }
     }
 }
 

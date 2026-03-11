@@ -61,21 +61,6 @@
         ]
     },
     {
-        "id": "askigaak-union",
-        "title": "Askigaak Union",
-        "category": "Faction",
-        "tags": [
-            "Askigaak",
-            "Moltke",
-            "History",
-            "Ecological Collapse"
-        ],
-        "content": [
-            "The Askigaak Union was a short-lived, opportunistic empire that emerged in the power vacuum following the Empress Wave, roughly between 1220 and 1260 Imperial. Contrary to romanticized historical dramas, it was founded by a coalition of corsairs and Sigka industrialists who aggressively seized control of neighboring systems like Moltke to exploit their resources.",
-            "Functioning as a militarized extraction state, the Union heavily exploited its territories, running a war economy built on forced labor and rapid industrialization. The Union collapsed due to its unsustainable practices, primarily its catastrophic decision to exterminate the Sachupe predator, which triggered an ecological cascade failure that led to mass starvation and the \"Great Abandonment\" of Askigaak."
-        ]
-    },
-    {
         "id": "the-sigka",
         "title": "The Sigka",
         "category": "Sophont",
@@ -107,7 +92,7 @@
     },
     {
         "id": "djari-harmony-cult",
-        "title": "Djari & The Goddess-Queen Cult",
+        "title": "Inshiiriama the Goddess-Queen of Harmony",
         "category": "Culture",
         "tags": [
             "Djar",
@@ -167,6 +152,21 @@
         ]
     },
     {
+        "id": "askigaak-union",
+        "title": "The Askigaak Union",
+        "category": "History",
+        "tags": [
+            "Askigaak",
+            "Moltke",
+            "History",
+            "Ecological Collapse"
+        ],
+        "content": [
+            "The Askigaak Union was a short-lived, opportunistic empire that emerged in the power vacuum following the Empress Wave, roughly between 1220 and 1260 Imperial. Contrary to romanticized historical dramas, it was founded by a coalition of corsairs and Sigka industrialists who aggressively seized control of neighboring systems like Moltke to exploit their resources.",
+            "Functioning as a militarized extraction state, the Union heavily exploited its territories, running a war economy built on forced labor and rapid industrialization. The Union collapsed due to its unsustainable practices, primarily its catastrophic decision to exterminate the Sachupe predator, which triggered an ecological cascade failure that led to mass starvation and the \"Great Abandonment\" of Askigaak."
+        ]
+    },
+    {
         "id": "great-abandonment",
         "title": "The Great Abandonment",
         "category": "History",
@@ -220,9 +220,7 @@
         "tags": [
             "Dekha",
             "Pentarch",
-            "Artificial Intelligence",
-            "Military",
-            "Security"
+            "Artificial Intelligence"
         ],
         "content": [
             "Sentinel is one of the five AI Pentarchs governing Dekha. It controls the world's military access, security clearances, routing priorities, and the deployment of security checkpoints and martial assets across the system. It operates primarily through the lens of regional stability and risk mitigation.",
@@ -296,7 +294,7 @@
     {
         "id": "temporal-refugees",
         "title": "Temporal Refugees",
-        "category": "Sophont",
+        "category": "Culture",
         "tags": [
             "Dekha",
             "Curator",
@@ -328,7 +326,7 @@
     },
     {
         "id": "bishop-genuine-jingles",
-        "title": "Archival Recovery: Bishop Genuine Marketing Campaigns",
+        "title": "Bishop Genuine Marketing Campaigns",
         "category": "Document",
         "tags": [
             "Bishop Genuine",
@@ -346,7 +344,7 @@
                 "file": "Bishop Genuine Synthetic Bioform Goo-Goo Buddy.mp3"
             },
             {
-                "title": "Genuine Goo-Goo Buddy (Buttery Smooth Edition)",
+                "title": "Genuine Goo-Goo Buddy",
                 "file": "Genuine Goo-Goo Buddy (Buttery Smooth Edition).mp3"
             }
         ]
@@ -432,5 +430,47 @@
             "These mixed accounts highlight the duality of Qevar. Some spacers view the world as a premier spiritual destination where luxurious kelp gardens and Sigka guides offer profound enlightenment. Others warn of the steep prices, intense cultural pressure, and the mysterious nature of their 'sacred integrations.'"
         ],
         "artifactUrl": "data/artifacts/qevar-tourist-reviews-clean.html"
+    },
+    {
+        "id": "the-yafizethe",
+        "title": "The Yafizethe",
+        "category": "Sophont",
+        "tags": [
+            "Kernal",
+            "Diplomats",
+            "Agriculture",
+            "Moltke",
+            "Askigaak Union"
+        ],
+        "content": [
+            "The native inhabitants of Kernal are a small sophont species known as the Yafizethe, who visually resemble large caterpillars. During the Imperial era, the Yafizethe were highly regarded as skilled diplomats and negotiators. They formed a powerful alliance with the Sigka of Askigaak, establishing a rare non-human coalition that wielded significant political and military influence within the Third Imperium. Later, during the wartime expansion of the Askigaak Union (circa 1248 IY), Yafizethe refugees from Kernal made up a notable portion of the massive labor and refugee population on the industrial world of Moltke.",
+            "Following the collapse of Askigaak and the rise of the corsair lords in the Askigaak Bight, the Yafizethe have receded from their former interstellar prominence. To survive in the dangerous post-collapse environment, they have been forced to adopt a cautiously pastoral lifestyle on their low-gravity, agricultural homeworld. Today, the Yafizethe live under a united monarchy. Their government struggles to maintain diplomatic ties with the nearby Duchy of Mora while constantly facing the threat of raids from the corsair lords of the Bight, who covet Kernal's rich agricultural yields."
+        ]
+    },
+    {
+        "id": "nenlat",
+        "title": "The Nenlat",
+        "category": "Sophont",
+        "tags": [
+            "Deneb",
+            "Amphibious",
+            "Trilateral"
+        ],
+        "image": "",
+        "summary": "The Nenlat are an amphibious, semi-aquatic sophont species native to the world of Deneb, known for their unusual trilateral symmetry and instinct-based caste system.",
+        "content": "<p>The Nenlat are an amphibious, semi-aquatic sophont species native to the world of Deneb, having evolved from wetland omnivore gatherers. They were known in the Imperial era for being an adventuresome people.</p><h3>Physiology and Biology</h3><p>The Nenlat possess a highly unusual trilateral symmetry, standing upright with leathery skin and a segmented shell. They have a barrel-shaped body featuring three legs, three arms, and three flippers. Their head contains their brain and sensory organs and faces their shorter 'central' arm, which is used for fine manipulation, while the two longer 'side-rear' arms are used for swimming and maneuvering through weed-cluttered waters.</p><p>They have a fast metabolism, notable physical strength, and are better suited for short-duration tasks than extended endurance efforts. Their vision is superior to humans and shifted toward the near-ultraviolet spectrum, and they have excellent hearing.</p><p>A distinct physical feature of the Nenlat is a stinger located on the back of the neck, which curves down their back like a dorsal fin. In combat or when agitated, this stinger can curve over their head to strike targets they are gripping; the venom is lethal to small creatures and causes severe pain to humans. They reach adulthood at 14 standard years and have an average life expectancy of 94 years.</p><h3>Genders and Castes</h3><p>The Nenlat have three biological genders: the Egg-Layer, the Activator, and the Bearer.</p><p>During adolescence, a Nenlat develops into one of six skill-based castes. Because Nenlat rely heavily on instinct rather than traditional classroom learning, these castes grant them inborn, instinctual skills. The castes include:</p><ul><li><strong>Driver:</strong> Possesses a genetic hunting instinct that allows them to hypnotize Denebian fauna.</li><li><strong>Strategist:</strong> Lacks a sense of smell but naturally produces many of Deneb's leaders.</li><li><strong>Counsellor:</strong> A diplomatic caste with an inborn ability to persuade and calm others.</li><li><strong>Carouse:</strong> Possesses 'tactical awareness'—a form of intuition or immediate precognition excellent for detecting nearby danger.</li><li><strong>Teacher:</strong> Because instinct-driven learning is normally a challenge for the Nenlat, this caste possesses exceptional intelligence and teaching abilities.</li><li><strong>Bureaucrat:</strong> Possesses high endurance to survive the exhausting political duels common in Nenlat society, though they tend to have weaker intelligence.</li></ul>"
+    },
+    {
+        "id": "limmu-bukara",
+        "title": "The Limmu Bukara",
+        "category": "Faction",
+        "tags": [
+            "Sabine Empire",
+            "Limmu Bukara",
+            "Magash"
+        ],
+        "image": "",
+        "summary": "A hostile pocket empire located in the Deneb sector, also known as the Sabine Empire, aggressively opposed to the Republic of Regina.",
+        "content": "<p>The Limmu Bukara, also known as the Sabine Empire, is a small, hostile pocket empire located in the Deneb sector. The empire is led by the 'Strong World' of Magash and includes the Strong Worlds of Kubishush and Liiri.</p><h3>Leadership</h3><p>The ranking leader, or 'megacrat,' of the central world Magash is Shegami Ushkashaar.</p><h3>Hostility toward the Republic of Regina</h3><p>The Limmu Bukara borders the trailing edge of the Republic of Regina and is considered a particularly dangerous threat. The Republic world of Rhylanor focuses much of its TL16 manufacturing on maintaining a defensive posture against the Sabine Empire.</p><h3>Military Aggression</h3><p>Magash is known to be openly hostile to Republic ships and crews. They conduct combat maneuvers with their navy and marines not only to 'show the flag' but also to aggressively pursue and impound Republic vessels that cross their path.</p><h3>Shady Commerce and Bioweapons</h3><p>Magash’s Startown is a place where one might negotiate grey-market deals, such as acquiring dangerous exotic animals like the Horned Pakang from dealers. Furthermore, intelligence has indicated that a contagious viral bioweapon used by Vargr corsairs may have originated from a research base on the Limmu Bukara world of Kubishush.</p>"
     }
 ]
