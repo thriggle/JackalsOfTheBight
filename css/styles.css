@@ -964,7 +964,7 @@ input:checked+.slider:before {
 
     .content-area {
         flex: 1;
-        height: auto;
+        min-height: 0;
     }
 
     .map-overlay {
