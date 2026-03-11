@@ -157,6 +157,65 @@ class StarMap {
             this.draw();
         });
 
+        // Touch events for panning and zooming
+        this.canvas.addEventListener('touchstart', (e) => {
+            if (e.touches.length === 1) {
+                this.isDragging = true;
+                this.lastMouse = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+            } else if (e.touches.length === 2) {
+                this.isDragging = false;
+                this.initialPinchDistance = Math.hypot(
+                    e.touches[0].clientX - e.touches[1].clientX,
+                    e.touches[0].clientY - e.touches[1].clientY
+                );
+                this.initialScale = this.scale;
+            }
+        });
+
+        this.canvas.addEventListener('touchmove', (e) => {
+            e.preventDefault(); // Prevent default browser panning
+            if (this.isDragging && e.touches.length === 1) {
+                const dx = e.touches[0].clientX - this.lastMouse.x;
+                const dy = e.touches[0].clientY - this.lastMouse.y;
+                this.offsetX += dx;
+                this.offsetY += dy;
+                this.lastMouse = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+                this.draw();
+            } else if (e.touches.length === 2) {
+                const currentDistance = Math.hypot(
+                    e.touches[0].clientX - e.touches[1].clientX,
+                    e.touches[0].clientY - e.touches[1].clientY
+                );
+
+                // Calculate zoom based on pinch
+                const zoomFactor = currentDistance / this.initialPinchDistance;
+                const newScale = Math.max(0.2, Math.min(3, this.initialScale * zoomFactor));
+
+                // Simplified zoom centering (center of the screen)
+                const mouseX = this.canvas.width / 2;
+                const mouseY = this.canvas.height / 2;
+                const worldX = (mouseX - this.offsetX) / this.scale;
+                const worldY = (mouseY - this.offsetY) / this.scale;
+
+                this.scale = newScale;
+                this.offsetX = mouseX - worldX * this.scale;
+                this.offsetY = mouseY - worldY * this.scale;
+
+                this.draw();
+            }
+        }, { passive: false });
+
+        this.canvas.addEventListener('touchend', (e) => {
+            if (e.touches.length < 2) {
+                if (e.touches.length === 1) {
+                    this.isDragging = true;
+                    this.lastMouse = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+                } else {
+                    this.isDragging = false;
+                }
+            }
+        });
+
         // Click handler for worlds
         this.canvas.addEventListener('click', (e) => {
             // Don't trigger click if we just dragged
