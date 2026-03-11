@@ -88,9 +88,21 @@
         <!-- The hex map will be rendered into this container by JS/D3 or Canvas -->
         <div id="map-container">
           <canvas id="hexMapCanvas"></canvas>
-          <div id="distant-worlds-overlay" class="distant-worlds">
-            <h4>Distant Worlds</h4>
-            <div id="distant-worlds-list" class="distant-list"></div>
+          <div id="distant-coreward" class="distant-block hidden">
+            <h4>Coreward</h4>
+            <div id="list-coreward" class="distant-list"></div>
+          </div>
+          <div id="distant-rimward" class="distant-block hidden">
+            <h4>Rimward</h4>
+            <div id="list-rimward" class="distant-list"></div>
+          </div>
+          <div id="distant-spinward" class="distant-block hidden">
+            <h4>Spinward</h4>
+            <div id="list-spinward" class="distant-list"></div>
+          </div>
+          <div id="distant-trailing" class="distant-block hidden">
+            <h4>Trailing</h4>
+            <div id="list-trailing" class="distant-list"></div>
           </div>
           <div id="map-overlay" class="map-overlay hidden">
             <!-- Used to display quick-ref for a world -->

@@ -289,10 +289,8 @@ body {
 }
 
 /* Distant Worlds Overlay */
-.distant-worlds {
+.distant-block {
     position: absolute;
-    bottom: 2rem;
-    left: 2rem;
     background: rgba(19, 21, 31, 0.85);
     backdrop-filter: blur(10px);
     border: 1px solid var(--border-color);
@@ -301,9 +299,11 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
     pointer-events: auto;
     z-index: 5;
+    /* Optional: hide when panning far away */
+    transition: opacity 0.2s;
 }
 
-.distant-worlds h4 {
+.distant-block h4 {
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -881,11 +881,10 @@ input:checked+.slider:before {
         width: calc(100% - 2rem);
     }
 
-    .distant-worlds {
-        left: 1rem;
-        bottom: 50px;
-        /* Adjust around the footer */
-        width: calc(100% - 2rem);
+    .distant-block {
+        /* On narrow screens, they might overlap poorly if we don't scale the map 
+           or limit their width, but JS pins them to world coords now. */
+        padding: 1rem;
     }
 
     .detail-header {

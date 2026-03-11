@@ -41,17 +41,32 @@ class StarMap {
     }
 
     loadData(worlds) {
-        const distantNames = ['agdarmi', 'borlund', 'magash', 'jecife', 'hrd', 'kubishush', 'liiri', 'rhinom', 'mora', 'regina', 'vincennes'];
+        const distantCategories = {
+            coreward: ['vincennes', 'hrd', 'kubishush', 'magash', 'liiri', 'rhinom', 'borlund'],
+            rimward: ['agdarmi', 'jecife', 'lilad'],
+            spinward: ['mora', 'regina'],
+            trailing: ['deneb']
+        };
+
         const mapWorlds = [];
-        const distantWorlds = [];
+        const distantWorlds = { coreward: [], rimward: [], spinward: [], trailing: [] };
 
         this.minCol = 99; this.maxCol = 0;
         this.minRow = 99; this.maxRow = 0;
 
         worlds.forEach(w => {
-            if (distantNames.includes(w.name.toLowerCase())) {
-                distantWorlds.push(w);
-            } else if (w.hex && w.hex.length === 4) {
+            const nameLower = w.name.toLowerCase();
+            let isDistant = false;
+
+            for (const [dir, names] of Object.entries(distantCategories)) {
+                if (names.includes(nameLower)) {
+                    distantWorlds[dir].push(w);
+                    isDistant = true;
+                    break;
+                }
+            }
+
+            if (!isDistant && w.hex && w.hex.length === 4) {
                 w.col = parseInt(w.hex.substring(0, 2), 10);
                 w.row = parseInt(w.hex.substring(2, 4), 10);
                 if (w.col < this.minCol) this.minCol = w.col;
@@ -71,18 +86,31 @@ class StarMap {
     }
 
     populateDistantWorlds(distantWorlds) {
-        const listContainer = document.getElementById('distant-worlds-list');
-        if (!listContainer) return;
+        const directions = ['coreward', 'rimward', 'spinward', 'trailing'];
 
-        listContainer.innerHTML = '';
-        distantWorlds.forEach(w => {
-            const btn = document.createElement('button');
-            btn.className = 'distant-world-btn';
-            btn.innerHTML = `<span>${w.name}</span> <span class="hex-badge">${w.hex}</span>`;
-            btn.onclick = () => {
-                window.location.hash = '#world/' + w.id;
-            };
-            listContainer.appendChild(btn);
+        directions.forEach(dir => {
+            const block = document.getElementById(`distant-${dir}`);
+            const listContainer = document.getElementById(`list-${dir}`);
+
+            if (!block || !listContainer) return;
+
+            const worldsInDir = distantWorlds[dir];
+
+            if (worldsInDir && worldsInDir.length > 0) {
+                block.classList.remove('hidden');
+                listContainer.innerHTML = '';
+                worldsInDir.forEach(w => {
+                    const btn = document.createElement('button');
+                    btn.className = 'distant-world-btn';
+                    btn.innerHTML = `<span>${w.name}</span> <span class="hex-badge">${w.hex || ''}</span>`;
+                    btn.onclick = () => {
+                        window.location.hash = '#world/' + w.id;
+                    };
+                    listContainer.appendChild(btn);
+                });
+            } else {
+                block.classList.add('hidden');
+            }
         });
     }
 
@@ -368,6 +396,39 @@ class StarMap {
         }
 
         this.ctx.restore();
+        this.updateDistantBlocksPositions();
+    }
+
+    updateDistantBlocksPositions() {
+        if (this.worlds.length === 0) return;
+
+        const midCol = (this.minCol + this.maxCol) / 2;
+        const midRow = (this.minRow + this.maxRow) / 2;
+
+        const anchors = {
+            coreward: this.getHexCenter(midCol, this.minRow - 4),
+            rimward: this.getHexCenter(midCol, this.maxRow + 4),
+            spinward: this.getHexCenter(this.minCol - 6, midRow),
+            trailing: this.getHexCenter(this.maxCol + 6, midRow)
+        };
+
+        for (const [dir, pos] of Object.entries(anchors)) {
+            const block = document.getElementById(`distant-${dir}`);
+            if (block && !block.classList.contains('hidden')) {
+                const screenX = pos.x * this.scale + this.offsetX;
+                const screenY = pos.y * this.scale + this.offsetY;
+
+                if (dir === 'coreward' || dir === 'rimward') {
+                    block.style.left = `${screenX}px`;
+                    block.style.transform = 'translateX(-50%)';
+                    block.style.top = `${screenY}px`;
+                } else {
+                    block.style.left = `${screenX}px`;
+                    block.style.top = `${screenY}px`;
+                    block.style.transform = 'translateY(-50%)';
+                }
+            }
+        }
     }
 }
 

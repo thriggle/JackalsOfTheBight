@@ -340,5 +340,23 @@
         "allegiance": "League of Deneb and Vincennes",
         "summary": "During the Third Imperium, Vincennes was a major industrial powerhouse, whose economic might heavily influenced neighboring worlds like Dekha. Following the Collapse, Vincennes became a core member of the \"League of Deneb and Vincennes,\" establishing a powerful polity that actively engaged in military expeditions against neighbors like the Askigaak Union.\n\nBy the late Galaxiad era, the space around Vincennes had become increasingly perilous. A notable historic event occurred recently in 1883 when corsairs cornered the Lurent worldship *Stone Horizon* in the Vincennes Oort cloud. Unable to defeat the superior corsair technology, the Lurent deliberately rammed the massive worldship into the pirate carrier, sacrificing the ship and Clan Yavrek to allow civilian craft to escape.",
         "hex": "1122"
+    },
+    {
+        "id": "lilad",
+        "name": "Lilad",
+        "uwp": "C547ACA-C",
+        "hazardLevel": "Heavily Defended",
+        "allegiance": "Lilad Group",
+        "summary": "Lilad is the largest moon of the massive gas giant Kuleshidur. Its enormous population lives almost entirely in 160 massive beanstalk arcologies anchored to the seafloor and stretching up into geostationary orbit. The system lacks a central highport; instead, each populated moon has its own small port. Lilad is highly self-contained, and the local defense flotillas are notoriously lethal to unauthorized raiders and intruders.",
+        "hex": "1135"
+    },
+    {
+        "id": "deneb",
+        "name": "Deneb",
+        "uwp": "B537A98-A",
+        "hazardLevel": "Wilds/Deadly",
+        "allegiance": "Wild",
+        "summary": "Deneb was historically the capital of the Deneb Sector, an advanced trade center and the homeworld of the amphibious Nenlat. By the Galaxiad era, the world has fallen into the lawless Wilds, having suffered immense tragedy and population loss during the Empress Wave, though its massive arcologies still house tens of billions of inhabitants. Travel here is considered deadly due to rampant corsair activity in the region.",
+        "hex": "1925"
     }
 ]
