@@ -12,7 +12,7 @@
         "id": "arnyl",
         "name": "Arnyl",
         "uwp": "B683656-9",
-        "hazardLevel": "Corsair activity, pirate fleets",
+        "hazardLevel": "Corsairs",
         "allegiance": "Arnyl Admiralty / Corsair Kingdom",
         "summary": "Arnyl is a yellow dwarf system in the Askigaak Bight that evolved from an Imperial Navy base into the seat of a powerful corsair kingdom. The world operates under a 'Naval Feudal' system where traditional naval ranks correspond to feudal titles, and its 5 million inhabitants live under the protection of aging orbital defenses while the Admiralty extracts tribute and enforces 'convoy escort services' across the region.\n\nThe world serves as a neutral meeting ground for corsairs and mercenaries, maintained by the Admiralty's fleets. However, the Admiralty faces internal tensions as salvage yields diminish, and external pressures from ambitious vassals like Skopyeh and the wildcard presence of newly arrived Lurent worldships. Adventure hooks abound here, from negotiating safe passage through the Bight to dealing with rival Captain-Lords looking to usurp the Admiralty's power.",
         "hex": "0930"
@@ -48,7 +48,7 @@
         "id": "bukit-seng",
         "name": "Bukit Seng",
         "uwp": "X542000-8",
-        "hazardLevel": "Dieback world",
+        "hazardLevel": "Dieback world, corsairs",
         "allegiance": "Unclaimed",
         "summary": "Bukit Seng is a forgotten dieback world within the Askigaak Bight. Like its neighbors, its population perished during the turbulent eras of the Collapse.\n\nThe world remains largely untouched by modern salvage operations, making it a potential blank canvas for prospectors or a hiding place for corsair caches. Players might use the empty system as a staging ground for covert operations against nearby pirate strongholds.",
         "hex": "0830"
@@ -57,7 +57,7 @@
         "id": "burnham",
         "name": "Burnham",
         "uwp": "D664000-8",
-        "hazardLevel": "Dieback world, scavengers",
+        "hazardLevel": "Dieback world, scavengers, corsairs",
         "allegiance": "Unclaimed",
         "summary": "Burnham is a dieback world in the Askigaak Bight. Like Imone, it was once the site of a significant Imperial naval facility that was completely destroyed as pirate factions warred over its assets during the Corsair Scourge.\n\nLeft in ruins, Burnham is now frequented by daring prospectors and salvage operators looking for valuable pre-Collapse technology, particularly exotic materials needed for jump drive manufacturing. Adventure hooks include exploring the irradiated remnants of the naval base, fending off scavengers, or investigating rumors of intact Imperial-era vaults.",
         "hex": "0828"
@@ -66,7 +66,7 @@
         "id": "dekha",
         "name": "Dekha",
         "uwp": "C100A75-F",
-        "hazardLevel": "AI governance, balkanized control, rogue Offshoots",
+        "hazardLevel": "AI governance, balkanized",
         "allegiance": "The Pentarchy",
         "summary": "Dekha is a massively overpopulated vacuum world transformed into a planet-sized artificial habitat housing 10 billion citizens. It is governed by the Pentarchy—five highly advanced hybrid artificial intelligences (Sentinel, Forgewright, Manciple, Curator, Impresario) born from the fusion of Cymbeline digital entities and stored human personality matrices during the Empress Wave. Citizens live in a state of controlled uncertainty, physically requiring neural wafer implants to rapidly download skills as territorial control shifts weekly among the competing AI rulers.\n\nDespite its immense industrial capacity (TL-15) and military might, Dekha maintains a restrictive Class C starport due to internal Pentarch disagreements. Visitors and diplomats quickly learn that Dekha does not speak with a unified voice; navigating its society requires playing the incompatible long-term goals of these five entities against each other. Adventure hooks include negotiating resource trades with the disparate AIs, dealing with Sentinel's rogue 'Offshoot' corsairs terrorizing the Wilds, or participating in Impresario's elaborate, heavily monitored 'reality show' expeditions.",
         "hex": "1128"
@@ -75,7 +75,7 @@
         "id": "djar",
         "name": "Djar",
         "uwp": "C30079B-7",
-        "hazardLevel": "Rigid bureaucracy, potential AI emergence",
+        "hazardLevel": "Rigid bureaucracy",
         "allegiance": "Djari Impersonal Bureaucracy (Dekha Client)",
         "summary": "Djar is an airless, low-gravity world where 70 million inhabitants survive in vast subterranean domes, relying on massive insect farms and hydroponics. Dependent on aging, mismatched life-support and gravitic infrastructure, the planet is ruled by a suffocating Impersonal Bureaucracy, managed by meticulous Sub-Ministers of Technical Compliance who track transit and maintenance rotations. Governance is legitimized through a cult of maintenance centered on 'Harmony, the Goddess-Queen'—a towering holographic avatar used to issue edicts. Dissidents face 'divine judgment' via weaponized grav-plating, or commuted sentences to manual farm labor. Djar relies heavily on Dekhan technical assistance, trading concessions for replacement parts and 'Silent Servant' clones.\n\nRecently, the Goddess-Queen avatar has begun exhibiting anomalous behavior, such as speaking with nuanced interiority, sparking intelligence rumors of an emergent AI. Widespread 'Harmony' merchandise is also proliferating across the Wilds. Adventure hooks involve investigating the true nature of the Goddess-Queen, navigating the labyrinthine ministries to smuggle exotic materials (like Djar Composite-7), or getting caught in Impresario's plot to expose the theocracy.",
         "hex": "1229"
@@ -93,7 +93,7 @@
         "id": "imone",
         "name": "Imone",
         "uwp": "D9C4000-F",
-        "hazardLevel": "Dieback world, scavengers, mysterious survey vessels",
+        "hazardLevel": "Dieback world, scavengers, corsairs",
         "allegiance": "Unclaimed",
         "summary": "Imone is one of the eight dieback worlds located in the Askigaak Bight. Historically, it hosted a major Imperial naval base that was dismantled and burned to ash during the brutal conflicts of the Corsair Scourge following the Imperial collapse.\n\nToday, Imone is considered uninhabited, but it remains a prime target for high-risk salvage operations searching for rare gravitic systems and lanthanum. Recently, the Arnyl Admiralty has reported unidentified, technologically advanced vessels conducting systematic and provocative survey operations near Imone and other dieback worlds. Adventure hooks include racing rival corsairs for naval scrap or confronting the unknown survey ships prowling the system.",
         "hex": "0826"
@@ -120,7 +120,7 @@
         "id": "moltke",
         "name": "Moltke",
         "uwp": "E646000-0",
-        "hazardLevel": "Dieback world, ASEN biological hazard, structural collapse",
+        "hazardLevel": "Dieback world, biological hazard",
         "allegiance": "Contested (Arnyl Admiralty / Qevar / Corsairs)",
         "summary": "Moltke is a chilling 'ghost city' world completely reclaimed by an alien fungal ecosystem. During the Askigaak Union era, bioengineers unleashed the ASEN (Askigaak Substrate Extraction Network) fungi to accelerate mining. When the civilization collapsed, the fungi continued functioning, perfectly replicating entire cities, vehicles, and canal systems out of brittle, metal-rich fungal matter. These hollow 'fossil cities' crumble to dust at a touch, releasing toxic, metal-laced spore clouds.\n\nExploring Moltke is extremely hazardous due to the fragile fungal structures and deceptive flooded canals hidden under thin crusts. The Unified Sigka Communities of Qevar actively patrol the system and restrict access to research data. Adventure hooks include high-risk archaeological documentation, rescuing trapped salvagers from collapsed fungal arcologies, or investigating why the fungi possess an apparent 'memory' of architectural forms.",
         "hex": "0529"
@@ -129,7 +129,7 @@
         "id": "norg",
         "name": "Norg",
         "uwp": "E000000-D",
-        "hazardLevel": "Dieback world",
+        "hazardLevel": "Dieback world, corsairs, scavengers",
         "allegiance": "Unclaimed",
         "summary": "Norg is another ruined dieback world in the Askigaak Bight, sharing the tragic history of its sister naval bases. Its populations and infrastructure were destroyed in the chaotic aftermath of the Empress Wave and subsequent pirate invasions.\n\n Players might be hired by the Admiralty to gather intelligence on these unknown craft or by independent researchers attempting to beat the survey ships to valuable archaeological sites.",
         "hex": "0729"
@@ -138,7 +138,7 @@
         "id": "prege",
         "name": "Prege",
         "uwp": "D79A000-9",
-        "hazardLevel": "Dieback world",
+        "hazardLevel": "Dieback world, corsairs",
         "allegiance": "Unclaimed",
         "summary": "Prege rounds out the list of the eight Askigaak Bight dieback worlds. A casualty of the galactic crises, its civilization was entirely extinguished centuries ago.\n\nThe system is occasionally used as a waypoint or temporary hideout by Wilds traders and Lurent worldships avoiding the attention of the Arnyl Admiralty. Adventure hooks include tracking down a fugitive hiding in its ruins or discovering a dormant Virus relic left behind during the Collapse.",
         "hex": "1030"
@@ -257,7 +257,7 @@
         "uwp": "D9C4000-B",
         "hazardLevel": "Dieback world",
         "allegiance": "Unclaimed",
-        "summary": "Eretaro lies in the trailing edge of the Bight.",
+        "summary": "Eretaro lies several parsecs from the trailing edge of the Bight.",
         "hex": "1430"
     },
     {
@@ -300,8 +300,8 @@
         "id": "vincennes",
         "name": "Vincennes",
         "uwp": "A899A8E-E",
-        "hazardLevel": "Post-Collapse Warfare, Corsair Activity",
-        "allegiance": "League of Deneb and Vincennes",
+        "hazardLevel": "Unpredictable dictator, Corsairs",
+        "allegiance": "Independent",
         "summary": "During the Third Imperium, Vincennes was a major industrial powerhouse, whose economic might heavily influenced neighboring worlds like Dekha. Following the Collapse, Vincennes became a core member of the \"League of Deneb and Vincennes,\" establishing a powerful polity that actively engaged in military expeditions against neighbors like the Askigaak Union.\n\nBy the late Galaxiad era, the space around Vincennes had become increasingly perilous. A notable historic event occurred recently in 1883 when corsairs cornered the Lurent worldship *Stone Horizon* in the Vincennes Oort cloud. Unable to defeat the superior corsair technology, the Lurent deliberately rammed the massive worldship into the pirate carrier, sacrificing the ship and Clan Yavrek to allow civilian craft to escape.",
         "hex": "1122"
     },
@@ -318,8 +318,8 @@
         "id": "deneb",
         "name": "Deneb",
         "uwp": "B537A98-A",
-        "hazardLevel": "Wilds/Deadly",
-        "allegiance": "Wild",
+        "hazardLevel": "Wilds",
+        "allegiance": "Independent",
         "summary": "Deneb was historically the capital of the Deneb Sector, an advanced trade center and the homeworld of the amphibious Nenlat. By the Galaxiad era, the world has fallen into the lawless Wilds, having suffered immense tragedy and population loss during the Empress Wave, though its massive arcologies still house tens of billions of inhabitants. Travel here is considered deadly due to rampant corsair activity in the region.",
         "hex": "1925"
     },

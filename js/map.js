@@ -467,10 +467,10 @@ class StarMap {
         const midRow = (this.minRow + this.maxRow) / 2;
 
         const anchors = {
-            coreward: this.getHexCenter(midCol, this.minRow - 4),
-            rimward: this.getHexCenter(midCol, this.maxRow + 4),
-            spinward: this.getHexCenter(this.minCol - 6, midRow),
-            trailing: this.getHexCenter(this.maxCol + 6, midRow)
+            coreward: this.getHexCenter(midCol, this.minRow - 1),
+            rimward: this.getHexCenter(midCol, this.maxRow + 1),
+            spinward: this.getHexCenter(this.minCol - 2, midRow),
+            trailing: this.getHexCenter(this.maxCol + 2, midRow)
         };
 
         for (const [dir, pos] of Object.entries(anchors)) {
