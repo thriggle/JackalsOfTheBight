@@ -76,6 +76,23 @@
         ]
     },
     {
+        "id": "the-gl'lu",
+        "title": "The Gl'lu",
+        "category": "Sophont",
+        "tags": [
+            "Gl'lu",
+            "Kubishush"
+        ],
+        "content": [
+            "The Gl'lu are a highly advanced minor starfaring species native to Kubishush (0917 Deneb), a world located within the hostile Limmu Bukara (Sabine Empire). Despite evolving on a planet plagued by a corrosive nitrogen-ammonia atmosphere, ammonia seas, and constant seismic and volcanic violence, they have built a thriving civilization of twenty billion people operating at the peak of the era's technological capacity (TL-15).",
+            "<strong>Physiology and Appearance:</strong> To humans, the Gl'lu resemble a cross between a Terran octopus and a large slug, featuring porous, mottled skin and a periscope-like eyestalk crowned with three antennae. They are asymmetrical \"septapods\" with seven limbs: four forward manipulators and three stout rear limbs for movement. They reproduce as single-gendered hermaphrodites and see entirely in the infrared spectrum, perceiving the thermal signatures of living bodies as brilliantly as humans see color. Because oxygen is lethal to them, they must wear sealed environmental suits when interacting with outsiders.",
+            "<strong>Culture and Psychology:</strong> The Gl'lu are a paradox. They are an \"Extremely Xenophilic\" species that loves to meet and learn about outsiders, yet they are politically trapped within Magash's highly restrictive and hostile pocket empire. Following the catastrophic population loss of the Empress Wave, their culture underwent a dramatic shift: their art, music, and performance became highly abstract and largely incomprehensible to outsiders because they are actually used to encode vital engineering, survival, and disaster-response protocols.",
+            "<strong>Society and Governance:</strong> Their society is managed by a professional Civil Service Bureaucracy that evolved from a historical system of floating-city elites (<em>Unaga</em>) and ground-dwelling citizens (<em>Kilig Gunati</em>). Because their environment requires constant industrial effort just to remain habitable, their government is entirely focused on practical competence and catastrophe management.",
+            "<strong>Shipbuilding and Technology:</strong> Gl'lu engineering is famous throughout the Deneb Wilds for its absolute refusal to allow a \"single point of failure\". Their \"nexus drive\" shipbuilding doctrine produces heavily redundant vessels featuring dual bridges, dual maneuver drives, and paired jump drives that can operate independently if the other is destroyed.",
+            "<strong>The Great Mystery:</strong> Archaeologists suspect the Gl'lu did not actually evolve on Kubishush due to a lack of fossil records and their skeletal density. The Gl'lu maintain a lethal, non-negotiable military exclusion zone around <em>Oolvig Naseena</em>, a higher-gravity moon in their system. They claim the moon is sacred and absolutely refuse to discuss it with any outsiders."
+        ]
+    },
+    {
         "id": "the-lurent",
         "title": "The Lurent",
         "category": "Sophont",
@@ -122,6 +139,7 @@
         "id": "empress-wave",
         "title": "The Empress Wave",
         "category": "History",
+        "sortOrder": 1,
         "tags": [
             "Catastrophe",
             "Psionics",
@@ -137,6 +155,7 @@
         "id": "virus-and-collapse",
         "title": "The Virus and the Collapse",
         "category": "History",
+        "sortOrder": 2,
         "tags": [
             "Virus",
             "Artificial Intelligence",
@@ -152,6 +171,7 @@
         "id": "corsair-scourge",
         "title": "The Corsair Scourge",
         "category": "History",
+        "sortOrder": 3,
         "tags": [
             "Piracy",
             "Vargr Extents",
@@ -167,6 +187,7 @@
         "id": "askigaak-union",
         "title": "The Askigaak Union",
         "category": "History",
+        "sortOrder": 4,
         "tags": [
             "Askigaak",
             "Moltke",
@@ -182,6 +203,7 @@
         "id": "great-abandonment",
         "title": "The Great Abandonment",
         "category": "History",
+        "sortOrder": 5,
         "tags": [
             "Askigaak",
             "Ecological Collapse",
@@ -408,6 +430,7 @@
         "id": "dekhan-convergence-event",
         "title": "The Dekhan Convergence Event",
         "category": "History",
+        "sortOrder": 6,
         "tags": [
             "Dekha",
             "Pentarchy",

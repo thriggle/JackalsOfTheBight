@@ -55,6 +55,14 @@ async function initApp() {
 }
 
 function populateSidebar() {
+    // Sort articles: by sortOrder (nulls last) then alphabetically by title
+    const sorted = [...AppState.articles].sort((a, b) => {
+        const aOrder = a.sortOrder ?? Infinity;
+        const bOrder = b.sortOrder ?? Infinity;
+        if (aOrder !== bOrder) return aOrder - bOrder;
+        return a.title.localeCompare(b.title);
+    });
+
     // Clear existing
     els.navHistory.innerHTML = '';
     els.navSophont.innerHTML = '';
@@ -63,7 +71,7 @@ function populateSidebar() {
     els.navCulture.innerHTML = '';
     els.navDocument.innerHTML = '';
 
-    AppState.articles.forEach(article => {
+    sorted.forEach(article => {
         const btn = document.createElement('button');
         btn.className = 'nav-subitem';
         btn.textContent = article.title;
@@ -89,6 +97,14 @@ function setupEventListeners() {
     els.backToMapBtn.addEventListener('click', () => {
         window.location.hash = ''; // Clear hash returns to map
     });
+
+    // Index button
+    const indexBtn = document.getElementById('nav-index-btn');
+    if (indexBtn) {
+        indexBtn.addEventListener('click', () => {
+            window.location.hash = '#index';
+        });
+    }
 
     // Accordion toggles on sidebar headings
     els.navItems.forEach(item => {
@@ -127,6 +143,9 @@ function handleRouting() {
 
     if (!hash || hash === '') {
         showView('map');
+    } else if (hash === 'index') {
+        renderIndex();
+        showView('index');
     } else if (hash.startsWith('world/')) {
         const id = hash.split('/')[1];
         renderWorld(id);
@@ -139,28 +158,29 @@ function handleRouting() {
 }
 
 function showView(viewId) {
+    const indexBtn = document.getElementById('nav-index-btn');
     if (viewId === 'map') {
         updateActiveSidebarState(null);
         els.viewMap.classList.remove('hidden');
         els.viewDetail.classList.add('hidden');
-
-        // Update active state in sidebar
         document.querySelector('[data-view="map"]').classList.add('active');
-
-        // Close overlay if open
+        if (indexBtn) indexBtn.classList.remove('active');
         const overlay = document.getElementById('map-overlay');
         if (overlay) overlay.classList.add('hidden');
-
-        // Ensure canvas is sized correctly if it was hidden during init
         if (window._mapInstance) {
             window._mapInstance.resize();
         }
-
+    } else if (viewId === 'index') {
+        updateActiveSidebarState(null);
+        els.viewMap.classList.add('hidden');
+        els.viewDetail.classList.remove('hidden');
+        document.querySelector('[data-view="map"]').classList.remove('active');
+        if (indexBtn) indexBtn.classList.add('active');
     } else if (viewId === 'detail') {
         els.viewMap.classList.add('hidden');
         els.viewDetail.classList.remove('hidden');
-
         document.querySelector('[data-view="map"]').classList.remove('active');
+        if (indexBtn) indexBtn.classList.remove('active');
     }
 }
 
@@ -301,6 +321,72 @@ function renderWorld(id) {
       ${formatContentToHTML(world.summary, id)}
     </div>
   `;
+}
+
+function renderIndex() {
+    updateActiveSidebarState(null);
+
+    // Helper: sort key strips leading "The "
+    const sortKey = title => title.replace(/^The\s+/i, '').trim();
+
+    // Build combined list of all articles and worlds
+    const entries = [];
+    AppState.articles.forEach(a => {
+        entries.push({
+            label: a.title,
+            key: sortKey(a.title),
+            badge: a.category,
+            href: `#article/${a.id}`
+        });
+    });
+    AppState.worlds.forEach(w => {
+        entries.push({
+            label: w.name,
+            key: sortKey(w.name),
+            badge: 'World',
+            href: `#world/${w.id}`
+        });
+    });
+
+    // Sort alphabetically by key
+    entries.sort((a, b) => a.key.localeCompare(b.key));
+
+    // Group by first letter of sort key
+    const groups = {};
+    entries.forEach(e => {
+        const letter = e.key[0].toUpperCase();
+        if (!groups[letter]) groups[letter] = [];
+        groups[letter].push(e);
+    });
+
+    const letters = Object.keys(groups).sort();
+
+    // Render letter jump bar
+    const jumpBar = letters.map(l =>
+        `<a href="#" onclick="document.getElementById('idx-${l}').scrollIntoView({behavior:'smooth'});return false;"
+            style="color:var(--text-accent);text-decoration:none;font-weight:600;font-size:0.9rem;">${l}</a>`
+    ).join('<span style="color:var(--border-color)"> · </span>');
+
+    let html = `
+    <h1 class="article-title">Index</h1>
+    <div style="margin-bottom:1.5rem;line-height:2;letter-spacing:0.05em;">${jumpBar}</div>
+    <div class="article-content">`;
+
+    letters.forEach(letter => {
+        html += `<div id="idx-${letter}" style="margin-top:2rem;">
+            <h2 style="color:var(--text-accent);border-bottom:1px solid var(--border-color);padding-bottom:0.5rem;margin-bottom:0.75rem;font-size:1.4rem;">${letter}</h2>
+            <div style="display:flex;flex-direction:column;gap:0.4rem;">`;
+        groups[letter].forEach(e => {
+            html += `<div style="display:flex;align-items:baseline;gap:0.75rem;">
+                <a href="${e.href}" class="inline-link" style="font-size:1rem;">${e.label}</a>
+                <span class="badge" style="font-size:0.65rem;padding:0.15rem 0.5rem;background:rgba(255,255,255,0.07);flex-shrink:0;">${e.badge}</span>
+            </div>`;
+        });
+        html += `</div></div>`;
+    });
+
+    html += `</div>`;
+    els.detailContent.innerHTML = html;
 }
 
 function renderArticle(id) {

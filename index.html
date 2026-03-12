@@ -67,17 +67,23 @@
 
         <div class="nav-group">
           <button class="nav-item" data-category="Culture">
-            <span class="icon">🎭</span> Culture
+            <span class="icon">🎭</span> Cultural Phenomena
           </button>
           <div class="nav-subitems hidden" id="nav-culture"></div>
         </div>
 
         <div class="nav-group">
           <button class="nav-item" data-category="Document">
-            <span class="icon">📜</span> Artifacts
+            <span class="icon">📜</span> Media & Artifacts
           </button>
           <div class="nav-subitems hidden" id="nav-document"></div>
         </div>
+
+        <h3 class="nav-heading" style="margin-top: 1.5rem;">Reference</h3>
+
+        <button class="nav-item" data-view="index" id="nav-index-btn">
+          <span class="icon">🗂️</span> Index
+        </button>
       </div>
     </nav>
 
@@ -148,7 +154,7 @@
       </div>
       <div class="microfilm-body crt-effect"
         style="display: flex; flex-direction: column; align-items: center; background-color: #000; overflow-y: auto;">
-        
+
         <!-- Sticky Audio Header Container -->
         <div id="audio-sticky-header" class="audio-sticky-header">
           <canvas id="oscilloscope" width="500" height="200"
@@ -158,14 +164,16 @@
             Your browser does not support the audio element.
           </audio>
           <div id="audio-subtext-tabs-container" style="width: 100%; margin-top: 1.5rem; display: none;">
-            <div id="audio-subtext-tabs" style="display: flex; gap: 0.5rem; border-bottom: 1px solid rgba(16, 185, 129, 0.3); padding-bottom: 0.5rem; overflow-x: auto;">
+            <div id="audio-subtext-tabs"
+              style="display: flex; gap: 0.5rem; border-bottom: 1px solid rgba(16, 185, 129, 0.3); padding-bottom: 0.5rem; overflow-x: auto;">
             </div>
           </div>
         </div>
 
         <!-- Scrollable Subtext Content -->
         <div id="audio-subtext-container" style="width: 100%; padding: 0 2rem 2rem 2rem; display: none;">
-          <div id="audio-subtext-content" style="color: var(--text-color); font-size: 0.95rem; line-height: 1.5; white-space: pre-wrap; margin-top: 1rem;">
+          <div id="audio-subtext-content"
+            style="color: var(--text-color); font-size: 0.95rem; line-height: 1.5; white-space: pre-wrap; margin-top: 1rem;">
           </div>
         </div>
       </div>
@@ -182,20 +190,22 @@
       </div>
       <div class="microfilm-body crt-effect"
         style="display: flex; flex-direction: column; align-items: center; background-color: #000; overflow-y: auto;">
-        
+
         <!-- Sticky Image Header Container -->
         <div id="image-sticky-header" class="image-sticky-header">
           <img id="image-viewer" src="" alt="Viewed Image"
             style="width: 100%; border-radius: 4px; box-shadow: inset 0 0 10px rgba(0,255,0,0.2); background-color: #051005; border: 1px solid rgba(16, 185, 129, 0.3); flex-shrink: 0; object-fit: contain; transition: max-height 0.3s ease;">
           <div id="image-subtext-tabs-container" style="width: 100%; margin-top: 1.5rem; display: none;">
-            <div id="image-subtext-tabs" style="display: flex; gap: 0.5rem; border-bottom: 1px solid rgba(16, 185, 129, 0.3); padding-bottom: 0.5rem; overflow-x: auto;">
+            <div id="image-subtext-tabs"
+              style="display: flex; gap: 0.5rem; border-bottom: 1px solid rgba(16, 185, 129, 0.3); padding-bottom: 0.5rem; overflow-x: auto;">
             </div>
           </div>
         </div>
 
         <!-- Scrollable Subtext Content -->
         <div id="image-subtext-container" style="width: 100%; padding: 0 2rem 2rem 2rem; display: none;">
-          <div id="image-subtext-content" style="color: var(--text-color); font-size: 0.95rem; line-height: 1.5; white-space: pre-wrap; margin-top: 1rem;">
+          <div id="image-subtext-content"
+            style="color: var(--text-color); font-size: 0.95rem; line-height: 1.5; white-space: pre-wrap; margin-top: 1rem;">
           </div>
         </div>
       </div>
