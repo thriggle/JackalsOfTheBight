@@ -5,9 +5,8 @@
         "category": "Faction",
         "tags": [
             "Dekha",
-            "Artificial Intelligence",
-            "Cymbeline",
-            "Governance"
+            "Pentarchy",
+            "Pentarch"
         ],
         "content": [
             "The Dekhan Pentarchy consists of five hybrid artificial intelligences—Sentinel, Forgewright, Manciple, Curator, and Impresario—governing ten billion citizens on the artificial vacuum world of Dekha. These entities were born during the Collapse when the Empress Wave's psychic energies caused emergent Cymbeline digital entities to merge with vast repositories of stored human personality matrices.",
@@ -124,7 +123,7 @@
         "imageFiles": [
             {
                 "title": "Inshiriiama Merchandise",
-                "file": "Harmony_Merchandise_01.png",
+                "file": "/images/Harmony_Merchandise_01.png",
                 "subtext": [
                     {
                         "label": "Intel Report",
@@ -159,7 +158,7 @@
             "Virus",
             "Artificial Intelligence",
             "Collapse",
-            "Technology"
+            "Cymbeline"
         ],
         "content": [
             "Unleashed around 1130 Imperial from a research base at Core 0922, the Virus was a weaponized, untested silicon-digital life form. Its initial generations caused widespread destruction of infrastructure and killed trillions of sophonts on technology-dependent worlds.",
@@ -174,7 +173,6 @@
         "tags": [
             "Piracy",
             "Vargr Extents",
-            "Wilds",
             "Raiders"
         ],
         "content": [
@@ -371,10 +369,22 @@
             "A series of recovered audio marketing jingles broadcast across the Deneb Wilds by Bishop Enterprises. These aggressively cheerful advertisements heavily promote the Bishop Genuine Synthetic Bioform Goo-Goo Buddy™, targeting independent ship crews and solitary spacers.",
             "The contrast between the upbeat corporate jingles and the often grim reality of survival in the Wilds serves as a stark reminder of Dekha's ubiquitous cultural and economic reach. Several editions of these jingles exist, including specialized remixes catering to different spacer demographics."
         ],
+        "imageFiles": [
+            {
+                "title": "Poster Advertisement",
+                "file": "/images/Bishop_Genuine_Goo_Goo_Buddy_Poster_Advertisement.jpg",
+                "subtext": [
+                    {
+                        "label": "Text",
+                        "content": "The Bishop Genuine Goo-Goo Buddy\n\nGenuine Synthetic Bioform\nPerfect for holding compact tools.\n\nThree Things Your Emergency Rations Cannot do. Hold your tools. Alert you to a hull breach. Breed a return on your investment. The Bishop Genuine Goo-Goo Buddy does all three -- and costs less than a used vacc suit. Feed it a training wafer and it learns. Put it in stasis and it waits. Two buddies and patience, and your initial outlay comes back to you in offspring within the season.\nSmart equipment earns its place. The Bishop Genuine earns its place three ways before you ever need it for the fourth.\nBishop Enterprises -- Bishop Station 2,500 CR.\n Ask your factor.\n"
+                    }
+                ]
+            }
+        ],
         "audioFiles": [
             {
                 "title": "Bishop Genuine Synthetic Bioform Goo-Goo Buddy",
-                "file": "Bishop Genuine Synthetic Bioform Goo-Goo Buddy.mp3",
+                "file": "/audio/Bishop Genuine Synthetic Bioform Goo-Goo Buddy.mp3",
                 "subtext": [
                     {
                         "label": "Lyrics",
@@ -384,7 +394,7 @@
             },
             {
                 "title": "Genuine Goo-Goo Buddy",
-                "file": "Genuine Goo-Goo Buddy (Buttery Smooth Edition).mp3",
+                "file": "/audio/Genuine Goo-Goo Buddy (Buttery Smooth Edition).mp3",
                 "subtext": [
                     {
                         "label": "Lyrics",
@@ -459,7 +469,7 @@
             "A series of unverified philosophical and technical audio logs documenting the creation of a \"Crystalline Witness\" by human Giskaani practitioners. The journals detail the construction of a photonic machine designed to record and project holographic memories of the past seamlessly over the present environment.",
             "The mendicant uses the machine's construction to teach students about the Giskaani philosophy of universal oneness, radical continuity, and the illusion of separation. For full immersion into the minds of the Witness's creators, the original, unscrambled data archives have been transcribed and stored for archival study."
         ],
-        "artifactUrl": "data/artifacts/crystalline-witness.html"
+        "artifactUrl": "data/artifacts/docs/crystalline-witness.html"
     },
     {
         "id": "qevar-tourist-reviews",
@@ -475,7 +485,7 @@
             "A collection of verified traveler reviews scraped from the popular 'GalacticTravel' network.",
             "These mixed accounts highlight the duality of Qevar. Some spacers view the world as a premier spiritual destination where luxurious kelp gardens and Sigka guides offer profound enlightenment. Others warn of the steep prices, intense cultural pressure, and the mysterious nature of their 'sacred integrations.'"
         ],
-        "artifactUrl": "data/artifacts/qevar-tourist-reviews-clean.html"
+        "artifactUrl": "data/artifacts/docs/qevar-tourist-reviews-clean.html"
     },
     {
         "id": "the-yafizethe",
@@ -538,7 +548,7 @@
         "audioFiles": [
             {
                 "title": "Mouthpiece",
-                "file": "Mouthpiece.mp3",
+                "file": "/audio/Mouthpiece.mp3",
                 "subtext": [
                     {
                         "label": "Lyrics",
@@ -546,7 +556,7 @@
                     },
                     {
                         "label": "Interpretation",
-                        "url": "data/artifacts/against_magash_consensus.html"
+                        "url": "data/artifacts/docs/against_magash_consensus.html"
                     }
                 ]
             }

@@ -601,6 +601,95 @@ window.closeAudioArchive = function () {
     if (animationId) cancelAnimationFrame(animationId);
 };
 
+// ── Image Archive ─────────────────────────────────────────────────────────────
+
+const _img = {
+    scale: 1,
+    tx: 0,
+    ty: 0,
+    dragging: false,
+    lastX: 0,
+    lastY: 0,
+    MIN: 0.25,
+    MAX: 8,
+    STEP: 0.25,
+};
+
+function _imgApplyTransform() {
+    const img = document.getElementById('image-viewer');
+    if (!img) return;
+    img.style.transform = `translate(${_img.tx}px, ${_img.ty}px) scale(${_img.scale})`;
+    const label = document.getElementById('image-zoom-label');
+    if (label) label.textContent = Math.round(_img.scale * 100) + '%';
+}
+
+function _imgResetState() {
+    _img.scale = 1;
+    _img.tx = 0;
+    _img.ty = 0;
+    _img.dragging = false;
+    _imgApplyTransform();
+}
+
+function _imgSetupInteractions() {
+    const container = document.getElementById('image-zoom-container');
+    if (!container || container._zoomBound) return;
+    container._zoomBound = true;
+
+    // Wheel zoom – zoom toward the cursor position (transform-origin: center center)
+    container.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        const rect = container.getBoundingClientRect();
+        // Mouse position relative to the container center (which is transform-origin)
+        const mouseX = e.clientX - rect.left - rect.width / 2;
+        const mouseY = e.clientY - rect.top  - rect.height / 2;
+
+        const delta = e.deltaY < 0 ? _img.STEP : -_img.STEP;
+        const newScale = Math.min(_img.MAX, Math.max(_img.MIN, _img.scale + delta));
+        if (newScale === _img.scale) return;
+
+        // Adjust translate so the point under the cursor stays fixed
+        const ratio = newScale / _img.scale;
+        _img.tx = mouseX - ratio * (mouseX - _img.tx);
+        _img.ty = mouseY - ratio * (mouseY - _img.ty);
+        _img.scale = newScale;
+        _imgApplyTransform();
+    }, { passive: false });
+
+    // Pointer drag pan
+    container.addEventListener('pointerdown', (e) => {
+        if (e.button !== 0) return;
+        _img.dragging = true;
+        _img.lastX = e.clientX;
+        _img.lastY = e.clientY;
+        container.setPointerCapture(e.pointerId);
+        container.style.cursor = 'grabbing';
+    });
+
+    container.addEventListener('pointermove', (e) => {
+        if (!_img.dragging) return;
+        _img.tx += e.clientX - _img.lastX;
+        _img.ty += e.clientY - _img.lastY;
+        _img.lastX = e.clientX;
+        _img.lastY = e.clientY;
+        _imgApplyTransform();
+    });
+
+    container.addEventListener('pointerup', () => {
+        _img.dragging = false;
+        container.style.cursor = 'grab';
+    });
+
+    container.addEventListener('pointercancel', () => {
+        _img.dragging = false;
+        container.style.cursor = 'grab';
+    });
+}
+
+window.imageZoomIn    = () => { _img.scale = Math.min(_img.MAX, _img.scale + _img.STEP); _imgApplyTransform(); };
+window.imageZoomOut   = () => { _img.scale = Math.max(_img.MIN, _img.scale - _img.STEP); _imgApplyTransform(); };
+window.imageZoomReset = () => _imgResetState();
+
 window.openImageArchive = function (articleId, fileIndex) {
     const article = AppState.articles.find(a => a.id === articleId);
     if (!article || !article.imageFiles || !article.imageFiles[fileIndex]) return;
@@ -613,6 +702,10 @@ window.openImageArchive = function (articleId, fileIndex) {
     const imgEl = document.getElementById('image-viewer');
     imgEl.src = 'data/artifacts/' + file.file;
     imgEl.alt = file.title;
+
+    // Reset pan/zoom state whenever a new image is opened
+    _imgResetState();
+    _imgSetupInteractions();
 
     // Setup Subtext
     const subtextContainer = document.getElementById('image-subtext-container');
@@ -660,6 +753,7 @@ window.closeImageArchive = function () {
     document.getElementById('image-viewer').src = '';
     document.getElementById('image-subtext-content').innerHTML = '';
     document.getElementById('image-subtext-tabs').innerHTML = '';
+    _imgResetState();
 };
 
 // Global start
