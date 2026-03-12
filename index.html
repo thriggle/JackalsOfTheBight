@@ -147,17 +147,55 @@
         <button id="closeAudioBtn" class="close-btn" onclick="closeAudioArchive()">&times;</button>
       </div>
       <div class="microfilm-body crt-effect"
-        style="padding: 2rem; display: flex; flex-direction: column; align-items: center; background-color: #000; overflow-y: auto;">
-        <canvas id="oscilloscope" width="500" height="200"
-          style="width: 100%; border-radius: 4px; box-shadow: inset 0 0 10px rgba(0,255,0,0.2); margin-bottom: 2rem; background-color: #051005; border: 1px solid rgba(16, 185, 129, 0.3); flex-shrink: 0;"></canvas>
-        <audio id="audio-player" controls
-          style="width: 100%; filter: sepia(100%) hue-rotate(90deg) saturate(300%) contrast(150%); flex-shrink: 0;">
-          Your browser does not support the audio element.
-        </audio>
-        <div id="audio-subtext-container" style="width: 100%; margin-top: 1.5rem; display: none;">
-          <div id="audio-subtext-tabs" style="display: flex; gap: 0.5rem; border-bottom: 1px solid rgba(16, 185, 129, 0.3); padding-bottom: 0.5rem; margin-bottom: 1rem; overflow-x: auto;">
+        style="display: flex; flex-direction: column; align-items: center; background-color: #000; overflow-y: auto;">
+        
+        <!-- Sticky Audio Header Container -->
+        <div id="audio-sticky-header" class="audio-sticky-header">
+          <canvas id="oscilloscope" width="500" height="200"
+            style="width: 100%; border-radius: 4px; box-shadow: inset 0 0 10px rgba(0,255,0,0.2); margin-bottom: 2rem; background-color: #051005; border: 1px solid rgba(16, 185, 129, 0.3); flex-shrink: 0; transition: height 0.3s ease;"></canvas>
+          <audio id="audio-player" controls
+            style="width: 100%; filter: sepia(100%) hue-rotate(90deg) saturate(300%) contrast(150%); flex-shrink: 0;">
+            Your browser does not support the audio element.
+          </audio>
+          <div id="audio-subtext-tabs-container" style="width: 100%; margin-top: 1.5rem; display: none;">
+            <div id="audio-subtext-tabs" style="display: flex; gap: 0.5rem; border-bottom: 1px solid rgba(16, 185, 129, 0.3); padding-bottom: 0.5rem; overflow-x: auto;">
+            </div>
           </div>
-          <div id="audio-subtext-content" style="color: var(--text-color); font-size: 0.95rem; line-height: 1.5; white-space: pre-wrap;">
+        </div>
+
+        <!-- Scrollable Subtext Content -->
+        <div id="audio-subtext-container" style="width: 100%; padding: 0 2rem 2rem 2rem; display: none;">
+          <div id="audio-subtext-content" style="color: var(--text-color); font-size: 0.95rem; line-height: 1.5; white-space: pre-wrap; margin-top: 1rem;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Viewer Modal -->
+  <div id="image-modal" class="microfilm-modal hidden">
+    <div class="microfilm-backdrop" onclick="closeImageArchive()"></div>
+    <div class="microfilm-content" style="max-width: 600px;">
+      <div class="microfilm-header">
+        <h2 id="image-title">Image Archive</h2>
+        <button id="closeImageBtn" class="close-btn" onclick="closeImageArchive()">&times;</button>
+      </div>
+      <div class="microfilm-body crt-effect"
+        style="display: flex; flex-direction: column; align-items: center; background-color: #000; overflow-y: auto;">
+        
+        <!-- Sticky Image Header Container -->
+        <div id="image-sticky-header" class="image-sticky-header">
+          <img id="image-viewer" src="" alt="Viewed Image"
+            style="width: 100%; border-radius: 4px; box-shadow: inset 0 0 10px rgba(0,255,0,0.2); background-color: #051005; border: 1px solid rgba(16, 185, 129, 0.3); flex-shrink: 0; object-fit: contain; transition: max-height 0.3s ease;">
+          <div id="image-subtext-tabs-container" style="width: 100%; margin-top: 1.5rem; display: none;">
+            <div id="image-subtext-tabs" style="display: flex; gap: 0.5rem; border-bottom: 1px solid rgba(16, 185, 129, 0.3); padding-bottom: 0.5rem; overflow-x: auto;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Scrollable Subtext Content -->
+        <div id="image-subtext-container" style="width: 100%; padding: 0 2rem 2rem 2rem; display: none;">
+          <div id="image-subtext-content" style="color: var(--text-color); font-size: 0.95rem; line-height: 1.5; white-space: pre-wrap; margin-top: 1rem;">
           </div>
         </div>
       </div>

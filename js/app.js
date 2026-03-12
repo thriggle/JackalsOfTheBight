@@ -348,6 +348,20 @@ function renderArticle(id) {
         htmlContent += `</div></div>`;
     }
 
+    if (article.imageFiles && article.imageFiles.length > 0) {
+        htmlContent += `<div style="margin-top: 2rem; border-top: 1px dashed var(--border-color); padding-top: 1.5rem;">
+            <h3 style="color: var(--text-accent); margin-bottom: 1rem;">Image Archives</h3>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">`;
+        article.imageFiles.forEach((file, index) => {
+            htmlContent += `
+                <button class="nav-item active" style="justify-content: flex-start; display: flex; width: 100%; padding: 0.75rem 1.5rem;" onclick="openImageArchive('${article.id}', ${index})">
+                    <span class="icon" style="margin-right: 0.5rem;">🖼️</span> View: ${file.title}
+                </button>
+            `;
+        });
+        htmlContent += `</div></div>`;
+    }
+
     htmlContent += `</div>`;
     els.detailContent.innerHTML = htmlContent;
 }
@@ -415,10 +429,12 @@ window.openAudioArchive = function (articleId, fileIndex) {
     // Setup Subtext
     const subtextContainer = document.getElementById('audio-subtext-container');
     const tabsContainer = document.getElementById('audio-subtext-tabs');
+    const tabsWrapper = document.getElementById('audio-subtext-tabs-container');
     const contentContainer = document.getElementById('audio-subtext-content');
 
     if (file.subtext && file.subtext.length > 0) {
         subtextContainer.style.display = 'block';
+        if (tabsWrapper) tabsWrapper.style.display = 'block';
         tabsContainer.innerHTML = '';
         contentContainer.innerHTML = '';
 
@@ -451,6 +467,7 @@ window.openAudioArchive = function (articleId, fileIndex) {
         });
     } else {
         subtextContainer.style.display = 'none';
+        if (tabsWrapper) tabsWrapper.style.display = 'none';
     }
 
     function draw() {
@@ -496,6 +513,67 @@ window.closeAudioArchive = function () {
     audioPlayer.pause();
     audioPlayer.src = "";
     if (animationId) cancelAnimationFrame(animationId);
+};
+
+window.openImageArchive = function (articleId, fileIndex) {
+    const article = AppState.articles.find(a => a.id === articleId);
+    if (!article || !article.imageFiles || !article.imageFiles[fileIndex]) return;
+
+    const file = article.imageFiles[fileIndex];
+    document.getElementById('image-title').textContent = file.title;
+    const modal = document.getElementById('image-modal');
+    modal.classList.remove('hidden');
+
+    const imgEl = document.getElementById('image-viewer');
+    imgEl.src = 'data/artifacts/' + file.file;
+    imgEl.alt = file.title;
+
+    // Setup Subtext
+    const subtextContainer = document.getElementById('image-subtext-container');
+    const tabsContainer = document.getElementById('image-subtext-tabs');
+    const tabsWrapper = document.getElementById('image-subtext-tabs-container');
+    const contentContainer = document.getElementById('image-subtext-content');
+
+    if (file.subtext && file.subtext.length > 0) {
+        subtextContainer.style.display = 'block';
+        if (tabsWrapper) tabsWrapper.style.display = 'block';
+        tabsContainer.innerHTML = '';
+        contentContainer.innerHTML = '';
+
+        file.subtext.forEach((sub, i) => {
+            const btn = document.createElement('button');
+            btn.className = 'nav-item active';
+            btn.style.cssText = 'padding: 0.5rem 1rem; width: auto; justify-content: center;';
+            btn.textContent = sub.label;
+            btn.onclick = () => {
+                Array.from(tabsContainer.children).forEach(c => c.style.opacity = '0.5');
+                btn.style.opacity = '1';
+                if (sub.content) {
+                    // Render markdown-style bold (**text**) and headers (## text)
+                    let rendered = sub.content
+                        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                        .replace(/^## (.+)$/gm, '<h3 style="color:#7dd3fc;margin:1rem 0 0.5rem;">$1</h3>')
+                        .replace(/^---$/gm, '<hr style="border-color:rgba(16,185,129,0.3);margin:1rem 0;">')
+                        .replace(/\n/g, '<br>');
+                    contentContainer.innerHTML = rendered;
+                }
+            };
+            tabsContainer.appendChild(btn);
+            if (i === 0) btn.click();
+            else btn.style.opacity = '0.5';
+        });
+    } else {
+        subtextContainer.style.display = 'none';
+        if (tabsWrapper) tabsWrapper.style.display = 'none';
+    }
+};
+
+window.closeImageArchive = function () {
+    const modal = document.getElementById('image-modal');
+    modal.classList.add('hidden');
+    document.getElementById('image-viewer').src = '';
+    document.getElementById('image-subtext-content').innerHTML = '';
+    document.getElementById('image-subtext-tabs').innerHTML = '';
 };
 
 // Global start

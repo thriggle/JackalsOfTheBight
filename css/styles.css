@@ -791,6 +791,50 @@ input:checked+.slider:before {
     z-index: 10;
 }
 
+/* Audio Sticky Header */
+.audio-sticky-header {
+    width: 100%;
+    padding: 2rem 2rem 1rem 2rem;
+    background-color: #000;
+}
+
+@media (min-width: 900px) {
+    .audio-sticky-header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+        padding-top: 1rem;
+    }
+    
+    #oscilloscope {
+        height: 100px !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+/* Image Sticky Header */
+.image-sticky-header {
+    width: 100%;
+    padding: 2rem 2rem 1rem 2rem;
+    background-color: #000;
+}
+
+@media (min-width: 900px) {
+    .image-sticky-header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+        padding-top: 1rem;
+    }
+
+    #image-viewer {
+        max-height: 280px !important;
+        object-fit: contain;
+    }
+}
+
 /* Specific styling for the document contents */
 .artifact-document h2 {
     margin-bottom: 0.5rem;
