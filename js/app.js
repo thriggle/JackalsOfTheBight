@@ -15,8 +15,7 @@ const els = {
     detailContent: document.getElementById('detail-content'),
     backToMapBtn: document.getElementById('backToMapBtn'),
     navItems: document.querySelectorAll('.nav-item'),
-    readingModeToggle: document.getElementById('readingModeToggle'),
-    modeSwitch: document.getElementById('modeSwitch'),
+
 
     // Dynamic Nav containers
     navHistory: document.getElementById('nav-history'),
@@ -68,7 +67,13 @@ function populateSidebar() {
         const btn = document.createElement('button');
         btn.className = 'nav-subitem';
         btn.textContent = article.title;
-        btn.onclick = () => window.location.hash = `#article/${article.id}`;
+        btn.dataset.articleId = article.id;
+        btn.onclick = () => {
+            window.location.hash = `#article/${article.id}`;
+            if (window.innerWidth <= 900) {
+                document.querySelectorAll('.nav-subitems').forEach(nav => nav.classList.add('hidden'));
+            }
+        };
 
         if (article.category === "History") els.navHistory.appendChild(btn);
         else if (article.category === "Sophont") els.navSophont.appendChild(btn);
@@ -91,6 +96,9 @@ function setupEventListeners() {
             // If it's the Map link
             if (item.dataset.view === 'map') {
                 window.location.hash = '';
+                if (window.innerWidth <= 900) {
+                    document.querySelectorAll('.nav-subitems').forEach(nav => nav.classList.add('hidden'));
+                }
                 return;
             }
 
@@ -99,6 +107,10 @@ function setupEventListeners() {
             if (category) {
                 const subnav = document.getElementById(`nav-${category.toLowerCase()}`);
                 if (subnav) {
+                    const isOpening = subnav.classList.contains('hidden');
+                    if (window.innerWidth <= 900 && isOpening) {
+                        document.querySelectorAll('.nav-subitems').forEach(nav => nav.classList.add('hidden'));
+                    }
                     subnav.classList.toggle('hidden');
                 }
             }
@@ -108,15 +120,6 @@ function setupEventListeners() {
     // Window hash change
     window.addEventListener('hashchange', handleRouting);
 
-    // Reading mode toggle
-    els.modeSwitch.addEventListener('change', (e) => {
-        const isChecked = e.target.checked;
-        if (isChecked) {
-            els.detailContent.classList.add('document-in-universe');
-        } else {
-            els.detailContent.classList.remove('document-in-universe');
-        }
-    });
 }
 
 function handleRouting() {
@@ -137,6 +140,7 @@ function handleRouting() {
 
 function showView(viewId) {
     if (viewId === 'map') {
+        updateActiveSidebarState(null);
         els.viewMap.classList.remove('hidden');
         els.viewDetail.classList.add('hidden');
 
@@ -162,6 +166,30 @@ function showView(viewId) {
 
 function updateActiveSidebarState(id) {
     document.querySelectorAll('.nav-subitem').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active-parent'));
+
+    if (!id) return;
+
+    const activeBtn = document.querySelector(`.nav-subitem[data-article-id="${id}"]`);
+    if (activeBtn) {
+        activeBtn.classList.add('active');
+
+        const navGroup = activeBtn.closest('.nav-group');
+        if (navGroup) {
+            const headingBtn = navGroup.querySelector('.nav-item');
+            if (headingBtn) {
+                headingBtn.classList.add('active-parent');
+            }
+
+            // On desktop, auto-expand the section containing the active article
+            if (window.innerWidth > 900) {
+                const subnav = navGroup.querySelector('.nav-subitems');
+                if (subnav) {
+                    subnav.classList.remove('hidden');
+                }
+            }
+        }
+    }
 }
 
 let autolinkerRules = [];
@@ -258,8 +286,7 @@ function renderWorld(id) {
     const world = AppState.worlds.find(w => w.id === id);
     if (!world) return;
 
-    els.readingModeToggle.classList.add('hidden'); // Worlds don't use in-universe styling
-    els.detailContent.classList.remove('document-in-universe');
+
 
     els.detailContent.innerHTML = `
     <h1 class="article-title">${world.name}</h1>
@@ -277,18 +304,11 @@ function renderWorld(id) {
 }
 
 function renderArticle(id) {
+    updateActiveSidebarState(id);
     const article = AppState.articles.find(a => a.id === id);
     if (!article) return;
 
-    // Show reading mode toggle only for Documents
-    if (article.category === "Document") {
-        els.readingModeToggle.classList.remove('hidden');
-        // Ensure switch reflects current class state
-        els.modeSwitch.checked = els.detailContent.classList.contains('document-in-universe');
-    } else {
-        els.readingModeToggle.classList.add('hidden');
-        els.detailContent.classList.remove('document-in-universe');
-    }
+
 
     const tagsHtml = article.tags ? article.tags.map(t => `<span class="tag-link">#${t}</span>`).join('') : '';
 
@@ -308,7 +328,7 @@ function renderArticle(id) {
         htmlContent += `
         <div style="margin-top: 2rem; border-top: 1px dashed var(--border-color); padding-top: 1.5rem; text-align: center;">
             <button class="nav-item active" style="justify-content: center; display: inline-flex; width: auto; padding: 0.75rem 1.5rem;" onclick="openMicrofilm('${article.artifactUrl}', '${article.title.replace(/'/g, "\\'")}')">
-                <span class="icon" style="margin-right: 0.5rem;">🔍</span> View Original Document Archive
+                <span class="icon" style="margin-right: 0.5rem;">🔍</span> View Archived Document
             </button>
         </div>
         `;
