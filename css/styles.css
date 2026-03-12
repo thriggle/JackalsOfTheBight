@@ -791,6 +791,50 @@ input:checked+.slider:before {
     z-index: 10;
 }
 
+/* Audio Sticky Header */
+.audio-sticky-header {
+    width: 100%;
+    padding: 2rem 2rem 1rem 2rem;
+    background-color: #000;
+}
+
+@media (min-width: 900px) {
+    .audio-sticky-header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+        padding-top: 1rem;
+    }
+    
+    #oscilloscope {
+        height: 100px !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+/* Image Sticky Header */
+.image-sticky-header {
+    width: 100%;
+    padding: 2rem 2rem 1rem 2rem;
+    background-color: #000;
+}
+
+@media (min-width: 900px) {
+    .image-sticky-header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+        padding-top: 1rem;
+    }
+
+    #image-viewer {
+        max-height: 280px !important;
+        object-fit: contain;
+    }
+}
+
 /* Specific styling for the document contents */
 .artifact-document h2 {
     margin-bottom: 0.5rem;
@@ -915,7 +959,7 @@ input:checked+.slider:before {
 
     .nav-item .icon {
         display: none;
-        /* Hide icons initially on mobile for space */
+        /* Icons hidden on wide horizontal nav; labels visible */
     }
 
     .nav-item.active {
@@ -987,6 +1031,24 @@ input:checked+.slider:before {
     }
 }
 
+/* Medium-width: hide text labels, show icons only */
+@media (max-width: 750px) {
+    .nav-item .nav-label {
+        display: none;
+    }
+
+    .nav-item .icon {
+        display: inline-block;
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .nav-item {
+        padding: 0.5rem 0.35rem;
+        gap: 0;
+    }
+}
+
 /* Very Small Mobile Screens */
 @media (max-width: 500px) {
     .nav-sections {
@@ -994,15 +1056,10 @@ input:checked+.slider:before {
     }
 
     .nav-item {
-        font-size: 0;
-        /* Hide text, leaving only the icon */
-        padding: 0.5rem 0.25rem;
+        padding: 0.4rem 0.2rem;
     }
 
     .nav-item .icon {
-        display: inline-block;
-        font-size: 1.25rem;
-        /* Make icon visible again */
-        margin: 0;
+        font-size: 1.15rem;
     }
 }

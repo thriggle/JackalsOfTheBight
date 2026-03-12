@@ -55,6 +55,14 @@ async function initApp() {
 }
 
 function populateSidebar() {
+    // Sort articles: by sortOrder (nulls last) then alphabetically by title
+    const sorted = [...AppState.articles].sort((a, b) => {
+        const aOrder = a.sortOrder ?? Infinity;
+        const bOrder = b.sortOrder ?? Infinity;
+        if (aOrder !== bOrder) return aOrder - bOrder;
+        return a.title.localeCompare(b.title);
+    });
+
     // Clear existing
     els.navHistory.innerHTML = '';
     els.navSophont.innerHTML = '';
@@ -63,7 +71,7 @@ function populateSidebar() {
     els.navCulture.innerHTML = '';
     els.navDocument.innerHTML = '';
 
-    AppState.articles.forEach(article => {
+    sorted.forEach(article => {
         const btn = document.createElement('button');
         btn.className = 'nav-subitem';
         btn.textContent = article.title;
@@ -89,6 +97,14 @@ function setupEventListeners() {
     els.backToMapBtn.addEventListener('click', () => {
         window.location.hash = ''; // Clear hash returns to map
     });
+
+    // Index button
+    const indexBtn = document.getElementById('nav-index-btn');
+    if (indexBtn) {
+        indexBtn.addEventListener('click', () => {
+            window.location.hash = '#index';
+        });
+    }
 
     // Accordion toggles on sidebar headings
     els.navItems.forEach(item => {
@@ -127,6 +143,9 @@ function handleRouting() {
 
     if (!hash || hash === '') {
         showView('map');
+    } else if (hash === 'index') {
+        renderIndex();
+        showView('index');
     } else if (hash.startsWith('world/')) {
         const id = hash.split('/')[1];
         renderWorld(id);
@@ -139,28 +158,29 @@ function handleRouting() {
 }
 
 function showView(viewId) {
+    const indexBtn = document.getElementById('nav-index-btn');
     if (viewId === 'map') {
         updateActiveSidebarState(null);
         els.viewMap.classList.remove('hidden');
         els.viewDetail.classList.add('hidden');
-
-        // Update active state in sidebar
         document.querySelector('[data-view="map"]').classList.add('active');
-
-        // Close overlay if open
+        if (indexBtn) indexBtn.classList.remove('active');
         const overlay = document.getElementById('map-overlay');
         if (overlay) overlay.classList.add('hidden');
-
-        // Ensure canvas is sized correctly if it was hidden during init
         if (window._mapInstance) {
             window._mapInstance.resize();
         }
-
+    } else if (viewId === 'index') {
+        updateActiveSidebarState(null);
+        els.viewMap.classList.add('hidden');
+        els.viewDetail.classList.remove('hidden');
+        document.querySelector('[data-view="map"]').classList.remove('active');
+        if (indexBtn) indexBtn.classList.add('active');
     } else if (viewId === 'detail') {
         els.viewMap.classList.add('hidden');
         els.viewDetail.classList.remove('hidden');
-
         document.querySelector('[data-view="map"]').classList.remove('active');
+        if (indexBtn) indexBtn.classList.remove('active');
     }
 }
 
@@ -303,6 +323,72 @@ function renderWorld(id) {
   `;
 }
 
+function renderIndex() {
+    updateActiveSidebarState(null);
+
+    // Helper: sort key strips leading "The "
+    const sortKey = title => title.replace(/^The\s+/i, '').trim();
+
+    // Build combined list of all articles and worlds
+    const entries = [];
+    AppState.articles.forEach(a => {
+        entries.push({
+            label: a.title,
+            key: sortKey(a.title),
+            badge: a.category,
+            href: `#article/${a.id}`
+        });
+    });
+    AppState.worlds.forEach(w => {
+        entries.push({
+            label: w.name,
+            key: sortKey(w.name),
+            badge: 'World',
+            href: `#world/${w.id}`
+        });
+    });
+
+    // Sort alphabetically by key
+    entries.sort((a, b) => a.key.localeCompare(b.key));
+
+    // Group by first letter of sort key
+    const groups = {};
+    entries.forEach(e => {
+        const letter = e.key[0].toUpperCase();
+        if (!groups[letter]) groups[letter] = [];
+        groups[letter].push(e);
+    });
+
+    const letters = Object.keys(groups).sort();
+
+    // Render letter jump bar
+    const jumpBar = letters.map(l =>
+        `<a href="#" onclick="document.getElementById('idx-${l}').scrollIntoView({behavior:'smooth'});return false;"
+            style="color:var(--text-accent);text-decoration:none;font-weight:600;font-size:0.9rem;">${l}</a>`
+    ).join('<span style="color:var(--border-color)"> · </span>');
+
+    let html = `
+    <h1 class="article-title">Index</h1>
+    <div style="margin-bottom:1.5rem;line-height:2;letter-spacing:0.05em;">${jumpBar}</div>
+    <div class="article-content">`;
+
+    letters.forEach(letter => {
+        html += `<div id="idx-${letter}" style="margin-top:2rem;">
+            <h2 style="color:var(--text-accent);border-bottom:1px solid var(--border-color);padding-bottom:0.5rem;margin-bottom:0.75rem;font-size:1.4rem;">${letter}</h2>
+            <div style="display:flex;flex-direction:column;gap:0.4rem;">`;
+        groups[letter].forEach(e => {
+            html += `<div style="display:flex;align-items:baseline;gap:0.75rem;">
+                <a href="${e.href}" class="inline-link" style="font-size:1rem;">${e.label}</a>
+                <span class="badge" style="font-size:0.65rem;padding:0.15rem 0.5rem;background:rgba(255,255,255,0.07);flex-shrink:0;">${e.badge}</span>
+            </div>`;
+        });
+        html += `</div></div>`;
+    });
+
+    html += `</div>`;
+    els.detailContent.innerHTML = html;
+}
+
 function renderArticle(id) {
     updateActiveSidebarState(id);
     const article = AppState.articles.find(a => a.id === id);
@@ -338,10 +424,24 @@ function renderArticle(id) {
         htmlContent += `<div style="margin-top: 2rem; border-top: 1px dashed var(--border-color); padding-top: 1.5rem;">
             <h3 style="color: var(--text-accent); margin-bottom: 1rem;">Audio Archives</h3>
             <div style="display: flex; flex-direction: column; gap: 0.5rem;">`;
-        article.audioFiles.forEach(file => {
+        article.audioFiles.forEach((file, index) => {
             htmlContent += `
-                <button class="nav-item active" style="justify-content: flex-start; display: flex; width: 100%; padding: 0.75rem 1.5rem;" onclick="openAudioArchive('data/artifacts/${file.file}', '${file.title.replace(/'/g, "\\'")}')">
+                <button class="nav-item active" style="justify-content: flex-start; display: flex; width: 100%; padding: 0.75rem 1.5rem;" onclick="openAudioArchive('${article.id}', ${index})">
                     <span class="icon" style="margin-right: 0.5rem;">🔊</span> Play: ${file.title}
+                </button>
+            `;
+        });
+        htmlContent += `</div></div>`;
+    }
+
+    if (article.imageFiles && article.imageFiles.length > 0) {
+        htmlContent += `<div style="margin-top: 2rem; border-top: 1px dashed var(--border-color); padding-top: 1.5rem;">
+            <h3 style="color: var(--text-accent); margin-bottom: 1rem;">Image Archives</h3>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">`;
+        article.imageFiles.forEach((file, index) => {
+            htmlContent += `
+                <button class="nav-item active" style="justify-content: flex-start; display: flex; width: 100%; padding: 0.75rem 1.5rem;" onclick="openImageArchive('${article.id}', ${index})">
+                    <span class="icon" style="margin-right: 0.5rem;">🖼️</span> View: ${file.title}
                 </button>
             `;
         });
@@ -378,8 +478,12 @@ let audioCtx = null;
 let audioAnalyser = null;
 let animationId = null;
 
-window.openAudioArchive = function (url, title) {
-    document.getElementById('audio-title').textContent = title;
+window.openAudioArchive = function (articleId, fileIndex) {
+    const article = AppState.articles.find(a => a.id === articleId);
+    if (!article || !article.audioFiles || !article.audioFiles[fileIndex]) return;
+
+    const file = article.audioFiles[fileIndex];
+    document.getElementById('audio-title').textContent = file.title;
     const modal = document.getElementById('audio-modal');
     modal.classList.remove('hidden');
 
@@ -387,6 +491,7 @@ window.openAudioArchive = function (url, title) {
     const canvas = document.getElementById('oscilloscope');
     const canvasCtx = canvas.getContext('2d');
 
+    const url = 'data/artifacts/' + file.file;
     audioPlayer.src = url;
     audioPlayer.play().catch(e => console.warn("Autoplay prevented:", e));
 
@@ -406,6 +511,50 @@ window.openAudioArchive = function (url, title) {
     audioAnalyser.fftSize = 2048;
     const bufferLength = audioAnalyser.frequencyBinCount;
     const dataArray = new Uint8Array(bufferLength);
+
+    // Setup Subtext
+    const subtextContainer = document.getElementById('audio-subtext-container');
+    const tabsContainer = document.getElementById('audio-subtext-tabs');
+    const tabsWrapper = document.getElementById('audio-subtext-tabs-container');
+    const contentContainer = document.getElementById('audio-subtext-content');
+
+    if (file.subtext && file.subtext.length > 0) {
+        subtextContainer.style.display = 'block';
+        if (tabsWrapper) tabsWrapper.style.display = 'block';
+        tabsContainer.innerHTML = '';
+        contentContainer.innerHTML = '';
+
+        file.subtext.forEach((sub, i) => {
+            const btn = document.createElement('button');
+            btn.className = 'nav-item active';
+            btn.style.cssText = 'padding: 0.5rem 1rem; width: auto; justify-content: center;';
+            btn.textContent = sub.label;
+            btn.onclick = async () => {
+                // Update active state
+                Array.from(tabsContainer.children).forEach(c => c.style.opacity = '0.5');
+                btn.style.opacity = '1';
+                
+                if (sub.content) {
+                    contentContainer.innerHTML = sub.content;
+                } else if (sub.url) {
+                    contentContainer.innerHTML = '<em>Loading...</em>';
+                    try {
+                        const response = await fetch(sub.url);
+                        if (!response.ok) throw new Error('Failed to load subtext');
+                        contentContainer.innerHTML = await response.text();
+                    } catch (e) {
+                        contentContainer.innerHTML = '<span style="color: #ef4444;">Failed to load document.</span>';
+                    }
+                }
+            };
+            tabsContainer.appendChild(btn);
+            if (i === 0) btn.click();
+            else btn.style.opacity = '0.5';
+        });
+    } else {
+        subtextContainer.style.display = 'none';
+        if (tabsWrapper) tabsWrapper.style.display = 'none';
+    }
 
     function draw() {
         if (modal.classList.contains('hidden')) return; // Stop drawing if closed
@@ -450,6 +599,67 @@ window.closeAudioArchive = function () {
     audioPlayer.pause();
     audioPlayer.src = "";
     if (animationId) cancelAnimationFrame(animationId);
+};
+
+window.openImageArchive = function (articleId, fileIndex) {
+    const article = AppState.articles.find(a => a.id === articleId);
+    if (!article || !article.imageFiles || !article.imageFiles[fileIndex]) return;
+
+    const file = article.imageFiles[fileIndex];
+    document.getElementById('image-title').textContent = file.title;
+    const modal = document.getElementById('image-modal');
+    modal.classList.remove('hidden');
+
+    const imgEl = document.getElementById('image-viewer');
+    imgEl.src = 'data/artifacts/' + file.file;
+    imgEl.alt = file.title;
+
+    // Setup Subtext
+    const subtextContainer = document.getElementById('image-subtext-container');
+    const tabsContainer = document.getElementById('image-subtext-tabs');
+    const tabsWrapper = document.getElementById('image-subtext-tabs-container');
+    const contentContainer = document.getElementById('image-subtext-content');
+
+    if (file.subtext && file.subtext.length > 0) {
+        subtextContainer.style.display = 'block';
+        if (tabsWrapper) tabsWrapper.style.display = 'block';
+        tabsContainer.innerHTML = '';
+        contentContainer.innerHTML = '';
+
+        file.subtext.forEach((sub, i) => {
+            const btn = document.createElement('button');
+            btn.className = 'nav-item active';
+            btn.style.cssText = 'padding: 0.5rem 1rem; width: auto; justify-content: center;';
+            btn.textContent = sub.label;
+            btn.onclick = () => {
+                Array.from(tabsContainer.children).forEach(c => c.style.opacity = '0.5');
+                btn.style.opacity = '1';
+                if (sub.content) {
+                    // Render markdown-style bold (**text**) and headers (## text)
+                    let rendered = sub.content
+                        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                        .replace(/^## (.+)$/gm, '<h3 style="color:#7dd3fc;margin:1rem 0 0.5rem;">$1</h3>')
+                        .replace(/^---$/gm, '<hr style="border-color:rgba(16,185,129,0.3);margin:1rem 0;">')
+                        .replace(/\n/g, '<br>');
+                    contentContainer.innerHTML = rendered;
+                }
+            };
+            tabsContainer.appendChild(btn);
+            if (i === 0) btn.click();
+            else btn.style.opacity = '0.5';
+        });
+    } else {
+        subtextContainer.style.display = 'none';
+        if (tabsWrapper) tabsWrapper.style.display = 'none';
+    }
+};
+
+window.closeImageArchive = function () {
+    const modal = document.getElementById('image-modal');
+    modal.classList.add('hidden');
+    document.getElementById('image-viewer').src = '';
+    document.getElementById('image-subtext-content').innerHTML = '';
+    document.getElementById('image-subtext-tabs').innerHTML = '';
 };
 
 // Global start
