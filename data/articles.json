@@ -341,11 +341,23 @@
         "audioFiles": [
             {
                 "title": "Bishop Genuine Synthetic Bioform Goo-Goo Buddy",
-                "file": "Bishop Genuine Synthetic Bioform Goo-Goo Buddy.mp3"
+                "file": "Bishop Genuine Synthetic Bioform Goo-Goo Buddy.mp3",
+                "subtext": [
+                    {
+                        "label": "Lyrics",
+                        "content": "Goo-Goo \nGoo-Goo Buddy\nBishop Genuine Synthetic Bioform Goo-Goo Buddy\n\n[Verse]\nMake it yours\nBishop Genuine Synthetic Bioform Goo-Goo Buddy\nIt'll hold your drinks and steady your camera\nTakes good care of grandma\n\n[Chorus]\nOh it's just so funny\nGet the Bishop Genuine Synthetic Bioform Goo-Goo Buddy\nIf you go to a foreign place\nIt'll keep your organics in place\n\n[Verse 2]\nIt keeps your kids safe from harm\nGoes off like a car alarm\nLooks good on your mantlepiece\nHate the stuff but love the squeeze\nSome say it's like tasting cheese\nOr playing God\nBut we don't care\nBecause it's so funny\nBishop Genuine Synthetic Bioform Goo-Goo Buddy\n\nGoo-Goo \nGoo-Goo Buddy\nBishop Genuine Synthetic Bioform Goo-Goo Buddy"
+                    }
+                ]
             },
             {
                 "title": "Genuine Goo-Goo Buddy",
-                "file": "Genuine Goo-Goo Buddy (Buttery Smooth Edition).mp3"
+                "file": "Genuine Goo-Goo Buddy (Buttery Smooth Edition).mp3",
+                "subtext": [
+                    {
+                        "label": "Lyrics",
+                        "content": "[Chorus]\nGenuine Goo-Goo Buddy\nOh what a friend for you\nFor when you need somebody\nTry Bishop's Bioform Goo\n\n[Verse]\nYou can stretch it and squish it and pull it apart\nIt makes great companions and goes great with tarts\nIn an emergency rations don't get no better\nIt'll always love you and it's made out of cheddar\n\n[Chorus]\nGenuine Goo-Goo Buddy\nOh what a friend for you\nFor when you need somebody\nTry Bishop's Bioform Goo\n\n[Verse 2]\nIt'll rub your back\nIf you're feelin' blue\nThen you rub its back\nOr you make a fondue\n\n[Chorus]\nGenuine Goo-Goo Buddy\nOh what a friend for you\nFor when you need somebody\nTry Bishop's Bioform Goo\nGenuine Goo-Goo Buddy\nOh what a friend for you\nFor when you need somebody\nTry Bishop's Bioform Goo\nTry Bishop's Bioform Goo"
+                    }
+                ]
             }
         ]
     },
@@ -471,6 +483,39 @@
         ],
         "image": "",
         "summary": "A hostile pocket empire located in the Deneb sector, also known as the Sabine Empire, aggressively opposed to the Republic of Regina.",
-        "content": "<p>The Limmu Bukara, also known as the Sabine Empire, is a small, hostile pocket empire located in the Deneb sector. The empire is led by the 'Strong World' of Magash and includes the Strong Worlds of Kubishush and Liiri.</p><h3>Leadership</h3><p>The ranking leader, or 'megacrat,' of the central world Magash is Shegami Ushkashaar.</p><h3>Hostility toward the Republic of Regina</h3><p>The Limmu Bukara borders the trailing edge of the Republic of Regina and is considered a particularly dangerous threat. The Republic world of Rhylanor focuses much of its TL16 manufacturing on maintaining a defensive posture against the Sabine Empire.</p><h3>Military Aggression</h3><p>Magash is known to be openly hostile to Republic ships and crews. They conduct combat maneuvers with their navy and marines not only to 'show the flag' but also to aggressively pursue and impound Republic vessels that cross their path.</p><h3>Shady Commerce and Bioweapons</h3><p>Magash’s Startown is a place where one might negotiate grey-market deals, such as acquiring dangerous exotic animals like the Horned Pakang from dealers. Furthermore, intelligence has indicated that a contagious viral bioweapon used by Vargr corsairs may have originated from a research base on the Limmu Bukara world of Kubishush.</p>"
+        "content": "<p>The Limmu Bukara, also known as the Sabine Empire, is a small, hostile pocket empire located in the Deneb sector. The empire is led by the 'Strong World' of Magash and includes the Strong Worlds of Kubishush and Liiri. Its reputation is known throughout the Wilds through traditional spacer songs like Mouthpiece.</p><h3>Leadership</h3><p>The ranking leader, or 'megacrat,' of the central world Magash is Shegami Ushkashaar.</p><h3>Hostility toward the Republic of Regina</h3><p>The Limmu Bukara borders the trailing edge of the Republic of Regina and is considered a particularly dangerous threat. The Republic world of Rhylanor focuses much of its TL16 manufacturing on maintaining a defensive posture against the Sabine Empire.</p><h3>Military Aggression</h3><p>Magash is known to be openly hostile to Republic ships and crews. They conduct combat maneuvers with their navy and marines not only to 'show the flag' but also to aggressively pursue and impound Republic vessels that cross their path.</p><h3>Shady Commerce and Bioweapons</h3><p>Magash’s Startown is a place where one might negotiate grey-market deals, such as acquiring dangerous exotic animals like the Horned Pakang from dealers. Furthermore, intelligence has indicated that a contagious viral bioweapon used by Vargr corsairs may have originated from a research base on the Limmu Bukara world of Kubishush.</p>"
+    },
+    {
+        "id": "mouthpiece-of-magash",
+        "title": "Mouthpiece of Magash",
+        "category": "Document",
+        "tags": [
+            "Magash",
+            "Mouthpiece",
+            "Limmu Bukara",
+            "Music",
+            "Audio Log",
+            "Culture"
+        ],
+        "content": [
+            "A popular spacer song originating near the borders of the Sabine Empire.",
+            "The song holds multiple interpretations as analyzed by various scholars of deep-space acoustics and Vernacular Astropolitics."
+        ],
+        "audioFiles": [
+            {
+                "title": "Mouthpiece",
+                "file": "Mouthpiece.mp3",
+                "subtext": [
+                    {
+                        "label": "Lyrics",
+                        "content": "\"Mouthpiece\"\n\n(Intro)\nWho's there? \nJust the mouth. \nWhat's it want? \nOnly what you'll give.\n\n(Verse 1)\nWho stitched the stars with stolen thread? \nThen sold the map to those misled? \nThe mouth knows, the mouth trades, \nthe mouth forgets nothing.\n\nWho picked the bones and left the skin? \nThen claimed the wreckage deep within? \nWho sifted ash for sovereign gold \nAnd called it peace when truth was sold?\n\nWho bowed to Mora's velvet hand \nAnd vanished into desert sand? \nThe mouth smiles in rust and spits in silver.\n\n(Chorus)\nWho's there? \nJust the mouth. \nWhat's it want? \nOnly what you'll give\n\n(Verse 2)\nThree worlds walk with wary pride: \nOne holds steel, one holds the tide, \nOne hides fire beneath its skin— \nGuess which one you're standing in?\n\nWho wore the crown of Mora's grace, \nThen vanished from the borders' face? \nWho smiled at Regina's quiet fade, \nThen built their walls from debts unpaid?\n\nWhat's wild and what's just left behind? \nWhat's pirate? What's a state in kind? \nWhat's Vincennes, if not betrayed \nBy Mora's hush and Regina's shade?\n\nThe mouth hums through wreckage, \nThe mouth hums through teeth.\n\n(Chorus)\nWho's there? \nJust the mouth. \nWhat's it want? \nOnly what you'll give\n\n(Bridge)\nWho speaks in wreckage, not in law? \nWho trades in silence, not in awe? \nWho guards the gates with riddled teeth, \nAnd lets the cargo hum beneath?\nOh, the mouth \nalways the mouth\n\n(Verse 3)\nWhat's stronger: peace or quiet guns? \nWhat's faster: truth or stolen runs? \nWhat's worth more: law or loaded crates? \nAnd who decides the border gates?\n\nThe mouth don't shout, it hums instead \nThrough rusted ports and deals half-dead \nIt answers only if you bring \nA song, a sign, a smuggler's ring\n\nSo ask it once and ask it true, \nBut mind the price it asks of you"
+                    },
+                    {
+                        "label": "Interpretation",
+                        "url": "data/artifacts/against_magash_consensus.html"
+                    }
+                ]
+            }
+        ]
     }
 ]

@@ -338,9 +338,9 @@ function renderArticle(id) {
         htmlContent += `<div style="margin-top: 2rem; border-top: 1px dashed var(--border-color); padding-top: 1.5rem;">
             <h3 style="color: var(--text-accent); margin-bottom: 1rem;">Audio Archives</h3>
             <div style="display: flex; flex-direction: column; gap: 0.5rem;">`;
-        article.audioFiles.forEach(file => {
+        article.audioFiles.forEach((file, index) => {
             htmlContent += `
-                <button class="nav-item active" style="justify-content: flex-start; display: flex; width: 100%; padding: 0.75rem 1.5rem;" onclick="openAudioArchive('data/artifacts/${file.file}', '${file.title.replace(/'/g, "\\'")}')">
+                <button class="nav-item active" style="justify-content: flex-start; display: flex; width: 100%; padding: 0.75rem 1.5rem;" onclick="openAudioArchive('${article.id}', ${index})">
                     <span class="icon" style="margin-right: 0.5rem;">🔊</span> Play: ${file.title}
                 </button>
             `;
@@ -378,8 +378,12 @@ let audioCtx = null;
 let audioAnalyser = null;
 let animationId = null;
 
-window.openAudioArchive = function (url, title) {
-    document.getElementById('audio-title').textContent = title;
+window.openAudioArchive = function (articleId, fileIndex) {
+    const article = AppState.articles.find(a => a.id === articleId);
+    if (!article || !article.audioFiles || !article.audioFiles[fileIndex]) return;
+
+    const file = article.audioFiles[fileIndex];
+    document.getElementById('audio-title').textContent = file.title;
     const modal = document.getElementById('audio-modal');
     modal.classList.remove('hidden');
 
@@ -387,6 +391,7 @@ window.openAudioArchive = function (url, title) {
     const canvas = document.getElementById('oscilloscope');
     const canvasCtx = canvas.getContext('2d');
 
+    const url = 'data/artifacts/' + file.file;
     audioPlayer.src = url;
     audioPlayer.play().catch(e => console.warn("Autoplay prevented:", e));
 
@@ -406,6 +411,47 @@ window.openAudioArchive = function (url, title) {
     audioAnalyser.fftSize = 2048;
     const bufferLength = audioAnalyser.frequencyBinCount;
     const dataArray = new Uint8Array(bufferLength);
+
+    // Setup Subtext
+    const subtextContainer = document.getElementById('audio-subtext-container');
+    const tabsContainer = document.getElementById('audio-subtext-tabs');
+    const contentContainer = document.getElementById('audio-subtext-content');
+
+    if (file.subtext && file.subtext.length > 0) {
+        subtextContainer.style.display = 'block';
+        tabsContainer.innerHTML = '';
+        contentContainer.innerHTML = '';
+
+        file.subtext.forEach((sub, i) => {
+            const btn = document.createElement('button');
+            btn.className = 'nav-item active';
+            btn.style.cssText = 'padding: 0.5rem 1rem; width: auto; justify-content: center;';
+            btn.textContent = sub.label;
+            btn.onclick = async () => {
+                // Update active state
+                Array.from(tabsContainer.children).forEach(c => c.style.opacity = '0.5');
+                btn.style.opacity = '1';
+                
+                if (sub.content) {
+                    contentContainer.innerHTML = sub.content;
+                } else if (sub.url) {
+                    contentContainer.innerHTML = '<em>Loading...</em>';
+                    try {
+                        const response = await fetch(sub.url);
+                        if (!response.ok) throw new Error('Failed to load subtext');
+                        contentContainer.innerHTML = await response.text();
+                    } catch (e) {
+                        contentContainer.innerHTML = '<span style="color: #ef4444;">Failed to load document.</span>';
+                    }
+                }
+            };
+            tabsContainer.appendChild(btn);
+            if (i === 0) btn.click();
+            else btn.style.opacity = '0.5';
+        });
+    } else {
+        subtextContainer.style.display = 'none';
+    }
 
     function draw() {
         if (modal.classList.contains('hidden')) return; // Stop drawing if closed
