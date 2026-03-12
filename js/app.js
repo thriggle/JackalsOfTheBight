@@ -173,14 +173,14 @@ function updateActiveSidebarState(id) {
     const activeBtn = document.querySelector(`.nav-subitem[data-article-id="${id}"]`);
     if (activeBtn) {
         activeBtn.classList.add('active');
-        
+
         const navGroup = activeBtn.closest('.nav-group');
         if (navGroup) {
             const headingBtn = navGroup.querySelector('.nav-item');
             if (headingBtn) {
                 headingBtn.classList.add('active-parent');
             }
-            
+
             // On desktop, auto-expand the section containing the active article
             if (window.innerWidth > 900) {
                 const subnav = navGroup.querySelector('.nav-subitems');
@@ -328,7 +328,7 @@ function renderArticle(id) {
         htmlContent += `
         <div style="margin-top: 2rem; border-top: 1px dashed var(--border-color); padding-top: 1.5rem; text-align: center;">
             <button class="nav-item active" style="justify-content: center; display: inline-flex; width: auto; padding: 0.75rem 1.5rem;" onclick="openMicrofilm('${article.artifactUrl}', '${article.title.replace(/'/g, "\\'")}')">
-                <span class="icon" style="margin-right: 0.5rem;">🔍</span> View Original Document Archive
+                <span class="icon" style="margin-right: 0.5rem;">🔍</span> View Archived Document
             </button>
         </div>
         `;
