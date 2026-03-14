@@ -19,11 +19,11 @@ class StarMap {
             hexBorder: 'rgba(56, 189, 248, 0.1)',
             bg: '#030407',
             // Factions/Hazards
-            dieback: '#ef4444',
-            arnyl: '#f59e0b',
+            arnyl: '#ef4444',
+            wilds: '#f59e0b',
             qevar: '#10b981',
             dekha: '#0ea5e9',
-            wilds: '#64748b',
+            dieback: '#64748b',
             strong: '#d946ef',
             independent: '#8b5cf6'
         };
@@ -392,6 +392,7 @@ class StarMap {
         if (all.includes('dekha') || all.includes('pentarchy')) return this.colors.dekha;
         if (haz.includes('strong')) return this.colors.strong;
         if (all.includes('independent')) return this.colors.independent;
+        if (haz.includes('wild')) return this.colors.wilds;
 
         return this.colors.textMuted;
     }
