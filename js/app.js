@@ -656,9 +656,60 @@ function _imgSetupInteractions() {
         _imgApplyTransform();
     }, { passive: false });
 
-    // Pointer drag pan
+    // Pinch-to-zoom (touch) ── track two fingers
+    let _pinchDist = null; // distance between two fingers at last touchmove
+
+    function _getTouchDist(t) {
+        const dx = t[0].clientX - t[1].clientX;
+        const dy = t[0].clientY - t[1].clientY;
+        return Math.hypot(dx, dy);
+    }
+    function _getTouchMid(t, rect) {
+        return {
+            x: (t[0].clientX + t[1].clientX) / 2 - rect.left - rect.width  / 2,
+            y: (t[0].clientY + t[1].clientY) / 2 - rect.top  - rect.height / 2,
+        };
+    }
+
+    container.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            e.preventDefault();
+            _pinchDist = _getTouchDist(e.touches);
+            _img.dragging = false; // suspend single-finger drag while pinching
+        }
+    }, { passive: false });
+
+    container.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2 && _pinchDist !== null) {
+            e.preventDefault();
+            const newDist = _getTouchDist(e.touches);
+            if (newDist === 0) return;
+
+            const rect = container.getBoundingClientRect();
+            const mid  = _getTouchMid(e.touches, rect);
+            const ratio = newDist / _pinchDist;
+            const newScale = Math.min(_img.MAX, Math.max(_img.MIN, _img.scale * ratio));
+
+            const scaleRatio = newScale / _img.scale;
+            _img.tx = mid.x - scaleRatio * (mid.x - _img.tx);
+            _img.ty = mid.y - scaleRatio * (mid.y - _img.ty);
+            _img.scale = newScale;
+            _pinchDist = newDist;
+            _imgApplyTransform();
+        }
+    }, { passive: false });
+
+    container.addEventListener('touchend', (e) => {
+        if (e.touches.length < 2) {
+            _pinchDist = null;
+        }
+    });
+
+    // Pointer drag pan (single finger / mouse)
     container.addEventListener('pointerdown', (e) => {
-        if (e.button !== 0) return;
+        // Don't start a drag if we're in a pinch gesture
+        if (e.pointerType === 'touch' && _pinchDist !== null) return;
+        if (e.button !== 0 && e.pointerType !== 'touch') return;
         _img.dragging = true;
         _img.lastX = e.clientX;
         _img.lastY = e.clientY;
@@ -667,7 +718,7 @@ function _imgSetupInteractions() {
     });
 
     container.addEventListener('pointermove', (e) => {
-        if (!_img.dragging) return;
+        if (!_img.dragging || _pinchDist !== null) return;
         _img.tx += e.clientX - _img.lastX;
         _img.ty += e.clientY - _img.lastY;
         _img.lastX = e.clientX;
