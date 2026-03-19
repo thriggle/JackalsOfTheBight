@@ -136,6 +136,43 @@ function setupEventListeners() {
     // Window hash change
     window.addEventListener('hashchange', handleRouting);
 
+    // Global Escape key handler
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            // First check if any modal is open
+            const microfilmModal = document.getElementById('microfilm-modal');
+            const audioModal = document.getElementById('audio-modal');
+            const imageModal = document.getElementById('image-modal');
+            const settingsModal = document.getElementById('settings-modal');
+            
+            let modalClosed = false;
+            
+            if (microfilmModal && !microfilmModal.classList.contains('hidden')) {
+                if (window.closeMicrofilm) window.closeMicrofilm();
+                modalClosed = true;
+            }
+            if (audioModal && !audioModal.classList.contains('hidden')) {
+                if (window.closeAudioArchive) window.closeAudioArchive();
+                modalClosed = true;
+            }
+            if (imageModal && !imageModal.classList.contains('hidden')) {
+                if (window.closeImageArchive) window.closeImageArchive();
+                modalClosed = true;
+            }
+            if (settingsModal && !settingsModal.classList.contains('hidden')) {
+                if (window.closeSettings) window.closeSettings();
+                modalClosed = true;
+            }
+            
+            // If no modal was closed and we are on an article/world/index, go back to map
+            if (!modalClosed) {
+                const hash = window.location.hash;
+                if (hash.startsWith('#article/') || hash.startsWith('#world/') || hash === '#index') {
+                    window.location.hash = ''; // Clear hash returns to map
+                }
+            }
+        }
+    });
 }
 
 function handleRouting() {
@@ -805,6 +842,26 @@ window.closeImageArchive = function () {
     document.getElementById('image-subtext-content').innerHTML = '';
     document.getElementById('image-subtext-tabs').innerHTML = '';
     _imgResetState();
+};
+
+// ── Settings Archive ──────────────────────────────────────────────────────────
+
+window.openSettings = function () {
+    document.getElementById('settings-modal').classList.remove('hidden');
+};
+
+window.closeSettings = function () {
+    document.getElementById('settings-modal').classList.add('hidden');
+};
+
+window.toggleAnimations = function (enabled) {
+    if (window._mapInstance) {
+        if (enabled) {
+            window._mapInstance.startTangleAnimation();
+        } else {
+            window._mapInstance.stopTangleAnimation();
+        }
+    }
 };
 
 // Global start
