@@ -469,7 +469,7 @@ class StarMap {
 
         const anchors = {
             coreward: this.getHexCenter(midCol, this.minRow - 1),
-            rimward: this.getHexCenter(midCol, this.maxRow + 1),
+            rimward: this.getHexCenter(midCol, this.maxRow + 0),
             spinward: this.getHexCenter(this.minCol - 2, midRow),
             trailing: this.getHexCenter(this.maxCol + 2, midRow)
         };

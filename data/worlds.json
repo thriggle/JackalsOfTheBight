@@ -358,5 +358,122 @@
         "allegiance": "Independent",
         "summary": "Rhinom is a populated world ruled by 'the Kashlan,' a charismatic but ruthless premier elected for life. The Kashlan maintains tight control over the system's exports, including the lucrative supply of the narcotic 'eela' produced on its farming moon, Malea.\n\nRhinom's politics are characterized by pragmatic deal-making and a populist facade. It serves as a hub for both legitimate trade and shadow economies. Adventure hooks include negotiating high-stakes trade deals directly with the Kashlan, navigating the complex black market for restricted agricultural goods, or running interference between rival smuggling rings. It is on the edge of the Limmu Bukara (Sabine Empire).",
         "hex": "0717"
+    },
+    {
+        "id": "giffert",
+        "name": "Giffert",
+        "uwp": "E7A8000-D",
+        "hazardLevel": "Dieback world",
+        "allegiance": "Unclaimed",
+        "summary": "Giffert is a dieback world on the trailing edge of the Pashus Cluster, a small constellation of systems rimward of Point Ay. Its population was extinguished long ago, leaving vast oceans undisturbed beneath silent skies.\n\nThe system is occasionally visited by scouts and prospectors out of Pashus, its inhabited neighbor, who survey the empty ocean world for signs of pre-Collapse installations or recoverable resources.",
+        "hex": "1332"
+    },
+    {
+        "id": "pashus",
+        "name": "Pashus",
+        "uwp": "A432474-F",
+        "hazardLevel": "Wild",
+        "allegiance": "Unclaimed",
+        "summary": "Pashus is the beating heart of the Pashus Cluster, a small constellation of systems rimward of Point Ay. Despite its modest population, Pashus boasts a Class A starport and cutting-edge TL-15 infrastructure — a remarkable achievement for a world in the deep Wilds.\n\nThe world's arid, low-pressure environment has bred a hardy and self-reliant population. Its exceptional starport serves as the primary resupply and refit hub for the surrounding cluster worlds, attracting traders and diplomats navigating the sparse rimward lanes.",
+        "hex": "1432"
+    },
+    {
+        "id": "rajan",
+        "name": "Rajan",
+        "uwp": "D87A000-B",
+        "hazardLevel": "Dieback world",
+        "allegiance": "Unclaimed",
+        "summary": "Rajan is a dieback world at the far trailing edge of the Pashus Cluster. Its vast, shallow seas once supported a now-extinct civilization whose records were lost to the Collapse.\n\nAlthough uninhabited, Rajan's water-world environment and intact biosphere make it a candidate for future colonization efforts. Researchers from Pashus periodically visit to catalogue its unusual aquatic ecosystems.",
+        "hex": "1532"
+    },
+    {
+        "id": "shiiku",
+        "name": "Shiiku",
+        "uwp": "D651758-7",
+        "hazardLevel": "Wild",
+        "allegiance": "Unclaimed",
+        "summary": "Shiiku is a settled world within the Pashus Cluster, home to a population of tens of millions carving out a modest existence on a poor, arid world. Its Class D starport handles the traffic of local traders and cluster merchants connecting to the hub at Pashus.\n\nLife on Shiiku is defined by scarcity and pragmatism. The population specializes in dust-farming and mineral extraction, trading raw materials to neighboring systems in exchange for finished goods and technology.",
+        "hex": "1333"
+    },
+    {
+        "id": "atab",
+        "name": "Atab",
+        "uwp": "C540789-8",
+        "hazardLevel": "Wild",
+        "allegiance": "Unclaimed",
+        "summary": "Atab is a desert world in the Pashus Cluster with a sizable population of tens of millions. Its thin, tainted atmosphere and extreme aridity have forced its inhabitants to develop sophisticated underground habitat networks and water reclamation technology.\n\nAtab's Class C starport serves as a secondary trade hub for the cluster. The world's population is largely self-governing, organized into powerful clan-confederacies that control access to water and underground farming infrastructure.",
+        "hex": "1433"
+    },
+    {
+        "id": "giranima",
+        "name": "Giranima",
+        "uwp": "D797873-6",
+        "hazardLevel": "Wild",
+        "allegiance": "Unclaimed",
+        "summary": "Giranima is the rimward anchor of the Pashus Cluster, a fertile garden world supporting hundreds of millions of inhabitants at a modest TL-6. Its broad temperate plains and stable climate made it one of the Cluster's most naturally welcoming worlds.\n\nDespite its agricultural richness, Giranima's low technology level leaves it dependent on Pashus for advanced goods and starship maintenance. The world is governed by a decentralized collection of agricultural councils, which jealously guard their world's food surplus as a diplomatic bargaining chip.",
+        "hex": "1334"
+    },
+    {
+        "id": "maricutin",
+        "name": "Maricutin",
+        "uwp": "X765000-A",
+        "hazardLevel": "Dieback world",
+        "allegiance": "Unclaimed",
+        "summary": "Maricutin is a dieback world located two hexes rimward of Briaxis, on the spinward edge of what is loosely called the Preslin Cluster. Its lush, garden-category environment is a haunting contrast to its total depopulation — a civilization snuffed out and forgotten.\n\nThe world's Class X non-starport and lack of any living population make it a blank slate for opportunists. Its rich biosphere and temperate climate are well-documented by Preslin scouts, who periodically include it on survey runs.",
+        "hex": "0534"
+    },
+    {
+        "id": "preslin",
+        "name": "Preslin",
+        "uwp": "B430635-C",
+        "hazardLevel": "Wild",
+        "allegiance": "Jonkeereen Independent State",
+        "summary": "Preslin is a Jonkeereen world — home to a native desert-adapted human subspecies uniquely suited to its dry, thin-atmosphere environment. The Jonkeereen of Preslin have channeled their world's harsh conditions into a fierce martial tradition, building the formidable Preslin Star Navy: a well-equipped and highly disciplined fleet that projects power across the surrounding cluster and beyond.\n\nThe Star Navy is both Preslin's greatest achievement and its most defining feature. It serves as a deterrent to corsair incursions, a police force for nearby uninhabited systems, and an occasional enforcer of Preslin's commercial interests. Traders who earn the Star Navy's favor find Preslin's Class B starport a welcome and reliable resupply point; those who cross it tend not to return.",
+        "hex": "0633"
+    },
+    {
+        "id": "raguseppe",
+        "name": "Raguseppe",
+        "uwp": "B410531-A",
+        "hazardLevel": "Wild",
+        "allegiance": "Unclaimed",
+        "summary": "Raguseppe is a vacuum world with a population of hundreds of thousands clustered in pressurized habitation domes built within a rich asteroid belt system. Its Class B starport makes it an important logistics node for traders moving between the Preslin Cluster and the broader Wilds.\n\nThe world's government maintains close ties with Preslin, relying on the Star Navy for protection. In exchange, Raguseppe provides skilled vacuum-construction labor and habitat engineering expertise that underpins much of the Cluster's infrastructure.",
+        "hex": "0734"
+    },
+    {
+        "id": "mephit",
+        "name": "Mephit",
+        "uwp": "E9B8000-8",
+        "hazardLevel": "Dieback world",
+        "allegiance": "Unclaimed",
+        "summary": "Mephit is a dieback world within the Preslin Cluster, a deep-ocean world whose former civilization left scant traces above the crushing pressure of its global sea. The world is classified as a non-starport system and sees little traffic.\n\nOccasional deep-sea survey probes from Preslin have recovered pre-Collapse structural fragments from Mephit's abyssal plains, hinting at a civilization that built downward into the ocean rather than upward into the sky.",
+        "hex": "0833"
+    },
+    {
+        "id": "echura",
+        "name": "Echura",
+        "uwp": "C683745-8",
+        "hazardLevel": "Wild",
+        "allegiance": "Unclaimed",
+        "summary": "Echura is a rich world — blessed with abundant resources, favorable trade conditions, and a comfortable biosphere that supports tens of millions of inhabitants. However, Echura is perhaps most famous across the Cluster for its deeply confusing customs: an elaborate web of social protocols, gift-giving obligations, seasonal taboos, and multi-layered honorifics that have tripped up generations of off-world traders.\n\nNavigating Echura's social landscape is considered a professional skill in itself. Traders who invest the time to learn local customs find an exceptionally profitable trading partner; those who blunder through negotiations often find deals inexplicably collapsed and doors politely but firmly closed. Several small consultancy firms operate out of Preslin specifically to coach merchants before their Echura runs.",
+        "hex": "0933"
+    },
+    {
+        "id": "quinthept",
+        "name": "Quinthept",
+        "uwp": "D521000-A",
+        "hazardLevel": "Dieback world",
+        "allegiance": "Unclaimed",
+        "summary": "Quinthept is a dieback world at the coreward edge of the Preslin Cluster's influence. Its thin, tainted atmosphere and minimal resources made it a marginal colony even before the Collapse; whatever population it once held vanished without significant trace.\n\nThe system sees occasional traffic from Preslin Navy patrol routes, which use its empty system as a waypoint and navigational anchor for the cluster's trailing approaches.",
+        "hex": "1032"
+    },
+    {
+        "id": "keirei",
+        "name": "Keirei",
+        "uwp": "X310000-B",
+        "hazardLevel": "Dieback world",
+        "allegiance": "Unclaimed",
+        "summary": "Keirei is a dieback world at the trailing edge of the Preslin Cluster, an airless rock whose former inhabitants left behind only fragmentary orbital debris. Its non-existent starport rating reflects years of complete neglect.\n\nDespite its desolation, Keirei's position makes it a useful navigational waypoint for ships moving between the Preslin Cluster and the worlds further trailing. Prospectors occasionally stop to check for recoverable salvage in its debris field.",
+        "hex": "1133"
     }
 ]
