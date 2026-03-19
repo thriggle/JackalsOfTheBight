@@ -345,7 +345,7 @@ function renderWorld(id) {
 
 
 
-    els.detailContent.innerHTML = `
+    let htmlContent = `
     <h1 class="article-title">${world.name}</h1>
     <div class="article-meta">
       <span class="overlay-uwp">${world.uwp}</span>
@@ -356,8 +356,50 @@ function renderWorld(id) {
     </div>
     <div class="article-content">
       ${formatContentToHTML(world.summary, id)}
-    </div>
-  `;
+    `;
+
+    const rawRelated = [];
+    AppState.articles.forEach(a => {
+        if (a.tags && a.tags.includes(world.name)) {
+            rawRelated.push({
+                type: 'article',
+                id: a.id,
+                title: a.title,
+                sharedTags: [world.name]
+            });
+        }
+    });
+
+    if (rawRelated.length > 0) {
+        htmlContent += `<div style="margin-top: 2rem; border-top: 1px dashed var(--border-color); padding-top: 1.5rem;">
+            <h3 style="color: var(--text-accent); margin-bottom: 1rem;">Related</h3>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">`;
+        
+        rawRelated.sort((a, b) => a.title.localeCompare(b.title));
+        
+        rawRelated.forEach(r => {
+            const sharedTagsHtml = r.sharedTags
+                .map(t => `<span class="badge" style="background:rgba(255,255,255,0.05); color: var(--text-muted); border-color: transparent;">#${t}</span>`)
+                .join('');
+                                     
+            const linkHref = `#article/${r.id}`;
+            
+            htmlContent += `
+                <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 4px; padding: 0.75rem 1rem;">
+                    <div style="display:flex; align-items: baseline; gap: 0.75rem;">
+                        <a href="${linkHref}" class="inline-link" style="font-size: 1rem; border-bottom: none;">${r.title}</a>
+                    </div>
+                    <div style="display: flex; gap: 0.3rem;">
+                        ${sharedTagsHtml}
+                    </div>
+                </div>
+            `;
+        });
+        htmlContent += `</div></div>`;
+    }
+
+    htmlContent += `</div>`;
+    els.detailContent.innerHTML = htmlContent;
 }
 
 function renderIndex() {
@@ -483,6 +525,62 @@ function renderArticle(id) {
             `;
         });
         htmlContent += `</div></div>`;
+    }
+
+    if (article.tags && article.tags.length > 0) {
+        const rawRelated = [];
+        
+        AppState.articles.forEach(a => {
+            if (a.id !== article.id && a.tags && a.tags.some(t => article.tags.includes(t))) {
+                rawRelated.push({
+                    type: 'article',
+                    id: a.id,
+                    title: a.title,
+                    sharedTags: a.tags.filter(t => article.tags.includes(t))
+                });
+            }
+        });
+        
+        AppState.worlds.forEach(w => {
+            if (article.tags.includes(w.name)) {
+                rawRelated.push({
+                    type: 'world',
+                    id: w.id,
+                    title: w.name,
+                    sharedTags: [w.name]
+                });
+            }
+        });
+        
+        if (rawRelated.length > 0) {
+            htmlContent += `<div style="margin-top: 2rem; border-top: 1px dashed var(--border-color); padding-top: 1.5rem;">
+                <h3 style="color: var(--text-accent); margin-bottom: 1rem;">Related</h3>
+                <div style="display: flex; flex-direction: column; gap: 0.5rem;">`;
+            
+            rawRelated.sort((a, b) => a.title.localeCompare(b.title));
+            
+            rawRelated.forEach(r => {
+                const sharedTagsHtml = r.sharedTags
+                    .map(t => `<span class="badge" style="background:rgba(255,255,255,0.05); color: var(--text-muted); border-color: transparent;">#${t}</span>`)
+                    .join('');
+                                         
+                const linkHref = r.type === 'article' ? `#article/${r.id}` : `#world/${r.id}`;
+                const badgeLabel = r.type === 'world' ? `<span class="badge" style="background:rgba(255,255,255,0.1); font-size: 0.65rem; padding: 0.15rem 0.4rem; border-color: transparent; margin-right: 0.5rem;">World</span>` : '';
+                
+                htmlContent += `
+                    <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 4px; padding: 0.75rem 1rem;">
+                        <div style="display:flex; align-items: baseline; gap: 0.75rem;">
+                            ${badgeLabel}
+                            <a href="${linkHref}" class="inline-link" style="font-size: 1rem; border-bottom: none;">${r.title}</a>
+                        </div>
+                        <div style="display: flex; gap: 0.3rem;">
+                            ${sharedTagsHtml}
+                        </div>
+                    </div>
+                `;
+            });
+            htmlContent += `</div></div>`;
+        }
     }
 
     htmlContent += `</div>`;
