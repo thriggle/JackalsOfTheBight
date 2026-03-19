@@ -156,8 +156,8 @@
         "id": "shen-yang",
         "name": "Shen-Yang",
         "uwp": "C665575-5",
-        "hazardLevel": "Corsair raids, extortion",
-        "allegiance": "Independent City-States / Skopyeh Tributary",
+        "hazardLevel": "Wild, Corsair raids, extortion",
+        "allegiance": "Skopyeh Tributary",
         "summary": "Shen-Yang is a TL-5 agricultural garden world with a scattered population of 300,000 living in independent rural city-states. Without significant planetary defenses, the populace relies on offering tribute to corsair lords—primarily from Skopyeh—in exchange for protection, though this relationship frequently swings into outright racketeering and raiding when tribute is withheld.\n\nSome of the agricultural city-states are allegedly populated entirely by pirate outcasts and exiles trying to earn their way back into the fleet. It serves as a prime location for adventures involving defending farming settlements from pirate raids, smuggling agricultural goods past corsair blockades, or dealing with pirate exiles hiding among the populace.",
         "hex": "0727"
     },
@@ -193,7 +193,7 @@
         "name": "Taburi Nen",
         "uwp": "D546000-B",
         "hazardLevel": "Dieback world, rogue machines",
-        "allegiance": "Unclaimed / Rogue Sentinel",
+        "allegiance": "Unclaimed",
         "summary": "Taburi Nen was once a critical agricultural supplier for Dekha until a mysterious machine uprising wiped out the human population and shut down food shipments. Now classified as an unstable dieback world, its surface is roamed by remnants of agricultural automation running purposeless routines. The planet is surrounded by extensive, treacherous debris fields composed of ruined orbital infrastructure and destroyed Dekhan emergency response vessels.\n\nAdventure hooks include scavenging high-tech Dekhan wreckage, dodging rogue surface harvesters, or investigating the cause of the machine uprising.",
         "hex": "1227"
     },
@@ -237,8 +237,8 @@
         "id": "condamine",
         "name": "Condamine",
         "uwp": "C665572-7",
-        "hazardLevel": "Targeted by Sentinel",
-        "allegiance": "Independent",
+        "hazardLevel": "Targeted by Sentinel, wild",
+        "allegiance": "Wild",
         "summary": "Condamine is a balkanized garden world with hundreds of thousands of inhabitants. During a massive machine uprising that devastated Dekha's primary agricultural supplier (Taburi Nen), Condamine was identified by the AI Pentarch 'Sentinel' as a primary target for aggressive military raids to secure its biosphere resources by force.\n\nThis proposed orbital invasion was narrowly avoided only because another Pentarch, 'Manciple', vetoed the action, insisting instead on mitigating the food crisis through internal synthetic production. The inhabitants of Condamine remain largely ignorant of how close they came to annihilation by Dekhan forces.",
         "hex": "1428"
     },
@@ -246,8 +246,8 @@
         "id": "ishiri",
         "name": "Ishiri",
         "uwp": "E565855-6",
-        "hazardLevel": "Targeted by Sentinel",
-        "allegiance": "Independent",
+        "hazardLevel": "Targeted by Sentinel, wild",
+        "allegiance": "Wild",
         "summary": "Ishiri is a highly populated, pre-agricultural world governed by a feudal technocracy and home to hundreds of millions of citizens. Driven by the starvation crisis triggered by the loss of Taburi Nen, the Dekhan AI Pentarch 'Sentinel' forcefully advocated for immediate military raids on Ishiri to extract its resources.\n\nThe invasion was prevented by a political deadlock within the Pentarchy, spearheaded by 'Manciple', who argued against exposing Dekhan citizens to the external dangers of invading heavily populated systems. Though spared for now, Ishiri remains a highly vulnerable target should the Pentarchy's internal synthetic food production fail.",
         "hex": "1429"
     },
@@ -437,7 +437,7 @@
         "uwp": "B410531-A",
         "hazardLevel": "Wild",
         "allegiance": "Unclaimed",
-        "summary": "Raguseppe is a vacuum world with a population of hundreds of thousands clustered in pressurized habitation domes built within a rich asteroid belt system. Its Class B starport makes it an important logistics node for traders moving between the Preslin Cluster and the broader Wilds.\n\nThe world's government maintains close ties with Preslin, relying on the Star Navy for protection. In exchange, Raguseppe provides skilled vacuum-construction labor and habitat engineering expertise that underpins much of the Cluster's infrastructure.",
+        "summary": "Raguseppe is a desert world with a trace atmosphere and a population of hundreds of thousands that survives clustered in pressurized habitation domes. Its Class B starport makes it an important logistics node for traders moving between the Preslin Cluster and the broader Wilds.\n\nThe world's government maintains close ties with Preslin, relying on the Star Navy for protection.",
         "hex": "0734"
     },
     {
@@ -446,7 +446,7 @@
         "uwp": "E9B8000-8",
         "hazardLevel": "Dieback world",
         "allegiance": "Unclaimed",
-        "summary": "Mephit is a dieback world within the Preslin Cluster, a deep-ocean world whose former civilization left scant traces above the crushing pressure of its global sea. The world is classified as a non-starport system and sees little traffic.\n\nOccasional deep-sea survey probes from Preslin have recovered pre-Collapse structural fragments from Mephit's abyssal plains, hinting at a civilization that built downward into the ocean rather than upward into the sky.",
+        "summary": "Mephit is a dieback world within the Preslin Cluster. While Imperial records indicate it once hosted a scout base, its unforgiving corrosive atmosphere has left little behind but patches of landing pads and scattered debris fields.",
         "hex": "0833"
     },
     {
