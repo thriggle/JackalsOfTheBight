@@ -266,7 +266,7 @@
         "uwp": "C560544-9",
         "hazardLevel": "Wild",
         "allegiance": "Unclaimed",
-        "summary": "Point Ay is a Wilds world.",
+        "summary": "Point Ay is a Wilds world at the rimward edge of charted space, notable chiefly as the last reliable waypoint before the Pashus Cluster. Navigators who have pushed beyond Point Ay report that something is wrong with jump space out that way — ships calculate routes to Pashus that should be routine and emerge from jump in the wrong system, or months late, or not at all.\n\nThe few traders who maintain irregular runs to the Cluster depart from Point Ay with unusual care, and most won't share their astrogation data. Rumored to be a route — stable for now, though nobody will confirm how long — threading through the hazard to Pashus. If it exists, whoever found it isn't advertising.",
         "hex": "1231"
     },
     {
@@ -363,45 +363,45 @@
         "id": "giffert",
         "name": "Giffert",
         "uwp": "E7A8000-D",
-        "hazardLevel": "Dieback world",
+        "hazardLevel": "Dieback world, Pashus Tangle",
         "allegiance": "Unclaimed",
-        "summary": "Giffert is a dieback world on the trailing edge of the Pashus Cluster, a small constellation of systems rimward of Point Ay. Its population was extinguished long ago, leaving vast oceans undisturbed beneath silent skies.\n\nThe system is occasionally visited by scouts and prospectors out of Pashus, its inhabited neighbor, who survey the empty ocean world for signs of pre-Collapse installations or recoverable resources.",
+        "summary": "Giffert is a dieback world on the trailing edge of the Pashus Cluster, its vast, still oceans undisturbed for centuries beneath haze-filtered skies. Whatever civilization once existed here left no useful records; the population was extinguished long enough ago that the cause is a matter of archaeological inference rather than history.\n\nThe system sits squarely within the Pashus Tangle, and the jump-space distortion that envelops this region makes Giffert as hard to reach as the inhabited worlds around it. Survey teams from Pashus have mapped the system thoroughly — it is the kind of place that a well-equipped technical civilization spends time documenting when outward expansion is not an option. What they have found is occasionally transmitted via relay to the few traders who pass through the Cluster, but the data tends to arrive incomplete and months out of date.",
         "hex": "1332"
     },
     {
         "id": "pashus",
         "name": "Pashus",
         "uwp": "A432474-F",
-        "hazardLevel": "Wild",
+        "hazardLevel": "Wild, Pashus Tangle",
         "allegiance": "Unclaimed",
-        "summary": "Pashus is the beating heart of the Pashus Cluster, a small constellation of systems rimward of Point Ay. Despite its modest population, Pashus boasts a Class A starport and cutting-edge TL-15 infrastructure — a remarkable achievement for a world in the deep Wilds.\n\nThe world's arid, low-pressure environment has bred a hardy and self-reliant population. Its exceptional starport serves as the primary resupply and refit hub for the surrounding cluster worlds, attracting traders and diplomats navigating the sparse rimward lanes.",
+        "summary": "Pashus is the center of its cluster and almost nothing else is known about it with confidence. Somewhere beyond the Tangle — the jump-space disturbance that has made this region a navigation hazard since the Collapse — sits a world with a Class A starport and TL-15 infrastructure. The evidence for this is not rumor: it trickles out in the form of people. Spacers emerge from the Tangle in aging but immaculately maintained ships, carrying technical components of obvious quality and speaking of a world that has turned entirely inward since the disaster.\n\nThe stories they tell are consistent on a few points. Pashus did not fall. It contracted. The old research station, whatever its original purpose, is either still operational or has been absorbed into something larger. The population is small, self-sufficient, and deeply uninterested in contact with the broader Wilds. The routes in are not published — they shift, or they are deliberately kept obscure — and the people who come out are not, as a rule, forthcoming about how they got through. They answer questions with the particular patience of individuals who have decided it is not worth arguing. If you want to find Pashus, it is generally suggested that you start at Point Ay and ask very carefully.",
         "hex": "1432"
     },
     {
         "id": "rajan",
         "name": "Rajan",
         "uwp": "D87A000-B",
-        "hazardLevel": "Dieback world",
+        "hazardLevel": "Dieback world, Pashus Tangle",
         "allegiance": "Unclaimed",
-        "summary": "Rajan is a dieback world at the far trailing edge of the Pashus Cluster. Its vast, shallow seas once supported a now-extinct civilization whose records were lost to the Collapse.\n\nAlthough uninhabited, Rajan's water-world environment and intact biosphere make it a candidate for future colonization efforts. Researchers from Pashus periodically visit to catalogue its unusual aquatic ecosystems.",
+        "summary": "Rajan is a dieback world at the far trailing edge of the Pashus Cluster, a vast shallow-seas world whose former inhabitants left behind little more than submerged foundations and the occasional reef of corroded structural alloy. It lies well inside the Pashus Tangle, and the jump-space hazard that defines this region means it receives less traffic than its position might otherwise suggest — which is to say, almost none at all.\n\nResearchers from Pashus include Rajan in their survey rotation. Transmissions from the Cluster that reach the wider Wilds occasionally reference findings from Rajan's abyssal zones, framed in the dry, technical language of a civilization that has had several centuries to fill its time with careful observation. Nobody on the outside has been able to verify the data.",
         "hex": "1532"
     },
     {
         "id": "shiiku",
         "name": "Shiiku",
         "uwp": "D651758-7",
-        "hazardLevel": "Wild",
+        "hazardLevel": "Wild, Pashus Tangle",
         "allegiance": "Unclaimed",
-        "summary": "Shiiku is a settled world within the Pashus Cluster, home to a population of tens of millions carving out a modest existence on a poor, arid world. Its Class D starport handles the traffic of local traders and cluster merchants connecting to the hub at Pashus.\n\nLife on Shiiku is defined by scarcity and pragmatism. The population specializes in dust-farming and mineral extraction, trading raw materials to neighboring systems in exchange for finished goods and technology.",
+        "summary": "Shiiku is a settled arid world within the Pashus Tangle, home to tens of millions who have spent generations adapting to the particular isolation that the jump-space hazard imposes. Travel out of the Cluster is unreliable and expensive; Shiiku's population has responded by becoming exceptionally self-sufficient in the ways that matter, building a society organized around dust-farming and deep mineral extraction that does not depend on regular outside contact.\n\nThe Tangle has shaped the character of the world as much as its thin atmosphere and chronic water scarcity. Shiiku's people are not unfriendly, but they have little practice with outsiders and somewhat less patience for them.",
         "hex": "1333"
     },
     {
         "id": "atab",
         "name": "Atab",
         "uwp": "C540789-8",
-        "hazardLevel": "Wild",
+        "hazardLevel": "Wild, Pashus Tangle",
         "allegiance": "Unclaimed",
-        "summary": "Atab is a desert world in the Pashus Cluster with a sizable population of tens of millions. Its thin, tainted atmosphere and extreme aridity have forced its inhabitants to develop sophisticated underground habitat networks and water reclamation technology.\n\nAtab's Class C starport serves as a secondary trade hub for the cluster. The world's population is largely self-governing, organized into powerful clan-confederacies that control access to water and underground farming infrastructure.",
+        "summary": "Atab is a desert world in the Pashus Tangle, home to roughly 80 million Jonkeereen — one of the largest surviving concentrations of the subspecies outside of Jonkeer itself. They arrived here during the Ministry of Colonisation's forced transplant program and have been effectively isolated from the broader Jonkeereen diaspora for most of the post-Collapse period. The cultural drift is significant: tribal third-surnames, verbal shorthand dialect, and many traditions have evolved independently over the intervening centuries, and contact with the Jonkeereen of Jonkeer or Preslin would encounter as much strangeness as recognition.\n\nThe Tangle contributes to Atab's isolation, but the Jonkeereen here had already built a self-contained society before navigation through the hazard became a live question. They are not hostile to outsiders who arrive through the Cluster's uncertain routes, but they have the particular aloofness of a population that has not needed much from anyone in a long time and has organized its institutions accordingly. The elder councils govern through the three-name framework, and outside proposals — trade agreements, mutual defense arrangements, anything requiring compliance in exchange for external benefit — tend to move slowly through deliberation and arrive at refusal.",
         "hex": "1433"
     },
     {
@@ -410,7 +410,7 @@
         "uwp": "D797873-6",
         "hazardLevel": "Wild",
         "allegiance": "Unclaimed",
-        "summary": "Giranima is the rimward anchor of the Pashus Cluster, a fertile garden world supporting hundreds of millions of inhabitants at a modest TL-6. Its broad temperate plains and stable climate made it one of the Cluster's most naturally welcoming worlds.\n\nDespite its agricultural richness, Giranima's low technology level leaves it dependent on Pashus for advanced goods and starship maintenance. The world is governed by a decentralized collection of agricultural councils, which jealously guard their world's food surplus as a diplomatic bargaining chip.",
+        "summary": "At the rimward edge of the Pashus Cluster, the Giranima system has a large population of around 900 million spread amongst feuding factions. The world's technology level has declined to pre-space flight since the emergence of the Pashus Tangle cut it off from the cluster, and internal strife has left scars of atomic weapons on its surface. An increasingly pastoral world with a history of corsair exploitation, its people are generally wary of outsiders.",
         "hex": "1334"
     },
     {

@@ -46,7 +46,7 @@
 
         <div class="nav-group">
           <button class="nav-item" data-category="Sophont" title="Sophonts">
-            <span class="icon">🧬</span><span class="nav-label"> Sophonts</span>
+            <span class="icon">🧬</span><span class="nav-label"> Contact!</span>
           </button>
           <div class="nav-subitems hidden" id="nav-sophont"></div>
         </div>
@@ -85,6 +85,7 @@
           <span class="icon">🗂️</span><span class="nav-label"> Index</span>
         </button>
       </div>
+
     </nav>
 
     <!-- Main Content Area -->
@@ -216,6 +217,26 @@
           <div id="image-subtext-content"
             style="color: var(--text-color); font-size: 0.95rem; line-height: 1.5; white-space: pre-wrap; margin-top: 1rem;">
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Settings Modal -->
+  <div id="settings-modal" class="microfilm-modal hidden">
+    <div class="microfilm-backdrop" onclick="closeSettings()"></div>
+    <div class="microfilm-content" style="max-width: 400px; height: auto;">
+      <div class="microfilm-header">
+        <h2 id="settings-title" style="color: var(--text-main);">Settings</h2>
+        <button id="closeSettingsBtn" class="close-btn" onclick="closeSettings()">&times;</button>
+      </div>
+      <div class="microfilm-body crt-effect" style="padding: 2rem; overflow: hidden;">
+        <div class="setting-row" style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-size: 1.1rem; color: var(--text-accent); font-family: var(--font-main);">Animations</span>
+          <label class="switch">
+            <input type="checkbox" id="toggle-animations" checked onchange="toggleAnimations(this.checked)">
+            <span class="slider round"></span>
+          </label>
         </div>
       </div>
     </div>

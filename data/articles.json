@@ -50,8 +50,7 @@
             "Qevar",
             "Askigaak",
             "Sigka",
-            "Bioengineering",
-            "Cult"
+            "Giskaani"
         ],
         "content": [
             "Formed by traumatized refugees following the ecological collapse of Askigaak, this faction took control of the Qevar naval base and integrated with an existing human commune's \"Giskaani\" philosophy. They operate the only Class A starport in the Askigaak Bight, utilizing their TL-14 naval assets and advanced technical expertise to maintain independence from the region's corsair lords.",
@@ -560,6 +559,29 @@
                     }
                 ]
             }
+        ]
+    },
+    {
+        "id": "the-jonkeereen",
+        "title": "The Jonkeereen",
+        "category": "Sophont",
+        "tags": [
+            "Jonkeereen",
+            "Atab",
+            "Preslin",
+            "Jonkeer",
+            "Desert",
+            "Subspecies",
+            "Ministry of Colonisation"
+        ],
+        "content": [
+            "<strong>Physiology:</strong> The Jonkeereen are a genetically engineered human subspecies designed to survive in hostile desert environments. They are not cross-fertile with baseline humanity. They average 2.1 meters (males) and 2.0 meters (females), with lean builds and an exceptionally efficient perspiration system that allows them to endure temperatures exceeding 50°C with significantly less water loss than baseline humans. Their bodies store water for extended periods and extract greater nutrition from smaller quantities of food. Their skin is dark and dry; they have no facial hair, and their head hair grows in an exaggerated widow's peak with a pronounced receding hairline. Protective membranes shield their eyes and ears from windblown sand and dust. Their eyes are slightly larger than baseline, set farther apart, with a dark, glassy appearance. Their ears sit flat against the skull. Their natural lifespan is 60 to 65 years. Females have a 10-month gestation period, and multiple births are virtually unknown.",
+            "<strong>Origins and History:</strong> The Jonkeereen Project began in 528 Imperial under the Ministry of Colonisation, which sought a subspecies capable of inhabiting worlds too harsh for baseline humanity. By 600, three generations had established themselves on the test world of Jonkeer in the Vincennes Cluster of Deneb Sector. By 700, the Ministry was forcibly transplanting Jonkeereen to desert worlds across the Domain of Deneb. In 1083, the tribes of Jonkeer united under Chief Tabali and rose against the forced relocations. A second uprising in 1101 followed fears that SuSAG intended to deploy a retrovirus against them. Imperial Marines killed Tabali; SuSAG negotiated the peace. Both uprisings failed militarily but established a cultural posture of resistance to outside authority that has persisted ever since. Chief Tabali has grown from historical figure to founding myth — his story varied in detail by tribe but consistent in meaning: outside powers cannot be trusted with Jonkeereen lives.",
+            "<strong>The Empress Wave and its Consequences:</strong> The Empress Wave hit the Jonkeereen harder demographically than most species. A 10-month gestation, no multiple births, and a maximum lifespan of 65 years left almost no buffer against mass casualties among the young. Decades passed before each lost cohort could be replaced. The oral traditions, tribal law, and verbal shorthand held by elders were among the first casualties. The diaspora communities the Ministry had seeded on mixed worlds — dependent on urban infrastructure that the Collapse destroyed — were largely wiped out. The surviving Jonkeereen populations contracted to a handful of worlds.",
+            "<strong>Jonkeer:</strong> Jonkeer's population stands at roughly 100 million, down from 400 million at the height of the Imperium. With the colonial administrative apparatus gone, the homeworld turned inward. Tribal structure, always central to Jonkeereen society, became its explicit government. The three-name system — given name, family surname, tribal surname — now functions as legal and political framework; a Jonkeereen's tribal third-name determines their obligations, rights, marriage prospects, and standing in any dispute. Elder councils are the sole governing authority. The lesson of the Tabali uprisings has current application: Jonkeer is aware of which powers have ambitions in the Vincennes Cluster and is unreceptive to any proposal — integration, mutual defense, tributary arrangement — that requires Jonkeereen compliance in exchange for Jonkeereen cooperation. Where corsairs resist imperial organization through predation, the Jonkeereen of Jonkeer resist it through refusal, and unlike corsairs they cannot be bought or suppressed into compliance.",
+            "<strong>Preslin:</strong> Preslin orbits a red dwarf rimward of the Askigaak Bight: a small, low-gravity desert world with a trace atmosphere and no surface water. Ninety percent of its million residents are Jonkeereen, governed by elder council in the traditional manner. Preslin operates at TL-12, well above what its economic base would naturally support, and maintains an active naval base — a direct response to the Arnyl Admiralty's habit of extracting tribute from weaker systems. Preslin declined that arrangement and invested in the technology to make declining credible. The neighboring worlds Raguseppe and Echura are not formal clients, but the three worlds function as a mutual survival cluster: Preslin provides security and high-technology services; Raguseppe likely shares tribal networks with the Jonkeereen population; Echura provides economic depth the other two cannot generate alone.",
+            "<strong>The Scattered Communities:</strong> The remaining Jonkeereen populations outside Jonkeer and Preslin share physiology and naming conventions but little else. Atab, isolated within the Pashus Tangle, has 80 million Jonkeereen — healthy and self-sustaining, but culturally drifted so far from Jonkeer that reestablished contact would encounter as much strangeness as recognition. Orenberg, far coreward in the Deneb Wilds, has a Jonkeereen majority of around 800,000 with even less contact and is probably the most culturally distinct surviving population. Redemption, coreward of the Vincennes and Deneb clusters, appears to have been founded or renamed during the crisis period. Melior, rimward of the Duchy of Mora, retains a 50% Jonkeereen population but the total has collapsed to around 10,000 — the proportion held as the population fell, suggesting Jonkeereen and non-Jonkeereen communities there survived or failed together. On Urnas, outside the Deneb Wilds, 400 million Jonkeereen live as roughly 20% of the population under a TL-9 Law Level F religious dictatorship. The Imperial transplant program placed them there; the post-Collapse regime kept them.",
+            "<strong>The Jonkeereen in the Galaxiad Era:</strong> The Jonkeereen were engineered as a colonial tool, scattered across hostile worlds by an institution that no longer exists. The Ministry of Colonisation is dissolved. SuSAG operates in the shadow of its former self. What persists is a species distributed across a dozen worlds in radically different circumstances — from the functional near-polity of Preslin to the theocratic captivity of Urnas — with no shared political structure and no common leadership. Their unity is biological and cultural: the same physiology, the same three-name system, the same instinct toward tribal self-governance, and a shared historical memory of what happens when they trust an empire. In the Wilds, where most of the worlds they inhabit are of marginal economic interest to any expansionist power, that has generally been sufficient."
         ]
     }
 ]

@@ -12,6 +12,8 @@ class StarMap {
         this.scale = 1;
         this.isDragging = false;
         this.lastMouse = { x: 0, y: 0 };
+        this.tangleTime = 0;
+        this.isAnimating = false;
 
         this.colors = {
             text: '#e2e8f0',
@@ -106,7 +108,116 @@ class StarMap {
 
         this.resize();
         this.centerMap();
+        this.startTangleAnimation();
+    }
+
+    startTangleAnimation() {
+        if (this.isAnimating) return;
+        this.isAnimating = true;
+        const animate = (ts) => {
+            if (!this.isAnimating) return;
+            this.tangleTime = ts * 0.001;
+            this.draw();
+            requestAnimationFrame(animate);
+        };
+        requestAnimationFrame(animate);
+    }
+
+    stopTangleAnimation() {
+        this.isAnimating = false;
         this.draw();
+    }
+
+    drawTangle(ctx) {
+        const t = this.tangleTime;
+        const R = this.hexRadius;
+
+        // The 7 hexes that form the tangle footprint
+        const tangleHexes = [
+            { col: 14, row: 31 }, // 1431 – empty, coreward of Pashus
+            { col: 13, row: 32 }, // 1332 – Giffert
+            { col: 14, row: 32 }, // 1432 – Pashus (centre)
+            { col: 15, row: 32 }, // 1532 – Rajan
+            { col: 13, row: 33 }, // 1333 – Shiiku
+            { col: 14, row: 33 }, // 1433 – Atab
+            { col: 15, row: 33 }, // 1533 – empty, rimward of Rajan
+        ];
+
+        const centers = tangleHexes.map(h => this.getHexCenter(h.col, h.row));
+        const cx = centers.reduce((s, c) => s + c.x, 0) / centers.length;
+        const cy = centers.reduce((s, c) => s + c.y, 0) / centers.length;
+
+        const blobR  = R * 1.18;   // base blob radius per hex
+        const amp1   = R * 0.13;   // primary wave amplitude
+        const amp2   = R * 0.06;   // secondary wave amplitude
+        const N      = 60;         // path resolution
+
+        // Colour tokens
+        const fillA   = 'rgba(245, 158, 11, 0.09)';
+        const fillB   = 'rgba(245, 158, 11, 0.06)';
+        const fillC   = 'rgba(245, 158, 11, 0.04)';
+        const strokeC = 'rgba(245, 158, 11, 0.28)';
+
+        ctx.save();
+
+        // Helper: draw one wavy circle around a centre point
+        const wavyPath = (cx, cy, rBase, timeOffset, sizeScale) => {
+            ctx.beginPath();
+            for (let i = 0; i <= N; i++) {
+                const ang = (i / N) * Math.PI * 2;
+                const wave = amp1 * Math.sin(3 * ang + t * 1.6 + timeOffset)
+                           + amp2 * Math.sin(7 * ang - t * 0.9 + timeOffset * 1.4);
+                const r = rBase * sizeScale + wave;
+                const px = cx + r * Math.cos(ang);
+                const py = cy + r * Math.sin(ang);
+                if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+            }
+            ctx.closePath();
+        };
+
+        // Three fill passes – progressively larger and more transparent
+        const passes = [
+            { fill: fillA, scale: 1.00 },
+            { fill: fillB, scale: 1.10 },
+            { fill: fillC, scale: 1.22 },
+        ];
+        for (const { fill, scale } of passes) {
+            ctx.fillStyle = fill;
+            for (const c of centers) {
+                const phase = (c.x * 0.008 + c.y * 0.006);
+                wavyPath(c.x, c.y, blobR, phase, scale);
+                ctx.fill();
+            }
+        }
+
+        // Glowing edge stroke
+        ctx.shadowColor = 'rgba(245, 158, 11, 0.55)';
+        ctx.shadowBlur  = 18;
+        ctx.strokeStyle = strokeC;
+        ctx.lineWidth   = 1.5;
+        for (const c of centers) {
+            const phase = (c.x * 0.008 + c.y * 0.006);
+            wavyPath(c.x, c.y, blobR, phase, 1.0);
+            ctx.stroke();
+        }
+        ctx.shadowBlur = 0;
+
+        // Label – offset coreward-spinward, gently rotated
+        const labelOpacity = 0.60 + 0.18 * Math.sin(t * 0.7);
+        const labelX = cx - R * 1.55;
+        const labelY = cy - R * 1.40;
+        ctx.save();
+        ctx.translate(labelX, labelY);
+        ctx.rotate(-Math.PI / 7.5);
+        ctx.textAlign = 'center';
+        ctx.font = `bold ${Math.round(R * 0.40)}px Outfit`;
+        ctx.shadowColor = 'rgba(245, 158, 11, 0.55)';
+        ctx.shadowBlur  = 10;
+        ctx.fillStyle   = `rgba(245, 158, 11, ${labelOpacity})`;
+        ctx.fillText('Pashus Tangle', 0, 0);
+        ctx.restore();
+
+        ctx.restore();
     }
 
     populateDistantWorlds(distantWorlds) {
@@ -424,6 +535,9 @@ class StarMap {
         }
 
         // Draw connectors/links if any (Skipping complex routing for now)
+
+        // Draw tangle overlay (beneath world dots)
+        this.drawTangle(this.ctx);
 
         // Draw worlds
         for (const w of this.worlds) {
