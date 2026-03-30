@@ -195,6 +195,12 @@ function handleRouting() {
         renderArticle(id);
         showView('detail');
     }
+
+    // Always scroll to top when routing changes to a new view/article
+    window.scrollTo(0, 0);
+    if (els.viewDetail) {
+        els.viewDetail.scrollTo(0, 0);
+    }
 }
 
 function showView(viewId) {
