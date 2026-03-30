@@ -1,0 +1,29 @@
+{
+  "coreward": [
+    "vincennes",
+    "hrd",
+    "borlund",
+    {
+      "id": "limmu-bukara",
+      "title": "The Limmu Bukara",
+      "worlds": [
+        "kubishush",
+        "magash",
+        "liiri"
+      ]
+    },
+    "rhinom"
+  ],
+  "rimward": [
+    "agdarmi",
+    "jecife",
+    "lilad"
+  ],
+  "spinward": [
+    "mora",
+    "regina"
+  ],
+  "trailing": [
+    "deneb"
+  ]
+}

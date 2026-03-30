@@ -4,7 +4,8 @@ const AppState = {
     articles: [],
     currentView: 'map', // 'map' or 'detail'
     currentEntityId: null,
-    currentEntityType: null // 'world' or 'article'
+    currentEntityType: null, // 'world' or 'article'
+    distantCategories: {}
 };
 
 // DOM Elements
@@ -29,13 +30,15 @@ const els = {
 async function initApp() {
     // Fetch data
     try {
-        const [worldsResponse, articlesResponse] = await Promise.all([
+        const [worldsResponse, articlesResponse, distantCategoriesResponse] = await Promise.all([
             fetch('data/worlds.json'),
-            fetch('data/articles.json')
+            fetch('data/articles.json'),
+            fetch('data/distant-categories.json')
         ]);
 
         AppState.worlds = await worldsResponse.json();
         AppState.articles = await articlesResponse.json();
+        AppState.distantCategories = await distantCategoriesResponse.json();
 
         populateSidebar();
         buildAutoLinker();
@@ -46,7 +49,7 @@ async function initApp() {
 
         // Initialize map if on map view
         if (window.initMap) {
-            window.initMap(AppState.worlds);
+            window.initMap(AppState.worlds, AppState.distantCategories);
         }
 
     } catch (e) {
@@ -256,7 +259,7 @@ function buildAutoLinker() {
     const entities = [];
 
     AppState.worlds.forEach(w => {
-        entities.push({ name: w.name, link: `#world/${w.id}` });
+        if (w.name) entities.push({ name: w.name, link: `#world/${w.id}` });
     });
 
     AppState.articles.forEach(a => {
@@ -419,6 +422,7 @@ function renderIndex() {
         });
     });
     AppState.worlds.forEach(w => {
+        if (!w.name) return;
         entries.push({
             label: w.name,
             key: sortKey(w.name),

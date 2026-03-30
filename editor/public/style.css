@@ -107,10 +107,14 @@ body {
 /* Sidebar */
 .sidebar {
     width: 300px;
+    min-width: 250px;
+    max-width: 50vw;
     background-color: var(--bg-surface);
     border-right: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
+    resize: horizontal;
+    overflow: hidden;
 }
 
 .sidebar-header {
@@ -192,6 +196,10 @@ body {
     padding: 30px;
     overflow-y: auto;
     background-color: var(--bg-color);
+}
+
+.hidden {
+    display: none !important;
 }
 
 .empty-state {

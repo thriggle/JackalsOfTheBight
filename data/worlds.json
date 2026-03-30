@@ -366,7 +366,8 @@
         "uwp": "E7A8000-D",
         "hazardLevel": "Dieback world, Pashus Tangle",
         "allegiance": "Unclaimed",
-        "summary": "Giffert is a dieback world on the trailing edge of the Pashus Cluster, its vast, still oceans undisturbed for centuries beneath haze-filtered skies. \n\nThe system sits squarely within the Pashus Tangle, and the jump-space distortion that envelops this region makes Giffert as hard to reach as the inhabited worlds around it."
+        "summary": "Giffert is a dieback world on the trailing edge of the Pashus Cluster, its vast, still oceans undisturbed for centuries beneath haze-filtered skies. \n\nThe system sits squarely within the Pashus Tangle, and the jump-space distortion that envelops this region makes Giffert as hard to reach as the inhabited worlds around it.",
+        "hasTangle": true
     },
     {
         "id": "pashus",
@@ -375,7 +376,8 @@
         "uwp": "A432474-F",
         "hazardLevel": "Wild, Pashus Tangle",
         "allegiance": "Unclaimed",
-        "summary": "Pashus is the center of its cluster and almost nothing else is known about it with confidence. Somewhere beyond the Tangle — the jump-space disturbance that has made this region a navigation hazard since the Collapse — sits a world with a Class A starport and TL-15 infrastructure. The evidence for this is not rumor: it trickles out in the form of people. Spacers emerge from the Tangle in aging but immaculately maintained ships, carrying technical components of obvious quality and speaking of a world that has turned entirely inward since the disaster.\n\nThe stories they tell are consistent on a few points. Pashus did not fall but, after the emergence of the Tangle, Pashus contracted. The old research station, whatever its original purpose, is either still operational or has been absorbed into something larger. The population is small, self-sufficient, and deeply uninterested in contact with the broader Wilds. The routes in are not published — they shift, or they are deliberately kept obscure — and the people who come out are not forthcoming about how they got through. If you want to find Pashus, it is generally suggested that you start at Point Ay and ask very carefully."
+        "summary": "Pashus is the center of its cluster and almost nothing else is known about it with confidence. Somewhere beyond the Tangle — the jump-space disturbance that has made this region a navigation hazard since the Collapse — sits a world with a Class A starport and TL-15 infrastructure. The evidence for this is not rumor: it trickles out in the form of people. Spacers emerge from the Tangle in aging but immaculately maintained ships, carrying technical components of obvious quality and speaking of a world that has turned entirely inward since the disaster.\n\nThe stories they tell are consistent on a few points. Pashus did not fall but, after the emergence of the Tangle, Pashus contracted. The old research station, whatever its original purpose, is either still operational or has been absorbed into something larger. The population is small, self-sufficient, and deeply uninterested in contact with the broader Wilds. The routes in are not published — they shift, or they are deliberately kept obscure — and the people who come out are not forthcoming about how they got through. If you want to find Pashus, it is generally suggested that you start at Point Ay and ask very carefully.",
+        "hasTangle": true
     },
     {
         "id": "rajan",
@@ -384,7 +386,8 @@
         "uwp": "D87A000-B",
         "hazardLevel": "Dieback world, Pashus Tangle",
         "allegiance": "Unclaimed",
-        "summary": "Rajan is a dieback world at the far trailing edge of the Pashus Cluster, a vast shallow-seas world whose former inhabitants left behind little more than submerged foundations and the occasional reef of corroded structural alloy. It lies well inside the Pashus Tangle, and the jump-space hazard that defines this region means it receives less traffic than its position might otherwise suggest — which is to say, almost none at all."
+        "summary": "Rajan is a dieback world at the far trailing edge of the Pashus Cluster, a vast shallow-seas world whose former inhabitants left behind little more than submerged foundations and the occasional reef of corroded structural alloy. It lies well inside the Pashus Tangle, and the jump-space hazard that defines this region means it receives less traffic than its position might otherwise suggest — which is to say, almost none at all.",
+        "hasTangle": true
     },
     {
         "id": "shiiku",
@@ -393,7 +396,8 @@
         "uwp": "D651758-7",
         "hazardLevel": "Wild, Pashus Tangle",
         "allegiance": "Unclaimed",
-        "summary": "Shiiku is a settled arid world within the Pashus Tangle, home to tens of millions who have spent generations adapting to the particular isolation that the jump-space hazard imposes. Travel out of the Cluster is unreliable and expensive; Shiiku's population has responded by becoming exceptionally self-sufficient, building a society organized around dust-farming and deep mineral extraction that does not depend on regular outside contact."
+        "summary": "Shiiku is a settled arid world within the Pashus Tangle, home to tens of millions who have spent generations adapting to the particular isolation that the jump-space hazard imposes. Travel out of the Cluster is unreliable and expensive; Shiiku's population has responded by becoming exceptionally self-sufficient, building a society organized around dust-farming and deep mineral extraction that does not depend on regular outside contact.",
+        "hasTangle": true
     },
     {
         "id": "atab",
@@ -402,7 +406,8 @@
         "uwp": "C540789-8",
         "hazardLevel": "Wild, Pashus Tangle",
         "allegiance": "Unclaimed",
-        "summary": "Atab is a desert world in the Pashus Tangle, home to roughly 80 million Jonkeereen — one of the largest surviving concentrations of the subspecies outside of Jonkeer itself. They arrived here during the Ministry of Colonisation's forced transplant program and have been effectively isolated from the broader Jonkeereen diaspora for most of the post-Collapse period. The cultural drift is significant: tribal third-surnames, verbal shorthand dialect, and many traditions have evolved independently over the intervening centuries, and contact with the Jonkeereen of Jonkeer or Preslin would encounter as much strangeness as recognition.\n\nThe Tangle contributes to Atab's isolation, but the Jonkeereen here had already built a self-contained society before navigation through the hazard became a live question. They are not hostile to outsiders who arrive through the Cluster's uncertain routes, but they have not needed much from anyone in a long time and have organized their institutions accordingly."
+        "summary": "Atab is a desert world in the Pashus Tangle, home to roughly 80 million Jonkeereen — one of the largest surviving concentrations of the subspecies outside of Jonkeer itself. They arrived here during the Ministry of Colonisation's forced transplant program and have been effectively isolated from the broader Jonkeereen diaspora for most of the post-Collapse period. The cultural drift is significant: tribal third-surnames, verbal shorthand dialect, and many traditions have evolved independently over the intervening centuries, and contact with the Jonkeereen of Jonkeer or Preslin would encounter as much strangeness as recognition.\n\nThe Tangle contributes to Atab's isolation, but the Jonkeereen here had already built a self-contained society before navigation through the hazard became a live question. They are not hostile to outsiders who arrive through the Cluster's uncertain routes, but they have not needed much from anyone in a long time and have organized their institutions accordingly.",
+        "hasTangle": true
     },
     {
         "id": "giranima",
@@ -475,5 +480,25 @@
         "hazardLevel": "Dieback world",
         "allegiance": "Unclaimed",
         "summary": "Keirei is a dieback world at the trailing edge of the Preslin Cluster, an airless rock whose former inhabitants left behind only fragmentary orbital debris. Its non-existent starport rating reflects years of complete neglect.\n\nDespite its desolation, Keirei's position makes it a useful navigational waypoint for ships moving between the Preslin Cluster and the worlds further trailing. "
+    },
+    {
+        "id": "hex1431",
+        "name": "",
+        "hex": "1431",
+        "uwp": "",
+        "hazardLevel": "",
+        "allegiance": "",
+        "summary": "",
+        "hasTangle": true
+    },
+    {
+        "id": "hex1533",
+        "name": "",
+        "hex": "1533",
+        "uwp": "",
+        "hazardLevel": "",
+        "allegiance": "",
+        "summary": "",
+        "hasTangle": true
     }
 ]

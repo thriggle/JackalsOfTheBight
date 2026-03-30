@@ -31,8 +31,8 @@ const server = http.createServer((req, res) => {
 
     // Handle API routes
     if (req.url.startsWith('/api/')) {
-        const file = req.url.split('/api/')[1]; // worlds.json or articles.json
-        if (file !== 'worlds.json' && file !== 'articles.json') {
+        const file = req.url.split('/api/')[1];
+        if (file !== 'worlds.json' && file !== 'articles.json' && file !== 'distant-categories.json') {
             res.writeHead(404);
             res.end(JSON.stringify({ error: 'Not found' }));
             return;

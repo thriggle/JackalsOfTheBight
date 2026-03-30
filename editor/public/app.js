@@ -4,9 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
         activeTab: 'articles', // 'articles' or 'worlds'
         data: {
             articles: [],
-            worlds: []
+            worlds: [],
+            distantCategories: []
         },
-        selectedItemId: null
+        selectedItemId: null,
+        selectedTagFilter: null
     };
 
     // DOM Elements
@@ -14,6 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
         tabs: document.querySelectorAll('.tab-btn'),
         itemList: document.getElementById('item-list'),
         searchInput: document.getElementById('search-input'),
+        categoryFilter: document.getElementById('category-filter'),
+        wordcloudBtn: document.getElementById('wordcloud-btn'),
+        wordcloudContainer: document.getElementById('wordcloud-container'),
         newItemBtn: document.getElementById('new-item-btn'),
         sortListBtn: document.getElementById('sort-list-btn'),
         saveAllBtn: document.getElementById('save-all-btn'),
@@ -28,18 +33,24 @@ document.addEventListener('DOMContentLoaded', () => {
     async function init() {
         await loadData();
         setupEventListeners();
+        els.categoryFilter.style.display = 'block';
+        els.wordcloudBtn.style.display = 'block';
         renderList();
     }
 
     // Data Load/Save
     async function loadData() {
         try {
-            const [artRes, worldRes] = await Promise.all([
+            const [artRes, worldRes, distRes] = await Promise.all([
                 fetch('/api/articles.json'),
-                fetch('/api/worlds.json')
+                fetch('/api/worlds.json'),
+                fetch('/api/distant-categories.json')
             ]);
             state.data.articles = await artRes.json();
             state.data.worlds = await worldRes.json();
+            const distData = await distRes.json();
+            state.data.distantCategories = [{ id: 'map-distant', name: 'Map Distant Categories', ...distData }];
+            updateCategoryDropdown();
         } catch (e) {
             console.error("Failed to load data", e);
             showToast("Failed to load data. Check console.", true);
@@ -52,8 +63,17 @@ document.addEventListener('DOMContentLoaded', () => {
             syncFormToState();
         }
 
-        const endpoint = `/api/${state.activeTab}.json`;
-        const dataToSave = state.activeTab === 'articles' ? state.data.articles : state.data.worlds;
+        let endpoint = `/api/${state.activeTab}.json`;
+        if (state.activeTab === 'distantCategories') endpoint = '/api/distant-categories.json';
+
+        let dataToSave = {};
+        if (state.activeTab === 'articles') dataToSave = state.data.articles;
+        else if (state.activeTab === 'worlds') dataToSave = state.data.worlds;
+        else {
+            dataToSave = { ...state.data.distantCategories[0] };
+            delete dataToSave.id;
+            delete dataToSave.name;
+        }
 
         try {
             const res = await fetch(endpoint, {
@@ -76,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // UI Updates
     function switchTab(tab) {
         if (state.activeTab === tab) return;
-        
+
         // Save current form silently to memory before switching
         if (state.selectedItemId) {
             syncFormToState();
@@ -84,7 +104,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         state.activeTab = tab;
         state.selectedItemId = null;
+        state.selectedTagFilter = null;
         els.searchInput.value = '';
+
+        if (tab === 'articles') {
+            els.categoryFilter.style.display = 'block';
+            els.wordcloudBtn.style.display = 'block';
+            updateCategoryDropdown();
+        } else {
+            els.categoryFilter.style.display = 'none';
+            els.wordcloudBtn.style.display = 'none';
+            els.wordcloudContainer.classList.add('hidden');
+            els.categoryFilter.value = '';
+        }
 
         // Update UI
         els.tabs.forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
@@ -93,20 +125,105 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderList(filter = '') {
-        const items = state.activeTab === 'articles' ? state.data.articles : state.data.worlds;
-        const listHtml = items
-            .filter(item => {
-                const searchStr = `${item.title || item.name} ${item.id}`.toLowerCase();
-                return searchStr.includes(filter.toLowerCase());
-            })
-            .map(item => {
-                const label = item.title || item.name || 'Untitled';
-                const isSelected = item.id === state.selectedItemId;
-                return `<li data-id="${item.id}" class="${isSelected ? 'selected' : ''}">${label}</li>`;
-            })
-            .join('');
-        
+        const items = state.activeTab === 'articles' ? state.data.articles :
+            state.activeTab === 'worlds' ? state.data.worlds : state.data.distantCategories;
+            
+        const selectedCategory = els.categoryFilter.value;
+
+        const filteredItems = items.filter(item => {
+            const searchStr = `${item.title || item.name} ${item.id}`.toLowerCase();
+            const matchesSearch = searchStr.includes(filter.toLowerCase());
+            
+            let matchesCategory = true;
+            if (state.activeTab === 'articles' && selectedCategory) {
+                matchesCategory = item.category === selectedCategory;
+            }
+            
+            let matchesTag = true;
+            if (state.activeTab === 'articles' && state.selectedTagFilter) {
+                if (!item.tags || !Array.isArray(item.tags)) {
+                    matchesTag = false;
+                } else {
+                    matchesTag = item.tags.map(t => t.trim()).includes(state.selectedTagFilter);
+                }
+            }
+            
+            return matchesSearch && matchesCategory && matchesTag;
+        });
+
+        const listHtml = filteredItems.map(item => {
+            const label = item.title || item.name || 'Untitled';
+            const isSelected = item.id === state.selectedItemId;
+            return `<li data-id="${item.id}" class="${isSelected ? 'selected' : ''}">${label}</li>`;
+        }).join('');
+
         els.itemList.innerHTML = listHtml;
+        
+        if (!els.wordcloudContainer.classList.contains('hidden')) {
+            renderWordcloud(filteredItems);
+        }
+    }
+
+    function updateCategoryDropdown() {
+        if (state.activeTab !== 'articles') return;
+        
+        const categories = new Set();
+        state.data.articles.forEach(a => {
+            if (a.category) categories.add(a.category);
+        });
+
+        const currentVal = els.categoryFilter.value;
+        const sortedCats = Array.from(categories).sort();
+        
+        let html = '<option value="">All Categories</option>';
+        sortedCats.forEach(cat => {
+            html += `<option value="${cat}">${cat}</option>`;
+        });
+        
+        els.categoryFilter.innerHTML = html;
+        els.categoryFilter.value = currentVal;
+    }
+
+    function renderWordcloud(filteredItems) {
+        if (state.activeTab !== 'articles') {
+            els.wordcloudContainer.innerHTML = '';
+            return;
+        }
+
+        const tagCounts = {};
+        let totalTags = 0;
+        filteredItems.forEach(item => {
+            if (item.tags && Array.isArray(item.tags)) {
+                item.tags.forEach(tag => {
+                    const t = String(tag).trim();
+                    if (t) {
+                        tagCounts[t] = (tagCounts[t] || 0) + 1;
+                        totalTags++;
+                    }
+                });
+            }
+        });
+
+        if (totalTags === 0) {
+            els.wordcloudContainer.innerHTML = '<div style="padding:1rem;color:var(--text-muted);text-align:center;">No tags found</div>';
+            return;
+        }
+
+        const maxCount = Math.max(...Object.values(tagCounts));
+        const sortedTags = Object.keys(tagCounts).sort((a,b) => a.localeCompare(b));
+        
+        let html = '<div style="padding:1rem; background: rgba(0,0,0,0.2); border-bottom: 1px solid var(--border-color); display:flex; flex-wrap:wrap; gap:0.6rem; justify-content:center; max-height: 250px; overflow-y: auto;">';
+        
+        sortedTags.forEach(tag => {
+            const count = tagCounts[tag];
+            const isSelected = tag === state.selectedTagFilter;
+            const bg = isSelected ? 'var(--accent-primary)' : 'var(--bg-surface-hover)';
+            const color = isSelected ? 'var(--bg-color)' : 'var(--text-primary)';
+            html += `<span class="tag-cloud-item" data-tag="${tag.replace(/"/g, '&quot;')}" style="font-size:0.85rem; color:${color}; background: ${bg}; padding: 4px 10px; border-radius: 12px; border: 1px solid var(--border-color); cursor: pointer;">${tag} (${count})</span>`;
+        });
+        
+        html += '</div>';
+        els.wordcloudContainer.innerHTML = html;
     }
 
     function selectItem(id) {
@@ -119,9 +236,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         state.selectedItemId = id;
         renderList(els.searchInput.value);
-        
-        const items = state.activeTab === 'articles' ? state.data.articles : state.data.worlds;
-        const item = items.find(i => i.id === id);
+
+        const items = state.activeTab === 'articles' ? state.data.articles :
+            state.activeTab === 'worlds' ? state.data.worlds : state.data.distantCategories;
+        const item = items.find(i => String(i.id) === String(id));
 
         if (item) {
             renderForm(item);
@@ -146,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: []
             };
             state.data.articles.push(newItem);
-        } else {
+        } else if (state.activeTab === 'worlds') {
             newItem = {
                 id: newId,
                 name: 'New World',
@@ -157,6 +275,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 hex: ''
             };
             state.data.worlds.push(newItem);
+        } else {
+            return; // Cannot create new distant categories block
         }
 
         state.selectedItemId = newId;
@@ -167,15 +287,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function deleteCurrentItem() {
         if (!state.selectedItemId) return;
-        
+
         if (!confirm('Are you sure you want to delete this item? This cannot be undone once saved to disk.')) {
             return;
         }
 
         if (state.activeTab === 'articles') {
             state.data.articles = state.data.articles.filter(i => i.id !== state.selectedItemId);
-        } else {
+        } else if (state.activeTab === 'worlds') {
             state.data.worlds = state.data.worlds.filter(i => i.id !== state.selectedItemId);
+        } else {
+            return; // Cannot delete the singleton distant categories
         }
 
         state.selectedItemId = null;
@@ -198,8 +320,9 @@ document.addEventListener('DOMContentLoaded', () => {
             syncFormToState();
         }
 
-        const items = state.activeTab === 'articles' ? state.data.articles : state.data.worlds;
-        
+        const items = state.activeTab === 'articles' ? state.data.articles :
+            state.activeTab === 'worlds' ? state.data.worlds : state.data.distantCategories;
+
         items.sort((a, b) => {
             const nameA = getSortableName(a);
             const nameB = getSortableName(b);
@@ -230,21 +353,30 @@ document.addEventListener('DOMContentLoaded', () => {
             { id: 'uwp', label: 'UWP', type: 'text', help: 'Universal World Profile code.' },
             { id: 'hazardLevel', label: 'Hazard Level', type: 'text' },
             { id: 'allegiance', label: 'Allegiance', type: 'text' },
+            { id: 'hasTangle', label: 'Has Tangle', type: 'checkbox', help: 'Check if this hex should render a Tangle anomaly.' },
             { id: 'summary', label: 'Summary', type: 'textarea', cssClass: 'textarea-tall' }
+        ],
+        distantCategories: [
+            { id: 'coreward', label: 'Coreward (Raw JSON)', type: 'textarea', cssClass: 'textarea-tall', isJson: true, help: 'JSON array of string or object IDs.' },
+            { id: 'rimward', label: 'Rimward (Raw JSON)', type: 'textarea', cssClass: 'textarea-tall', isJson: true },
+            { id: 'spinward', label: 'Spinward (Raw JSON)', type: 'textarea', cssClass: 'textarea-tall', isJson: true },
+            { id: 'trailing', label: 'Trailing (Raw JSON)', type: 'textarea', cssClass: 'textarea-tall', isJson: true }
         ]
     };
 
     function renderForm(item) {
         document.getElementById('form-title').textContent = `Edit ${state.activeTab === 'articles' ? 'Article' : 'World'}: ${item.title || item.name || 'New'}`;
-        
+
         const schema = formSchemas[state.activeTab];
         let formHtml = '';
 
         schema.forEach(field => {
             let value = item[field.id] !== undefined ? item[field.id] : '';
-            
+
             // Format for display
-            if (field.isArray && Array.isArray(value)) {
+            if (field.isJson && typeof value === 'object') {
+                value = JSON.stringify(value, null, 4);
+            } else if (field.isArray && Array.isArray(value)) {
                 value = value.join(', ');
             } else if (field.isArrayOfHtmlStrings && Array.isArray(value)) {
                 value = value.join('\n\n');
@@ -257,15 +389,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
             formHtml += `<div class="form-group">`;
             formHtml += `<label for="${field.id}">${field.label}</label>`;
-            
+
             if (field.type === 'textarea') {
                 formHtml += `<textarea id="${field.id}" name="${field.id}" class="${field.cssClass || ''}">${value}</textarea>`;
             } else if (field.type === 'number') {
                 formHtml += `<input type="number" id="${field.id}" name="${field.id}" value="${value}">`;
+            } else if (field.type === 'checkbox') {
+                formHtml += `<input type="checkbox" id="${field.id}" name="${field.id}" ${value ? 'checked' : ''} style="width: auto; margin-right: 0.5rem;" />`;
             } else {
                 formHtml += `<input type="text" id="${field.id}" name="${field.id}" value="${value}">`;
             }
-            
+
             if (field.help) {
                 formHtml += `<span class="help-text">${field.help}</span>`;
             }
@@ -278,7 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (otherKeys.length > 0) {
             let rawDataMap = {};
             otherKeys.forEach(k => rawDataMap[k] = item[k]);
-            
+
             formHtml += `<div class="form-group">
                 <label for="_raw_json">Other Properties (Raw JSON)</label>
                 <textarea id="_raw_json" name="_raw_json" class="textarea-tall">${JSON.stringify(rawDataMap, null, 4)}</textarea>
@@ -299,8 +433,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function syncFormToState() {
         if (!state.selectedItemId) return;
 
-        const items = state.activeTab === 'articles' ? state.data.articles : state.data.worlds;
-        const itemIndex = items.findIndex(i => i.id === state.selectedItemId);
+        const items = state.activeTab === 'articles' ? state.data.articles : 
+                      state.activeTab === 'worlds' ? state.data.worlds : state.data.distantCategories;
+        const itemIndex = items.findIndex(i => String(i.id) === String(state.selectedItemId));
         if (itemIndex === -1) return;
 
         const schema = formSchemas[state.activeTab];
@@ -313,12 +448,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let val = input.value;
 
-            if (field.isArray) {
+            if (field.isJson) {
+                try {
+                    updatedItem[field.id] = JSON.parse(val || '[]');
+                } catch (e) { }
+            } else if (field.isArray) {
                 updatedItem[field.id] = val.split(',').map(s => s.trim()).filter(s => s);
             } else if (field.isArrayOfHtmlStrings) {
                 updatedItem[field.id] = val.split(/\n\s*\n/).map(s => s.trim()).filter(s => s);
             } else if (field.type === 'number') {
                 updatedItem[field.id] = val ? parseFloat(val) : undefined;
+            } else if (field.type === 'checkbox') {
+                updatedItem[field.id] = input.checked;
+                if (!updatedItem[field.id]) delete updatedItem[field.id]; // Don't bloat JSON with false
             } else {
                 updatedItem[field.id] = val;
             }
@@ -382,17 +524,52 @@ document.addEventListener('DOMContentLoaded', () => {
             renderList(e.target.value);
         });
 
+        if (els.categoryFilter) {
+            els.categoryFilter.addEventListener('change', () => {
+                renderList(els.searchInput.value);
+            });
+        }
+
+        if (els.wordcloudBtn) {
+            els.wordcloudBtn.addEventListener('click', () => {
+                els.wordcloudContainer.classList.toggle('hidden');
+                renderList(els.searchInput.value);
+            });
+        }
+        
+        if (els.wordcloudContainer) {
+            els.wordcloudContainer.addEventListener('click', (e) => {
+                const span = e.target.closest('.tag-cloud-item');
+                if (!span) return;
+                
+                const tag = span.dataset.tag;
+                if (state.selectedTagFilter === tag) {
+                    state.selectedTagFilter = null;
+                } else {
+                    state.selectedTagFilter = tag;
+                }
+                renderList(els.searchInput.value);
+            });
+        }
+
         els.newItemBtn.addEventListener('click', createNewItem);
         els.sortListBtn.addEventListener('click', sortCurrentList);
-        
+
         els.saveAllBtn.addEventListener('click', () => {
             saveData();
         });
 
         els.deleteItemBtn.addEventListener('click', deleteCurrentItem);
 
-        // Auto-update list title when editing title/name
+        // Auto-update list title when editing title/name/category
         els.dataForm.addEventListener('input', (e) => {
+            if (e.target.id === 'category') {
+                updateCategoryDropdown();
+            }
+            if (e.target.id === 'tags' && !els.wordcloudContainer.classList.contains('hidden')) {
+                // Throttle maybe? It's fine for small lists
+                renderList(els.searchInput.value);
+            }
             if (e.target.id === 'title' || e.target.id === 'name') {
                 const li = els.itemList.querySelector(`li[data-id="${state.selectedItemId}"]`);
                 if (li) li.textContent = e.target.value || 'Untitled';
