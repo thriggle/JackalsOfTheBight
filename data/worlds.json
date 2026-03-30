@@ -2,290 +2,290 @@
     {
         "id": "agdarmi",
         "name": "Agdarmi",
+        "hex": "1340",
         "uwp": "B56679D-A",
         "hazardLevel": "Deep Wilds operations, Tangles",
         "allegiance": "Agdarmi Bureaucratic Directorate",
-        "summary": "Agdarmi is a powerful strong world located deep in the Deneb Wilds, renowned for its sophisticated merchant survey and trade coordination operation, the Agdarmi Merchant Authority. Combining the functions of scouts, traders, and diplomats, the Authority maps profitable trade routes and establishes contacts with isolated worlds, utilizing AI systems that rival Republic of Regina technology.\n\nAgdarmi titles of nobility, such as knighthoods, carry significant weight even among the corsair lords of the Askigaak Bight, granting safe passage and diplomatic leverage. The world is also heavily involved in the 'Project Leapfrog Revival' to develop advanced jump tech. Adventure hooks involve taking survey contracts for the Merchant Authority, exploring the newly formed Sigma-471 Tangle, or engaging in espionage surrounding the catastrophic material consumption of their jump experiments.",
-        "hex": "1340"
+        "summary": "Agdarmi is a powerful strong world located deep in the Deneb Wilds, renowned for its sophisticated merchant survey and trade coordination operation, the Agdarmi Merchant Authority. Combining the functions of scouts, traders, and diplomats, the Authority maps profitable trade routes and establishes contacts with isolated worlds, utilizing AI systems that rival Republic of Regina technology.\n\nAgdarmi titles of nobility, such as knighthoods, carry significant weight even among the corsair lords of the Askigaak Bight, granting safe passage and diplomatic leverage. "
     },
     {
         "id": "arnyl",
         "name": "Arnyl",
+        "hex": "0930",
         "uwp": "B683656-9",
         "hazardLevel": "Corsairs",
         "allegiance": "Arnyl Admiralty / Corsair Kingdom",
-        "summary": "Arnyl is a yellow dwarf system in the Askigaak Bight that evolved from an Imperial Navy base into the seat of a powerful corsair kingdom. The world operates under a 'Naval Feudal' system where traditional naval ranks correspond to feudal titles, and its 5 million inhabitants live under the protection of aging orbital defenses while the Admiralty extracts tribute and enforces 'convoy escort services' across the region.\n\nThe world serves as a neutral meeting ground for corsairs and mercenaries, maintained by the Admiralty's fleets. However, the Admiralty faces internal tensions as salvage yields diminish, and external pressures from ambitious vassals like Skopyeh and the wildcard presence of newly arrived Lurent worldships. Adventure hooks abound here, from negotiating safe passage through the Bight to dealing with rival Captain-Lords looking to usurp the Admiralty's power.",
-        "hex": "0930"
+        "summary": "Arnyl is a yellow dwarf system in the Askigaak Bight that evolved from an Imperial Navy base into the seat of a powerful corsair kingdom. The world operates under a 'Naval Feudal' system where traditional naval ranks correspond to feudal titles, and its 5 million inhabitants live under the protection of aging orbital defenses while the Admiralty extracts tribute and enforces 'convoy escort services' across the region.\n\nThe world serves as a neutral meeting ground for corsairs and mercenaries, maintained by the Admiralty's fleets. However, the Admiralty faces internal tensions as salvage yields diminish, and external pressures from ambitious vassals like Skopyeh and the wildcard presence of newly arrived Lurent worldships. "
     },
     {
         "id": "askigaak",
         "name": "Askigaak",
+        "hex": "0629",
         "uwp": "E549000-0",
         "hazardLevel": "Dieback world, ecological collapse",
         "allegiance": "Unclaimed (Qevar Sigka interest)",
-        "summary": "Once the thriving homeworld of the aquatic Sigka and the industrial heart of the Askigaak Union, this dieback world suffered a total ecological collapse. The extermination of the native apex predator (the Sachupe) by human colonial administrators led to a population explosion of grazers, which destroyed the massive ocean flora and caused mass starvation. The ensuing civil war resulted in the deliberate destruction of remaining infrastructure and complete depopulation.\n\nToday, Askigaak is a silent, ocean-dominated graveyard. However, unidentified survey vessels with advanced technology have recently been spotted prowling its waters, evading Arnyl patrols. The exiled Sigka on Qevar actively seek to reclaim and restore it. Adventures here might involve deep-sea salvage operations, investigating the mysterious survey ships, or assisting Qevar researchers in their dangerous bioengineering restoration efforts.",
-        "hex": "0629"
+        "summary": "Once the thriving homeworld of the aquatic Sigka and the industrial heart of the Askigaak Union, this dieback world suffered a total ecological collapse. The extermination of the native apex predator (the Sachupe) by human colonial administrators led to a population explosion of grazers, which destroyed the massive ocean flora and caused mass starvation. The ensuing civil war resulted in the deliberate destruction of remaining infrastructure and complete depopulation.\n\nToday, Askigaak is a silent, ocean-dominated graveyard. However, unidentified survey vessels with advanced technology have recently been spotted prowling its waters, evading Arnyl patrols. The exiled Sigka on Qevar actively seek to reclaim and restore it. Adventures here might involve deep-sea salvage operations, investigating the mysterious survey ships, or assisting Qevar researchers in their dangerous bioengineering restoration efforts."
     },
     {
         "id": "bishop",
         "name": "Bishop",
+        "hex": "1226",
         "uwp": "B201514-D",
         "hazardLevel": "Corporate espionage, smuggling rings",
         "allegiance": "Forgewright (Dekha) / Independent Corporation",
-        "summary": "Bishop Station is a highly productive manufacturing and logistics hub serving the outer Wilds, officially established as an independent colonial project by the Dekhan Pentarch Forgewright. While the station's AI predictive models build structurally efficient but profoundly uncomfortable spaces, the local human population has spent decades modifying them to be highly livable, acting as a testing ground for consumer brands like Bishop Genuine.\n\nBeneath its legitimate industrial operations, Bishop Station hosts a thriving underground economy. It serves as the primary fabrication center for bootleg 'Harmony' religious merchandise spreading across the sector, which gets quietly mixed into legitimate industrial manufacturing queues. Adventure hooks include corporate espionage to steal synthetic bioform technology, investigating logistical anomalies tied to the Harmony cult, or uncovering mind-wiped Dekhan clones hidden in the lower habitation decks.",
-        "hex": "1226"
+        "summary": "Bishop Station is a highly productive manufacturing and logistics hub serving the outer Wilds, officially established as an independent colonial project by the Dekhan Pentarch Forgewright. While the station's AI predictive models build structurally efficient but profoundly uncomfortable spaces, the local human population has spent decades modifying them to be highly livable, acting as a testing ground for consumer brands like Bishop Genuine.\n\nBeneath its legitimate industrial operations, Bishop Station hosts a thriving underground economy. It serves as the primary fabrication center for bootleg 'Harmony' religious merchandise spreading across the sector. "
     },
     {
         "id": "borlund",
         "name": "Borlund",
+        "hex": "1406",
         "uwp": "E554A7B-9",
         "hazardLevel": "Law level B travel controls, clan feuds",
         "allegiance": "Lurent Clans",
-        "summary": "Borlund is the tectonically active, toxic-atmosphere homeworld of the Lurent, a tri-gendered, fur-covered species defined by a profound biological imperative for wanderlust. Once a unified civilization that built planetary engines into moons to create massive worldships, Borlund was shattered by the Empress Wave. It is now a balkanized world with thousands of clan-controlled starports enforcing strict travel restrictions (Law Level B).\n\nThe suppression of their genetic wanderlust causes severe mental health crises and ongoing clan feuds. Many Lurent operate worldships as sovereign, wandering polities that function as merchant arks, black-market hulks, or desperate raiders. Adventure hooks involve navigating the complex, multi-generational honor feuds to trade with a Lurent worldship, surviving an encounter with a Virus-haunted 'vampire' hulk, or transporting Lurent youth on heritage journeys.",
-        "hex": "1406"
+        "summary": "Borlund is the tectonically active, toxic-atmosphere homeworld of the Lurent, a tri-gendered, fur-covered species defined by a profound biological imperative for wanderlust. Once a unified civilization that built planetary engines into moons to create massive worldships, Borlund was shattered by the Empress Wave. It is now a balkanized world with thousands of clan-controlled starports enforcing strict travel restrictions (Law Level B).\n\nThe suppression of their genetic wanderlust causes severe mental health crises and ongoing clan feuds. Many Lurent operate worldships as sovereign, wandering polities that function as merchant arks, black-market hulks, or desperate raiders. "
     },
     {
         "id": "bukit-seng",
         "name": "Bukit Seng",
+        "hex": "0830",
         "uwp": "X542000-8",
         "hazardLevel": "Dieback world, corsairs",
         "allegiance": "Unclaimed",
-        "summary": "Bukit Seng is a forgotten dieback world within the Askigaak Bight. Like its neighbors, its population perished during the turbulent eras of the Collapse.\n\nThe world remains largely untouched by modern salvage operations, making it a potential blank canvas for prospectors or a hiding place for corsair caches. Players might use the empty system as a staging ground for covert operations against nearby pirate strongholds.",
-        "hex": "0830"
+        "summary": "Bukit Seng is a forgotten dieback world within the Askigaak Bight. Like its neighbors, its population perished during the turbulent eras of the Collapse.\n\nThe world remains largely untouched by modern salvage operations, making it a potential blank canvas for prospectors or a hiding place for corsair caches. "
     },
     {
         "id": "burnham",
         "name": "Burnham",
+        "hex": "0828",
         "uwp": "D664000-8",
         "hazardLevel": "Dieback world, scavengers, corsairs",
         "allegiance": "Unclaimed",
-        "summary": "Burnham is a dieback world in the Askigaak Bight. Like Imone, it was once the site of a significant Imperial naval facility that was completely destroyed as pirate factions warred over its assets during the Corsair Scourge.\n\nLeft in ruins, Burnham is now frequented by daring prospectors and salvage operators looking for valuable pre-Collapse technology, particularly exotic materials needed for jump drive manufacturing. Adventure hooks include exploring the irradiated remnants of the naval base, fending off scavengers, or investigating rumors of intact Imperial-era vaults.",
-        "hex": "0828"
+        "summary": "Burnham is a dieback world in the Askigaak Bight. Like Imone, it was once the site of a significant Imperial naval facility that was completely destroyed as pirate factions warred over its assets during the Corsair Scourge.\n\nLeft in ruins, Burnham is now frequented by daring prospectors and salvage operators looking for valuable pre-Collapse technology, particularly exotic materials needed for jump drive manufacturing. "
     },
     {
         "id": "dekha",
         "name": "Dekha",
+        "hex": "1128",
         "uwp": "C100A75-F",
         "hazardLevel": "AI governance, balkanized",
         "allegiance": "The Pentarchy",
-        "summary": "Dekha is a massively overpopulated vacuum world transformed into a planet-sized artificial habitat housing 10 billion citizens. It is governed by the Pentarchy—five highly advanced hybrid artificial intelligences (Sentinel, Forgewright, Manciple, Curator, Impresario) born from the fusion of Cymbeline digital entities and stored human personality matrices during the Empress Wave. Citizens live in a state of controlled uncertainty, physically requiring neural wafer implants to rapidly download skills as territorial control shifts weekly among the competing AI rulers.\n\nDespite its immense industrial capacity (TL-15) and military might, Dekha maintains a restrictive Class C starport due to internal Pentarch disagreements. Visitors and diplomats quickly learn that Dekha does not speak with a unified voice; navigating its society requires playing the incompatible long-term goals of these five entities against each other. Adventure hooks include negotiating resource trades with the disparate AIs, dealing with Sentinel's rogue 'Offshoot' corsairs terrorizing the Wilds, or participating in Impresario's elaborate, heavily monitored 'reality show' expeditions.",
-        "hex": "1128"
+        "summary": "Dekha is a massively overpopulated vacuum world transformed into a planet-sized artificial habitat housing 10 billion citizens. It is governed by the Pentarchy—five highly advanced hybrid artificial intelligences (Sentinel, Forgewright, Manciple, Curator, Impresario) born from the fusion of Cymbeline digital entities and stored human personality matrices during the Empress Wave. Citizens live in a state of controlled uncertainty, physically requiring neural wafer implants to rapidly download skills as territorial control shifts weekly among the competing AI rulers.\n\nDespite its immense industrial capacity (TL-15) and military might, Dekha maintains a restrictive Class C starport due to internal Pentarch disagreements. Visitors and diplomats quickly learn that Dekha does not speak with a unified voice; navigating its society requires playing the incompatible long-term goals of these five entities against each other."
     },
     {
         "id": "djar",
         "name": "Djar",
+        "hex": "1229",
         "uwp": "C30079B-7",
         "hazardLevel": "Rigid bureaucracy",
         "allegiance": "Djari Impersonal Bureaucracy (Dekha Client)",
-        "summary": "Djar is an airless, low-gravity world where 70 million inhabitants survive in vast subterranean domes, relying on massive insect farms and hydroponics. Dependent on aging, mismatched life-support and gravitic infrastructure, the planet is ruled by a suffocating Impersonal Bureaucracy, managed by meticulous Sub-Ministers of Technical Compliance who track transit and maintenance rotations. Governance is legitimized through a cult of maintenance centered on 'Harmony, the Goddess-Queen'—a towering holographic avatar used to issue edicts. Dissidents face 'divine judgment' via weaponized grav-plating, or commuted sentences to manual farm labor. Djar relies heavily on Dekhan technical assistance, trading concessions for replacement parts and 'Silent Servant' clones.\n\nRecently, the Goddess-Queen avatar has begun exhibiting anomalous behavior, such as speaking with nuanced interiority, sparking intelligence rumors of an emergent AI. Widespread 'Harmony' merchandise is also proliferating across the Wilds. Adventure hooks involve investigating the true nature of the Goddess-Queen, navigating the labyrinthine ministries to smuggle exotic materials (like Djar Composite-7), or getting caught in Impresario's plot to expose the theocracy.",
-        "hex": "1229"
+        "summary": "Djar is an airless, low-gravity world where 70 million inhabitants survive in vast subterranean domes, relying on massive insect farms and hydroponics. Dependent on aging, mismatched life-support and gravitic infrastructure, the planet is ruled by a suffocating Impersonal Bureaucracy, managed by meticulous Sub-Ministers of Technical Compliance who track transit and maintenance rotations. Governance is legitimized through a cult of maintenance centered on 'Harmony, the Goddess-Queen'—a towering holographic avatar used to issue edicts. Dissidents face 'divine judgment' via weaponized grav-plating, or commuted sentences to manual farm labor. Djar relies heavily on Dekhan technical assistance, trading concessions for replacement parts and 'Silent Servant' clones."
     },
     {
         "id": "hrd",
         "name": "HRD",
+        "hex": "1623",
         "uwp": "A401441-F",
         "hazardLevel": "Hidden lethal defenses, espionage",
         "allegiance": "Representative Democracy / Corporate Guilds",
-        "summary": "HRD is an ice-capped vacuum world orbiting a dying red giant, transformed from an Imperial research nexus into an indispensable neutral haven. Governed by a representative democracy and three powerful technical guilds, it boasts a Class A starport and retains TL-15 manufacturing capabilities. It serves as the premier location in the Wilds for advanced jump drive repair, exotic component fabrication, and neutral ground negotiations between rival corsair factions.\n\nDespite a lenient Law Level 1, HRD protects its neutrality with a 'Porcupine' defense strategy—employing a devastating, camouflaged arsenal and orchestrating sophisticated 'Honeypot' intelligence operations to lure and annihilate aggressive pirate bands. Adventures here might involve brokering information, securing impossible repairs for battle-damaged ships, or navigating the lethal web of espionage to retrieve missing personnel like Dr. Yuki Tanaka.",
-        "hex": "1623"
+        "summary": "HRD is an ice-capped vacuum world orbiting a dying red giant, transformed from an Imperial research nexus into an indispensable neutral haven. Governed by a representative democracy and three powerful technical guilds, it boasts a Class A starport and retains TL-15 manufacturing capabilities. It serves as the premier location in the Wilds for advanced jump drive repair, exotic component fabrication, and neutral ground negotiations between rival corsair factions.\n\nDespite a lenient Law Level 1, HRD protects its neutrality with a 'Porcupine' defense strategy—employing a devastating, camouflaged arsenal and orchestrating sophisticated 'Honeypot' intelligence operations to lure and annihilate aggressive pirate bands. "
     },
     {
         "id": "imone",
         "name": "Imone",
+        "hex": "0826",
         "uwp": "D9C4000-F",
         "hazardLevel": "Dieback world, scavengers, corsairs",
         "allegiance": "Unclaimed",
-        "summary": "Imone is one of the eight dieback worlds located in the Askigaak Bight. Historically, it hosted a major Imperial naval base that was dismantled and burned to ash during the brutal conflicts of the Corsair Scourge following the Imperial collapse.\n\nToday, Imone is considered uninhabited, but it remains a prime target for high-risk salvage operations searching for rare gravitic systems and lanthanum. Recently, the Arnyl Admiralty has reported unidentified, technologically advanced vessels conducting systematic and provocative survey operations near Imone and other dieback worlds. Adventure hooks include racing rival corsairs for naval scrap or confronting the unknown survey ships prowling the system.",
-        "hex": "0826"
+        "summary": "Imone is one of the eight dieback worlds located in the Askigaak Bight. Historically, it hosted a major Imperial naval base that was dismantled and burned to ash during the brutal conflicts of the Corsair Scourge following the Imperial collapse.\n\nToday, Imone is considered uninhabited, but it remains a prime target for high-risk salvage operations searching for rare gravitic systems and lanthanum. "
     },
     {
         "id": "jecife",
         "name": "Jecife",
+        "hex": "1640",
         "uwp": "A439552-H",
         "hazardLevel": "Thin atmosphere, oceanic archipelagos",
         "allegiance": "Independent Feudal Technocracy",
-        "summary": "Jecife is a frontier feudal technocracy with a population of 700,000 scattered across shallow seas and archipelagos. Life is heavily managed by advanced AI systems working alongside a human nobility that values competence over birthright. The planet maintains an excellent Class-A starport and provides rigorous AI-managed training programs for starship pilots and starport operations.\n\nJecife is currently the headquarters for the 'Project Leapfrog Revival' consortium, hosting the Jecife Advanced Research Institute (JARI). Adventure hooks include investigating the disappearance of key scientists, testing prototype jump-drives in the nearby Jecife-Aum-Rhar Rift, or navigating the intricate AI-assisted bureaucracy to secure passage or training credentials.",
-        "hex": "1640"
+        "summary": "Jecife is a frontier feudal technocracy with a population of 700,000 scattered across shallow seas and archipelagos. Life is heavily managed by advanced AI systems working alongside a human nobility that values competence over birthright. The planet maintains an excellent Class-A starport and provides rigorous AI-managed training programs for starship pilots and starport operations.\n\nJecife is home to the Jecife Advanced Research Institute (JARI)."
     },
     {
         "id": "kernal",
         "name": "Kernal",
+        "hex": "0626",
         "uwp": "B5667B8-7",
         "hazardLevel": "Corsair raids",
         "allegiance": "Independent Monarchy (Yafizethe/Human)",
-        "summary": "Kernal is a rich, low-gravity agricultural world and the homeworld of the Yafizethe, a small caterpillar-like sophont species renowned for their diplomatic skills. Housing 40 million sophonts (roughly three-quarters Yafizethe), it maintains a TL-7 industrial base. Following the collapse of the Askigaak Loop, the Yafizethe were forced to adopt a cautious, pastoral lifestyle under a united monarchy to survive.\n\nThe world's rich fields are under constant threat from the jackal lords of the Askigaak Bight. The monarchy strains to maintain ties with the Duchy of Mora for protection. Players might be hired to escort Yafizethe diplomats, protect agricultural shipments from Arnyl corsairs, or help the monarchy secure advanced defensive technologies.",
-        "hex": "0626"
+        "summary": "Kernal is a rich, low-gravity agricultural world and the homeworld of the Yafizethe, a small caterpillar-like sophont species renowned for their diplomatic skills. Housing 40 million sophonts (roughly three-quarters Yafizethe), it maintains a TL-7 industrial base. Following the collapse of the Askigaak Loop, the Yafizethe were forced to adopt a cautious, pastoral lifestyle under a united monarchy to survive.\n\nThe world's rich fields are under constant threat from the jackal lords of the Askigaak Bight. The monarchy strains to maintain ties with the Duchy of Mora for protection. "
     },
     {
         "id": "moltke",
         "name": "Moltke",
+        "hex": "0529",
         "uwp": "E646000-0",
         "hazardLevel": "Dieback world, biological hazard",
         "allegiance": "Contested (Arnyl Admiralty / Qevar / Corsairs)",
-        "summary": "Moltke is a chilling 'ghost city' world completely reclaimed by an alien fungal ecosystem. During the Askigaak Union era, bioengineers unleashed the ASEN (Askigaak Substrate Extraction Network) fungi to accelerate mining. When the civilization collapsed, the fungi continued functioning, perfectly replicating entire cities, vehicles, and canal systems out of brittle, metal-rich fungal matter. These hollow 'fossil cities' crumble to dust at a touch, releasing toxic, metal-laced spore clouds.\n\nExploring Moltke is extremely hazardous due to the fragile fungal structures and deceptive flooded canals hidden under thin crusts. The Unified Sigka Communities of Qevar actively patrol the system and restrict access to research data. Adventure hooks include high-risk archaeological documentation, rescuing trapped salvagers from collapsed fungal arcologies, or investigating why the fungi possess an apparent 'memory' of architectural forms.",
-        "hex": "0529"
+        "summary": "Moltke is a chilling 'ghost city' world completely reclaimed by an alien fungal ecosystem. During the Askigaak Union era, bioengineers unleashed the ASEN (Askigaak Substrate Extraction Network) fungi to accelerate mining. When the civilization collapsed, the fungi continued functioning, perfectly replicating entire cities, vehicles, and canal systems out of brittle, metal-rich fungal matter. These hollow 'fossil cities' crumble to dust at a touch, releasing toxic, metal-laced spore clouds.\n\nExploring Moltke is extremely hazardous due to the fragile fungal structures and deceptive flooded canals hidden under thin crusts. The Unified Sigka Communities of Qevar actively patrol the system and restrict access to research data. "
     },
     {
         "id": "norg",
         "name": "Norg",
+        "hex": "0729",
         "uwp": "E000000-D",
         "hazardLevel": "Dieback world, corsairs, scavengers",
         "allegiance": "Unclaimed",
-        "summary": "Norg is another ruined dieback world in the Askigaak Bight, sharing the tragic history of its sister naval bases. Its populations and infrastructure were destroyed in the chaotic aftermath of the Empress Wave and subsequent pirate invasions.\n\n Players might be hired by the Admiralty to gather intelligence on these unknown craft or by independent researchers attempting to beat the survey ships to valuable archaeological sites.",
-        "hex": "0729"
+        "summary": "Norg is another ruined dieback world in the Askigaak Bight, sharing the tragic history of its sister naval bases. Its populations and infrastructure were destroyed in the chaotic aftermath of the Empress Wave and subsequent pirate invasions."
     },
     {
         "id": "prege",
         "name": "Prege",
+        "hex": "1030",
         "uwp": "D79A000-9",
         "hazardLevel": "Dieback world, corsairs",
         "allegiance": "Unclaimed",
-        "summary": "Prege rounds out the list of the eight Askigaak Bight dieback worlds. A casualty of the galactic crises, its civilization was entirely extinguished centuries ago.\n\nThe system is occasionally used as a waypoint or temporary hideout by Wilds traders and Lurent worldships avoiding the attention of the Arnyl Admiralty. Adventure hooks include tracking down a fugitive hiding in its ruins or discovering a dormant Virus relic left behind during the Collapse.",
-        "hex": "1030"
+        "summary": "Prege rounds out the list of the eight Askigaak Bight dieback worlds. A casualty of the galactic crises, its civilization was entirely extinguished centuries ago.\n\nThe system is occasionally used as a waypoint or temporary hideout by Wilds traders and Lurent worldships avoiding the attention of the Arnyl Admiralty. "
     },
     {
         "id": "qevar",
         "name": "Qevar",
+        "hex": "0731",
         "uwp": "A432646-E",
         "hazardLevel": "Bio-engineered predators, cult-like radicalism",
         "allegiance": "Unified Sigka Communities",
-        "summary": "Qevar is the stronghold of the exiled Sigka, an aquatic sophont species that fled the ecological collapse of Askigaak. Armed with an advanced TL-14 naval fleet, Qevar boasts the only Class A starport in the Askigaak Bight. The world is renowned for its spectacular low-gravity bioluminescent kelp gardens, spiritual tourism, and peerless technical expertise, particularly in ionic fluidic systems.\n\nBeneath its welcoming, spiritual facade lies a deeply traumatized society. The Sigka have adopted a radicalized version of the indigenous Giskaani philosophy ('all are one, including predator and prey') and practice 'free love' alongside ritualistic psychedelic use. Alarmingly, they are using advanced bioengineering to recreate their extinct apex predator (the Sachupe), conducting human/Sigka sacrifices disguised as 'sacred integration.' Adventure hooks include investigating missing tourists, negotiating ship repairs, or uncovering the dark truths of their ecological restoration projects.",
-        "hex": "0731"
+        "summary": "Qevar is the stronghold of the exiled Sigka, an aquatic sophont species that fled the ecological collapse of Askigaak. Armed with an advanced TL-14 naval fleet, Qevar boasts the only Class A starport in the Askigaak Bight. The world is renowned for its spectacular low-gravity bioluminescent kelp gardens, spiritual tourism, and peerless technical expertise, particularly in ionic fluidic systems.\n\nBeneath its welcoming, spiritual facade lies a deeply traumatized society. The Sigka have adopted a radicalized version of the indigenous Giskaani philosophy and practice 'free love' alongside ritualistic psychedelic use. "
     },
     {
         "id": "shen-yang",
         "name": "Shen-Yang",
+        "hex": "0727",
         "uwp": "C665575-5",
         "hazardLevel": "Wild, Corsair raids, extortion",
         "allegiance": "Skopyeh Tributary",
-        "summary": "Shen-Yang is a TL-5 agricultural garden world with a scattered population of 300,000 living in independent rural city-states. Without significant planetary defenses, the populace relies on offering tribute to corsair lords—primarily from Skopyeh—in exchange for protection, though this relationship frequently swings into outright racketeering and raiding when tribute is withheld.\n\nSome of the agricultural city-states are allegedly populated entirely by pirate outcasts and exiles trying to earn their way back into the fleet. It serves as a prime location for adventures involving defending farming settlements from pirate raids, smuggling agricultural goods past corsair blockades, or dealing with pirate exiles hiding among the populace.",
-        "hex": "0727"
+        "summary": "Shen-Yang is a TL-5 agricultural garden world with a scattered population of 300,000 living in independent rural city-states. Without significant planetary defenses, the populace relies on offering tribute to corsair lords—primarily from Skopyeh—in exchange for protection, though this relationship frequently swings into outright racketeering and raiding when tribute is withheld.\n\nSome of the agricultural city-states are allegedly populated entirely by pirate outcasts and exiles trying to earn their way back into the fleet. "
     },
     {
         "id": "sipedon",
         "name": "Sipedon",
+        "hex": "0929",
         "uwp": "E553676-6",
         "hazardLevel": "Lawlessness, assassins, thieves",
         "allegiance": "Arnyl Admiralty / Pirate Retirement Haven",
-        "summary": "Sipedon is a poor, thin-atmosphere world with a bare-bones Class E starport. Despite its poverty and low tech level (TL-6), it has carved out a unique niche as a retirement haven for pirates. Located just one parsec away from Arnyl, it remains free from the Admiralty's tribute enforcement, operating instead under the whims of local lords and shadow brokers.\n\nSipedon is the dark reflection of Arnyl's visible neutrality. It is the go-to destination for hiring assassins, thieves, and conducting illicit business away from the Admiralty's watchful eyes. Adventure hooks include tracking down retired corsairs hoarding stolen Imperial treasure, navigating the shadowy casino politics, or recruiting unsavory specialists for black-ops missions.",
-        "hex": "0929"
+        "summary": "Sipedon is a poor, thin-atmosphere world with a bare-bones Class E starport. Despite its poverty and low tech level (TL-6), it has carved out a unique niche as a retirement haven for pirates. Located just one parsec away from Arnyl, it remains free from the Admiralty's tribute enforcement, operating instead under the whims of local lords and shadow brokers.\n\nSipedon is the dark reflection of Arnyl's visible neutrality. It is the go-to destination for hiring assassins, thieves, and conducting illicit business away from the Admiralty's watchful eyes."
     },
     {
         "id": "skopyeh",
         "name": "Skopyeh",
+        "hex": "0827",
         "uwp": "B500455-D",
         "hazardLevel": "Corsairs, high-tech fortress",
         "allegiance": "Corsair Lords (Nominally Arnyl Admiralty)",
-        "summary": "An airless desert fortress world, Skopyeh boasts a high-tech (TL-13) infrastructure funded by savvy corsair captains who invested their plunder rather than squandering it. The world’s 60,000 inhabitants maintain a Class B starport crucial for patching hulls and keeping the corsair squadrons operational. They nominally swear fealty to the Arnyl Admiralty, but operate in direct competition with them.\n\nStrategically located near agricultural worlds like Shen-Yang and Kernal, Skopyeh leverages its superior technology to offer lucrative opportunities for ambitious corsair captains. Adventure hooks include smuggling high-tech components, facilitating secret diplomatic overtures between Skopyeh and Qevar, or participating in proxy conflicts between Skopyeh lords and the Arnyl Admiralty.",
-        "hex": "0827"
+        "summary": "An airless desert fortress world, Skopyeh boasts a high-tech (TL-13) infrastructure funded by savvy corsair captains who invested their plunder rather than squandering it. The world’s 60,000 inhabitants maintain a Class B starport crucial for patching hulls and keeping the corsair squadrons operational. They nominally swear fealty to the Arnyl Admiralty, but operate in direct competition with them.\n\nStrategically located near agricultural worlds like Shen-Yang and Kernal, Skopyeh leverages its superior technology to offer lucrative opportunities for ambitious corsair captains. "
     },
     {
         "id": "sultana",
         "name": "Sultana",
+        "hex": "0730",
         "uwp": "E649000-9",
         "hazardLevel": "Dieback world",
         "allegiance": "Unclaimed",
-        "summary": "Sultana is one of the eight dead systems comprising the Askigaak Bight dieback worlds. Once a populated system, it was swept clean by the combined devastation of the Empress Wave and the Corsair Scourge.\n\nToday, it is a silent graveyard offering little more than navigational hazards and the faint promise of deep-space salvage. Adventure hooks could involve mapping the system for safe trade routes or searching for lost merchant convoys that vanished in its vicinity.",
-        "hex": "0730"
+        "summary": "Sultana is one of the eight dead systems comprising the Askigaak Bight dieback worlds. Once a populated system, it was swept clean by the combined devastation of the Empress Wave and the Corsair Scourge.\n\nToday, it is a silent graveyard offering little more than navigational hazards and the faint promise of deep-space salvage. "
     },
     {
         "id": "taburi-nen",
         "name": "Taburi Nen",
+        "hex": "1227",
         "uwp": "D546000-B",
         "hazardLevel": "Dieback world, rogue machines",
         "allegiance": "Unclaimed",
-        "summary": "Taburi Nen was once a critical agricultural supplier for Dekha until a mysterious machine uprising wiped out the human population and shut down food shipments. Now classified as an unstable dieback world, its surface is roamed by remnants of agricultural automation running purposeless routines. The planet is surrounded by extensive, treacherous debris fields composed of ruined orbital infrastructure and destroyed Dekhan emergency response vessels.\n\nAdventure hooks include scavenging high-tech Dekhan wreckage, dodging rogue surface harvesters, or investigating the cause of the machine uprising.",
-        "hex": "1227"
+        "summary": "Taburi Nen was once a critical agricultural supplier for Dekha until a mysterious machine uprising wiped out the human population and shut down food shipments. Now classified as an unstable dieback world, its surface is roamed by remnants of agricultural automation running purposeless routines. "
     },
     {
         "id": "frisgar",
         "name": "Frisgar",
+        "hex": "1025",
         "uwp": "E4247A7-8",
         "hazardLevel": "Wild",
         "allegiance": "Unclaimed",
-        "summary": "Frisgar is a world on the coreward edges of the map.",
-        "hex": "1025"
+        "summary": "Frisgar is a world on the coreward edges of the map."
     },
     {
         "id": "burtrum",
         "name": "Burtrum",
+        "hex": "1026",
         "uwp": "C53878B-8",
         "hazardLevel": "Wild",
         "allegiance": "Unclaimed",
-        "summary": "Burtrum is a world in the Wilds.",
-        "hex": "1026"
+        "summary": "Burtrum is a world in the Wilds."
     },
     {
         "id": "medard",
         "name": "Medard",
+        "hex": "1327",
         "uwp": "D421000-C",
         "hazardLevel": "Dieback world",
         "allegiance": "Unclaimed",
-        "summary": "Medard is a world in the Wilds.",
-        "hex": "1327"
+        "summary": "Medard is a world in the Wilds."
     },
     {
         "id": "kew",
         "name": "Kew",
+        "hex": "1426",
         "uwp": "E512000-B",
         "hazardLevel": "Dieback World",
         "allegiance": "Unclaimed",
-        "summary": "Kew lies in the trailing edge of the Bight.",
-        "hex": "1426"
+        "summary": "Kew lies in the trailing edge of the Bight."
     },
     {
         "id": "condamine",
         "name": "Condamine",
+        "hex": "1428",
         "uwp": "C665572-7",
-        "hazardLevel": "Targeted by Sentinel, wild",
+        "hazardLevel": "Wild",
         "allegiance": "Wild",
-        "summary": "Condamine is a balkanized garden world with hundreds of thousands of inhabitants. During a massive machine uprising that devastated Dekha's primary agricultural supplier (Taburi Nen), Condamine was identified by the AI Pentarch 'Sentinel' as a primary target for aggressive military raids to secure its biosphere resources by force.\n\nThis proposed orbital invasion was narrowly avoided only because another Pentarch, 'Manciple', vetoed the action, insisting instead on mitigating the food crisis through internal synthetic production. The inhabitants of Condamine remain largely ignorant of how close they came to annihilation by Dekhan forces.",
-        "hex": "1428"
+        "summary": "Condamine is a balkanized garden world with hundreds of thousands of inhabitants."
     },
     {
         "id": "ishiri",
         "name": "Ishiri",
+        "hex": "1429",
         "uwp": "E565855-6",
-        "hazardLevel": "Targeted by Sentinel, wild",
+        "hazardLevel": "Wild",
         "allegiance": "Wild",
-        "summary": "Ishiri is a highly populated, pre-agricultural world governed by a feudal technocracy and home to hundreds of millions of citizens. Driven by the starvation crisis triggered by the loss of Taburi Nen, the Dekhan AI Pentarch 'Sentinel' forcefully advocated for immediate military raids on Ishiri to extract its resources.\n\nThe invasion was prevented by a political deadlock within the Pentarchy, spearheaded by 'Manciple', who argued against exposing Dekhan citizens to the external dangers of invading heavily populated systems. Though spared for now, Ishiri remains a highly vulnerable target should the Pentarchy's internal synthetic food production fail.",
-        "hex": "1429"
+        "summary": "Ishiri is a highly populated, pre-agricultural world governed by a feudal technocracy and home to hundreds of millions of citizens. "
     },
     {
         "id": "eretaro",
         "name": "Eretaro",
+        "hex": "1430",
         "uwp": "D9C4000-B",
         "hazardLevel": "Dieback world",
         "allegiance": "Unclaimed",
-        "summary": "Eretaro lies several parsecs from the trailing edge of the Bight.",
-        "hex": "1430"
+        "summary": "Eretaro lies several parsecs from the trailing edge of the Bight."
     },
     {
         "id": "point-ay",
         "name": "Point Ay",
+        "hex": "1231",
         "uwp": "C560544-9",
         "hazardLevel": "Wild",
         "allegiance": "Unclaimed",
-        "summary": "Point Ay is a Wilds world at the rimward edge of charted space, notable chiefly as the last reliable waypoint before the Pashus Cluster. Navigators who have pushed beyond Point Ay report that something is wrong with jump space out that way — ships calculate routes to Pashus that should be routine and emerge from jump in the wrong system, or months late, or not at all.\n\nThe few traders who maintain irregular runs to the Cluster depart from Point Ay with unusual care, and most won't share their astrogation data. Rumored to be a route — stable for now, though nobody will confirm how long — threading through the hazard to Pashus. If it exists, whoever found it isn't advertising.",
-        "hex": "1231"
+        "summary": "Point Ay is a Wilds world at the rimward edge of charted space, notable chiefly as the last reliable waypoint before the Pashus Cluster. Navigators who have pushed beyond Point Ay report that something is wrong with jump space out that way: ships calculate routes to Pashus that should be routine and emerge from jump in the wrong system, or months late, or not at all."
     },
     {
         "id": "briaxis",
         "name": "Briaxis",
+        "hex": "0531",
         "uwp": "C420477-B",
         "hazardLevel": "Wild",
         "allegiance": "Unclaimed",
-        "summary": "Briaxis is a Wilds world.",
-        "hex": "0531"
+        "summary": "Briaxis is a Wilds world."
     },
     {
         "id": "mora",
         "name": "Mora",
+        "hex": "SPIN 3124",
         "uwp": "AA99A9D-C",
         "hazardLevel": "Strict matriarchy, state-sanctioned piracy",
         "allegiance": "The Matriarchy of Mora",
-        "summary": "Mora is a powerful, independent 'Strong World' and the historical *de facto* capital of the Spinward Marches. In the Galaxiad era, Mora steadfastly refuses to join the Republic of Regina, instead styling itself as 'The Matriarchy'. The society is a strict global monoculture governed by an oligarchic matriarchy where men face severely restricted rights.\n\nDuring the collapse of the Third Imperium, Mora instituted a policy of 'Rescue' to secure Imperial technology, which over centuries devolved into state-sanctioned espionage and piracy across the Wilds. The Duchy of Mora issues 'Letters of Salvage' to heavily armed, subsidized salvage ships. Despite its hostility to external corporate control, Mora is a vital economic engine for the Deneb Wilds, hosting massive 'Wild Trader Auctions' and chaotic shadow markets.",
-        "hex": "SPIN 3124"
+        "summary": "Mora is a powerful, independent 'Strong World' and the historical *de facto* capital of the Spinward Marches. In the Galaxiad era, Mora steadfastly refuses to join the Republic of Regina, instead styling itself as 'The Matriarchy'. The society is a strict global monoculture governed by an oligarchic matriarchy where men face severely restricted rights.\n\nDuring the collapse of the Third Imperium, Mora instituted a policy of 'Rescue' to secure Imperial technology, which over centuries devolved into state-sanctioned espionage and piracy across the Wilds. The Duchy of Mora issues 'Letters of Salvage' to heavily armed, subsidized salvage ships. Despite its hostility to external corporate control, Mora is a vital economic engine for the Deneb Wilds, hosting massive 'Wild Trader Auctions' and chaotic shadow markets."
     },
     {
         "id": "regina",
@@ -299,181 +299,181 @@
     {
         "id": "vincennes",
         "name": "Vincennes",
+        "hex": "1122",
         "uwp": "A899A8E-E",
         "hazardLevel": "Unpredictable dictator, Corsairs",
         "allegiance": "Independent",
-        "summary": "During the Third Imperium, Vincennes was a major industrial powerhouse, whose economic might heavily influenced neighboring worlds like Dekha. Following the Collapse, Vincennes became a core member of the \"League of Deneb and Vincennes,\" establishing a powerful polity that actively engaged in military expeditions against neighbors like the Askigaak Union.\n\nBy the late Galaxiad era, the space around Vincennes had become increasingly perilous. A notable historic event occurred recently in 1883 when corsairs cornered the Lurent worldship *Stone Horizon* in the Vincennes Oort cloud. Unable to defeat the superior corsair technology, the Lurent deliberately rammed the massive worldship into the pirate carrier, sacrificing the ship and Clan Yavrek to allow civilian craft to escape.",
-        "hex": "1122"
+        "summary": "During the Third Imperium, Vincennes was a major industrial powerhouse, whose economic might heavily influenced neighboring worlds like Dekha. Following the Collapse, Vincennes became a core member of the \"League of Deneb and Vincennes,\" establishing a powerful polity that actively engaged in military expeditions against neighbors like the Askigaak Union.\n\nBy the late Galaxiad era, the space around Vincennes had become increasingly perilous. A notable historic event occurred recently in 1883 when corsairs cornered the Lurent worldship *Stone Horizon* in the Vincennes Oort cloud. Unable to defeat the superior corsair technology, the Lurent deliberately rammed the massive worldship into the pirate carrier, sacrificing the ship and Clan Yavrek to allow civilian craft to escape."
     },
     {
         "id": "lilad",
         "name": "Lilad",
+        "hex": "1135",
         "uwp": "C547ACA-C",
         "hazardLevel": "Heavily Defended",
         "allegiance": "Lilad Group",
-        "summary": "Lilad is the largest moon of the massive gas giant Kuleshidur. Its enormous population lives almost entirely in 160 massive beanstalk arcologies anchored to the seafloor and stretching up into geostationary orbit. The system lacks a central highport; instead, each populated moon has its own small port. Lilad is highly self-contained, and the local defense flotillas are notoriously lethal to unauthorized raiders and intruders.",
-        "hex": "1135"
+        "summary": "Lilad is the largest moon of the massive gas giant Kuleshidur. Its enormous population lives almost entirely in 160 massive beanstalk arcologies anchored to the seafloor and stretching up into geostationary orbit. The system lacks a central highport; instead, each populated moon has its own small port. Lilad is highly self-contained, and the local defense flotillas are notoriously lethal to unauthorized raiders and intruders."
     },
     {
         "id": "deneb",
         "name": "Deneb",
+        "hex": "1925",
         "uwp": "B537A98-A",
         "hazardLevel": "Wilds",
         "allegiance": "Independent",
-        "summary": "Deneb was historically the capital of the Deneb Sector, an advanced trade center and the homeworld of the amphibious Nenlat. By the Galaxiad era, the world has fallen into the lawless Wilds, having suffered immense tragedy and population loss during the Empress Wave, though its massive arcologies still house tens of billions of inhabitants. Travel here is considered deadly due to rampant corsair activity in the region.",
-        "hex": "1925"
+        "summary": "Deneb was historically the capital of the Deneb Sector, an advanced trade center and the homeworld of the amphibious Nenlat. By the Galaxiad era, the world has fallen into the lawless Wilds, having suffered immense tragedy and population loss during the Empress Wave, though its massive arcologies still house tens of billions of inhabitants. Travel here is considered deadly due to rampant corsair activity in the region."
     },
     {
         "id": "magash",
         "name": "Magash",
+        "hex": "0316",
         "uwp": "A4009A9-F",
         "hazardLevel": "Hostile empire, militarized zone",
         "allegiance": "Limmu Bukara",
-        "summary": "Magash is the capital of the Limmu Bukara (the Sabine Empire), a small, fiercely hostile pocket empire in the Deneb sector led by megacrat Shegami Ushkashaar. Boasting a Class A starport and TL-15 capabilities, Magash commands a formidable navy and routinely conducts aggressive combat maneuvers, actively pursuing and impounding vessels from rival states like the Republic of Regina.\n\nThe world is governed by a ranking megacrat and maintains strict controls, making it extremely dangerous for unauthorized travelers. Adventure hooks include smuggling rare goods (like the Horned Pakang riding beast from nearby Rhinom) through Magash's tight security, rescuing impounded merchant crews, or conducting espionage against their naval operations.",
-        "hex": "0316"
+        "summary": "Magash is the capital of the Limmu Bukara (the Sabine Empire), a small, fiercely hostile pocket empire in the Deneb sector led by megacrat Shegami Ushkashaar. Boasting a Class A starport and TL-15 capabilities, Magash commands a formidable navy and routinely conducts aggressive combat maneuvers, actively pursuing and impounding vessels from rival states like the Republic of Regina.\n\nThe world is governed by a ranking megacrat and maintains strict controls, making it extremely dangerous for unauthorized travelers. "
     },
     {
         "id": "kubishush",
         "name": "Kubishush",
+        "hex": "0917",
         "uwp": "B8B6A88-F",
         "hazardLevel": "Bioweapons research, hostile empire",
         "allegiance": "Limmu Bukara",
-        "summary": "Kubishush is a high-tech (TL-15) strong world aligned with the Limmu Bukara pocket empire. Known for its aggressive stance alongside Magash and Liiri, it bolsters the military might of its coalition against the Republic of Regina.\n\nIntelligence reports and captured corsairs indicate that Kubishush hosts clandestine research bases involved in developing viral bioweapons, such as the SDEIEX virus. Adventure hooks include infiltrating these research facilities to secure antidotes, extracting defecting scientists, or stopping corsairs armed with Kubishush-manufactured biological payloads.",
-        "hex": "0917"
+        "summary": "Kubishush is a high-tech (TL-15) strong world aligned with the Limmu Bukara pocket empire. Known for its aggressive stance alongside Magash and Liiri, it bolsters the military might of its coalition against the Republic of Regina.\n\nIntelligence reports and captured corsairs indicate that Kubishush hosts clandestine research bases involved in developing viral bioweapons, such as the SDEIEX virus. "
     },
     {
         "id": "liiri",
         "name": "Liiri",
+        "hex": "1016",
         "uwp": "B54297A-C",
         "hazardLevel": "Hostile empire",
         "allegiance": "Limmu Bukara",
-        "summary": "Liiri is the third pillar of the hostile Limmu Bukara pocket empire, standing alongside Magash and Kubishush. With a Class B starport and TL-12 capabilities, it supports the logistical and military framework of the coalition.\n\nThe world contributes to the constant border tensions with the Republic of Regina. Players operating near Liiri must navigate hostile patrols and blockades. Adventure hooks include conducting reconnaissance on Liiri's fleet movements or extracting deep-cover agents embedded within its government.",
-        "hex": "1016"
+        "summary": "Liiri is the third pillar of the hostile Limmu Bukara pocket empire, standing alongside Magash and Kubishush. With a Class B starport and TL-12 capabilities, it supports the logistical and military framework of the coalition.\n\nThe world contributes to the constant border tensions with the Republic of Regina. Players operating near Liiri must navigate hostile patrols and blockades. "
     },
     {
         "id": "rhinom",
         "name": "Rhinom",
+        "hex": "0717",
         "uwp": "B77688B-8",
         "hazardLevel": "Corrupt politics, smuggling",
         "allegiance": "Independent",
-        "summary": "Rhinom is a populated world ruled by 'the Kashlan,' a charismatic but ruthless premier elected for life. The Kashlan maintains tight control over the system's exports, including the lucrative supply of the narcotic 'eela' produced on its farming moon, Malea.\n\nRhinom's politics are characterized by pragmatic deal-making and a populist facade. It serves as a hub for both legitimate trade and shadow economies. Adventure hooks include negotiating high-stakes trade deals directly with the Kashlan, navigating the complex black market for restricted agricultural goods, or running interference between rival smuggling rings. It is on the edge of the Limmu Bukara (Sabine Empire).",
-        "hex": "0717"
+        "summary": "Rhinom is a populated world ruled by 'the Kashlan,' a charismatic but ruthless premier elected for life. The Kashlan maintains tight control over the system's exports, including the lucrative supply of the narcotic 'eela' produced on its farming moon, Malea.\n\nRhinom's politics are characterized by pragmatic deal-making and a populist facade. It serves as a hub for both legitimate trade and shadow economies. "
     },
     {
         "id": "giffert",
         "name": "Giffert",
+        "hex": "1332",
         "uwp": "E7A8000-D",
         "hazardLevel": "Dieback world, Pashus Tangle",
         "allegiance": "Unclaimed",
-        "summary": "Giffert is a dieback world on the trailing edge of the Pashus Cluster, its vast, still oceans undisturbed for centuries beneath haze-filtered skies. Whatever civilization once existed here left no useful records; the population was extinguished long enough ago that the cause is a matter of archaeological inference rather than history.\n\nThe system sits squarely within the Pashus Tangle, and the jump-space distortion that envelops this region makes Giffert as hard to reach as the inhabited worlds around it. Survey teams from Pashus have mapped the system thoroughly — it is the kind of place that a well-equipped technical civilization spends time documenting when outward expansion is not an option. What they have found is occasionally transmitted via relay to the few traders who pass through the Cluster, but the data tends to arrive incomplete and months out of date.",
-        "hex": "1332"
+        "summary": "Giffert is a dieback world on the trailing edge of the Pashus Cluster, its vast, still oceans undisturbed for centuries beneath haze-filtered skies. \n\nThe system sits squarely within the Pashus Tangle, and the jump-space distortion that envelops this region makes Giffert as hard to reach as the inhabited worlds around it."
     },
     {
         "id": "pashus",
         "name": "Pashus",
+        "hex": "1432",
         "uwp": "A432474-F",
         "hazardLevel": "Wild, Pashus Tangle",
         "allegiance": "Unclaimed",
-        "summary": "Pashus is the center of its cluster and almost nothing else is known about it with confidence. Somewhere beyond the Tangle — the jump-space disturbance that has made this region a navigation hazard since the Collapse — sits a world with a Class A starport and TL-15 infrastructure. The evidence for this is not rumor: it trickles out in the form of people. Spacers emerge from the Tangle in aging but immaculately maintained ships, carrying technical components of obvious quality and speaking of a world that has turned entirely inward since the disaster.\n\nThe stories they tell are consistent on a few points. Pashus did not fall. It contracted. The old research station, whatever its original purpose, is either still operational or has been absorbed into something larger. The population is small, self-sufficient, and deeply uninterested in contact with the broader Wilds. The routes in are not published — they shift, or they are deliberately kept obscure — and the people who come out are not, as a rule, forthcoming about how they got through. They answer questions with the particular patience of individuals who have decided it is not worth arguing. If you want to find Pashus, it is generally suggested that you start at Point Ay and ask very carefully.",
-        "hex": "1432"
+        "summary": "Pashus is the center of its cluster and almost nothing else is known about it with confidence. Somewhere beyond the Tangle — the jump-space disturbance that has made this region a navigation hazard since the Collapse — sits a world with a Class A starport and TL-15 infrastructure. The evidence for this is not rumor: it trickles out in the form of people. Spacers emerge from the Tangle in aging but immaculately maintained ships, carrying technical components of obvious quality and speaking of a world that has turned entirely inward since the disaster.\n\nThe stories they tell are consistent on a few points. Pashus did not fall but, after the emergence of the Tangle, Pashus contracted. The old research station, whatever its original purpose, is either still operational or has been absorbed into something larger. The population is small, self-sufficient, and deeply uninterested in contact with the broader Wilds. The routes in are not published — they shift, or they are deliberately kept obscure — and the people who come out are not forthcoming about how they got through. If you want to find Pashus, it is generally suggested that you start at Point Ay and ask very carefully."
     },
     {
         "id": "rajan",
         "name": "Rajan",
+        "hex": "1532",
         "uwp": "D87A000-B",
         "hazardLevel": "Dieback world, Pashus Tangle",
         "allegiance": "Unclaimed",
-        "summary": "Rajan is a dieback world at the far trailing edge of the Pashus Cluster, a vast shallow-seas world whose former inhabitants left behind little more than submerged foundations and the occasional reef of corroded structural alloy. It lies well inside the Pashus Tangle, and the jump-space hazard that defines this region means it receives less traffic than its position might otherwise suggest — which is to say, almost none at all.\n\nResearchers from Pashus include Rajan in their survey rotation. Transmissions from the Cluster that reach the wider Wilds occasionally reference findings from Rajan's abyssal zones, framed in the dry, technical language of a civilization that has had several centuries to fill its time with careful observation. Nobody on the outside has been able to verify the data.",
-        "hex": "1532"
+        "summary": "Rajan is a dieback world at the far trailing edge of the Pashus Cluster, a vast shallow-seas world whose former inhabitants left behind little more than submerged foundations and the occasional reef of corroded structural alloy. It lies well inside the Pashus Tangle, and the jump-space hazard that defines this region means it receives less traffic than its position might otherwise suggest — which is to say, almost none at all."
     },
     {
         "id": "shiiku",
         "name": "Shiiku",
+        "hex": "1333",
         "uwp": "D651758-7",
         "hazardLevel": "Wild, Pashus Tangle",
         "allegiance": "Unclaimed",
-        "summary": "Shiiku is a settled arid world within the Pashus Tangle, home to tens of millions who have spent generations adapting to the particular isolation that the jump-space hazard imposes. Travel out of the Cluster is unreliable and expensive; Shiiku's population has responded by becoming exceptionally self-sufficient in the ways that matter, building a society organized around dust-farming and deep mineral extraction that does not depend on regular outside contact.\n\nThe Tangle has shaped the character of the world as much as its thin atmosphere and chronic water scarcity. Shiiku's people are not unfriendly, but they have little practice with outsiders and somewhat less patience for them.",
-        "hex": "1333"
+        "summary": "Shiiku is a settled arid world within the Pashus Tangle, home to tens of millions who have spent generations adapting to the particular isolation that the jump-space hazard imposes. Travel out of the Cluster is unreliable and expensive; Shiiku's population has responded by becoming exceptionally self-sufficient, building a society organized around dust-farming and deep mineral extraction that does not depend on regular outside contact."
     },
     {
         "id": "atab",
         "name": "Atab",
+        "hex": "1433",
         "uwp": "C540789-8",
         "hazardLevel": "Wild, Pashus Tangle",
         "allegiance": "Unclaimed",
-        "summary": "Atab is a desert world in the Pashus Tangle, home to roughly 80 million Jonkeereen — one of the largest surviving concentrations of the subspecies outside of Jonkeer itself. They arrived here during the Ministry of Colonisation's forced transplant program and have been effectively isolated from the broader Jonkeereen diaspora for most of the post-Collapse period. The cultural drift is significant: tribal third-surnames, verbal shorthand dialect, and many traditions have evolved independently over the intervening centuries, and contact with the Jonkeereen of Jonkeer or Preslin would encounter as much strangeness as recognition.\n\nThe Tangle contributes to Atab's isolation, but the Jonkeereen here had already built a self-contained society before navigation through the hazard became a live question. They are not hostile to outsiders who arrive through the Cluster's uncertain routes, but they have the particular aloofness of a population that has not needed much from anyone in a long time and has organized its institutions accordingly. The elder councils govern through the three-name framework, and outside proposals — trade agreements, mutual defense arrangements, anything requiring compliance in exchange for external benefit — tend to move slowly through deliberation and arrive at refusal.",
-        "hex": "1433"
+        "summary": "Atab is a desert world in the Pashus Tangle, home to roughly 80 million Jonkeereen — one of the largest surviving concentrations of the subspecies outside of Jonkeer itself. They arrived here during the Ministry of Colonisation's forced transplant program and have been effectively isolated from the broader Jonkeereen diaspora for most of the post-Collapse period. The cultural drift is significant: tribal third-surnames, verbal shorthand dialect, and many traditions have evolved independently over the intervening centuries, and contact with the Jonkeereen of Jonkeer or Preslin would encounter as much strangeness as recognition.\n\nThe Tangle contributes to Atab's isolation, but the Jonkeereen here had already built a self-contained society before navigation through the hazard became a live question. They are not hostile to outsiders who arrive through the Cluster's uncertain routes, but they have not needed much from anyone in a long time and have organized their institutions accordingly."
     },
     {
         "id": "giranima",
         "name": "Giranima",
+        "hex": "1334",
         "uwp": "D797873-6",
         "hazardLevel": "Wild",
         "allegiance": "Unclaimed",
-        "summary": "At the rimward edge of the Pashus Cluster, the Giranima system has a large population of around 900 million spread amongst feuding factions. The world's technology level has declined to pre-space flight since the emergence of the Pashus Tangle cut it off from the cluster, and internal strife has left scars of atomic weapons on its surface. An increasingly pastoral world with a history of corsair exploitation, its people are generally wary of outsiders.",
-        "hex": "1334"
+        "summary": "At the rimward edge of the Pashus Cluster, the Giranima system has a large population of around 900 million spread amongst feuding factions. The world's technology level has declined to pre-space flight since the emergence of the Pashus Tangle cut it off from the cluster, and internal strife has left scars of atomic weapons on its surface. \n\nAn increasingly pastoral world with a history of corsair exploitation, Giranima's people are generally wary of outsiders."
     },
     {
         "id": "maricutin",
         "name": "Maricutin",
+        "hex": "0534",
         "uwp": "X765000-A",
         "hazardLevel": "Dieback world",
         "allegiance": "Unclaimed",
-        "summary": "Maricutin is a dieback world located two hexes rimward of Briaxis, on the spinward edge of what is loosely called the Preslin Cluster. Its lush, garden-category environment is a haunting contrast to its total depopulation — a civilization snuffed out and forgotten.\n\nThe world's Class X non-starport and lack of any living population make it a blank slate for opportunists. Its rich biosphere and temperate climate are well-documented by Preslin scouts, who periodically include it on survey runs.",
-        "hex": "0534"
+        "summary": "Maricutin is a dieback world located two hexes rimward of Briaxis, on the spinward edge of what is loosely called the Preslin Cluster. Its lush, garden-category environment is a haunting contrast to its total depopulation — a civilization snuffed out and forgotten."
     },
     {
         "id": "preslin",
         "name": "Preslin",
+        "hex": "0633",
         "uwp": "B430635-C",
         "hazardLevel": "Wild",
         "allegiance": "Jonkeereen Independent State",
-        "summary": "Preslin is a Jonkeereen world — home to a native desert-adapted human subspecies uniquely suited to its dry, thin-atmosphere environment. The Jonkeereen of Preslin have channeled their world's harsh conditions into a fierce martial tradition, building the formidable Preslin Star Navy: a well-equipped and highly disciplined fleet that projects power across the surrounding cluster and beyond.\n\nThe Star Navy is both Preslin's greatest achievement and its most defining feature. It serves as a deterrent to corsair incursions, a police force for nearby uninhabited systems, and an occasional enforcer of Preslin's commercial interests. Traders who earn the Star Navy's favor find Preslin's Class B starport a welcome and reliable resupply point; those who cross it tend not to return.",
-        "hex": "0633"
+        "summary": "Preslin is a Jonkeereen world — home to a native desert-adapted human subspecies uniquely suited to its dry, thin-atmosphere environment. The Jonkeereen of Preslin have channeled their world's harsh conditions into a fierce martial tradition, building the formidable Preslin Star Navy: a well-equipped and highly disciplined fleet that projects power across the surrounding cluster and beyond.\n\nThe Star Navy is both Preslin's greatest achievement and its most defining feature. It serves as a deterrent to corsair incursions, a police force for nearby uninhabited systems, and an occasional enforcer of Preslin's commercial interests. Traders who earn the Star Navy's favor find Preslin's Class B starport a welcome and reliable resupply point; those who cross it tend not to return."
     },
     {
         "id": "raguseppe",
         "name": "Raguseppe",
+        "hex": "0734",
         "uwp": "B410531-A",
         "hazardLevel": "Wild",
         "allegiance": "Unclaimed",
-        "summary": "Raguseppe is a desert world with a trace atmosphere and a population of hundreds of thousands that survives clustered in pressurized habitation domes. Its Class B starport makes it an important logistics node for traders moving between the Preslin Cluster and the broader Wilds.\n\nThe world's government maintains close ties with Preslin, relying on the Star Navy for protection.",
-        "hex": "0734"
+        "summary": "Raguseppe is a desert world with a trace atmosphere and a population of hundreds of thousands that survives clustered in pressurized habitation domes. Its Class B starport makes it an important logistics node for traders moving between the Preslin Cluster and the broader Wilds.\n\nThe world's government maintains close ties with Preslin, relying on the Star Navy for protection."
     },
     {
         "id": "mephit",
         "name": "Mephit",
+        "hex": "0833",
         "uwp": "E9B8000-8",
         "hazardLevel": "Dieback world",
         "allegiance": "Unclaimed",
-        "summary": "Mephit is a dieback world within the Preslin Cluster. While Imperial records indicate it once hosted a scout base, its unforgiving corrosive atmosphere has left little behind but patches of landing pads and scattered debris fields.",
-        "hex": "0833"
+        "summary": "Mephit is a dieback world within the Preslin Cluster. While Imperial records indicate it once hosted a scout base, its unforgiving corrosive atmosphere has left little behind but patches of landing pads and scattered debris fields."
     },
     {
         "id": "echura",
         "name": "Echura",
+        "hex": "0933",
         "uwp": "C683745-8",
         "hazardLevel": "Wild",
         "allegiance": "Unclaimed",
-        "summary": "Echura is a rich world — blessed with abundant resources, favorable trade conditions, and a comfortable biosphere that supports tens of millions of inhabitants. However, Echura is perhaps most famous across the Cluster for its deeply confusing customs: an elaborate web of social protocols, gift-giving obligations, seasonal taboos, and multi-layered honorifics that have tripped up generations of off-world traders.\n\nNavigating Echura's social landscape is considered a professional skill in itself. Traders who invest the time to learn local customs find an exceptionally profitable trading partner; those who blunder through negotiations often find deals inexplicably collapsed and doors politely but firmly closed. Several small consultancy firms operate out of Preslin specifically to coach merchants before their Echura runs.",
-        "hex": "0933"
+        "summary": "Echura is a rich world — blessed with abundant resources, favorable trade conditions, and a comfortable biosphere that supports tens of millions of inhabitants. However, Echura is perhaps most famous across the Cluster for its deeply confusing customs: an elaborate web of social protocols, gift-giving obligations, seasonal taboos, and multi-layered honorifics that have tripped up generations of off-world traders.\n\nNavigating Echura's social landscape is considered a professional skill in itself. Traders who invest the time to learn local customs find an exceptionally profitable trading partner; those who blunder through negotiations often find deals inexplicably collapsed and doors politely but firmly closed. Several small consultancy firms operate out of Preslin specifically to coach merchants before their Echura runs."
     },
     {
         "id": "quinthept",
         "name": "Quinthept",
+        "hex": "1032",
         "uwp": "D521000-A",
         "hazardLevel": "Dieback world",
         "allegiance": "Unclaimed",
-        "summary": "Quinthept is a dieback world at the coreward edge of the Preslin Cluster's influence. Its thin, tainted atmosphere and minimal resources made it a marginal colony even before the Collapse; whatever population it once held vanished without significant trace.\n\nThe system sees occasional traffic from Preslin Navy patrol routes, which use its empty system as a waypoint and navigational anchor for the cluster's trailing approaches.",
-        "hex": "1032"
+        "summary": "Quinthept is a dieback world at the coreward edge of the Preslin Cluster's influence. Its thin, tainted atmosphere and minimal resources made it a marginal colony even before the Collapse; whatever population it once held vanished without significant trace.\n\nThe system sees occasional traffic from Preslin Navy patrol routes, which use its empty system as a waypoint and navigational anchor for the cluster's trailing approaches."
     },
     {
         "id": "keirei",
         "name": "Keirei",
+        "hex": "1133",
         "uwp": "X310000-B",
         "hazardLevel": "Dieback world",
         "allegiance": "Unclaimed",
-        "summary": "Keirei is a dieback world at the trailing edge of the Preslin Cluster, an airless rock whose former inhabitants left behind only fragmentary orbital debris. Its non-existent starport rating reflects years of complete neglect.\n\nDespite its desolation, Keirei's position makes it a useful navigational waypoint for ships moving between the Preslin Cluster and the worlds further trailing. Prospectors occasionally stop to check for recoverable salvage in its debris field.",
-        "hex": "1133"
+        "summary": "Keirei is a dieback world at the trailing edge of the Preslin Cluster, an airless rock whose former inhabitants left behind only fragmentary orbital debris. Its non-existent starport rating reflects years of complete neglect.\n\nDespite its desolation, Keirei's position makes it a useful navigational waypoint for ships moving between the Preslin Cluster and the worlds further trailing. "
     }
 ]
