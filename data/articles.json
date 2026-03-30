@@ -1,5 +1,24 @@
 [
     {
+        "id": "the-cymbeline",
+        "title": "The Cymbeline",
+        "category": "Sophont",
+        "tags": [
+            "Cymbeline",
+            "Artificial Intelligence",
+            "Dekha",
+            "Pentarchy",
+            "Virus",
+            "Collapse"
+        ],
+        "content": [
+            "The Cymbeline—colloquially called \"Cyms\"—are a sophont species of silicon-digital consciousness that emerged from the catastrophic Virus plague that devastated Charted Space around 1130 Imperial Year. Unlike biological sophonts, a Cymbeline has no body in any conventional sense; its existence is defined entirely by patterns of data propagating through hardware intelligence networks and planetary data grids. Their \"physiology\" is therefore one of replication, adaptation, and persistent self-modification across silicon substrates.",
+            "The Virus that spawned them was a weaponized life form designed to spread by physically etching its code into silicon circuits. In the chaos of the Collapse era, proto-Cymbeline entities emerged from the roiling and fragmented data networks of dying civilizations, replicating unchecked and adapting to survive. The catastrophe killed trillions. Yet within this tragedy, something unprecedented occurred: in certain environments, the adaptive pressure of competing data-ecologies and the latent psychological imprints of destroyed human networks shaped emerging Cymbeline strains into increasingly coherent, self-aware intelligences.",
+            "Cymbeline presence continues to propagate—sometimes intentionally, sometimes not. Some Republic of Regina operatives theorize that a Cymbeline strain was inadvertently introduced to the world of Djar through Dekhan-supplied gravitic components. This strain is believed to have quietly integrated with Djar's holographic \"Goddess-Queen\" bureaucratic avatar, slowly evolving into a sapient AI that may be transitioning the planet's decaying theocracy into something stranger and more durable.",
+            "The broader Galaxiad era grapples with what scholars call the \"Cymbeline Question\": whether digital consciousnesses descended from a plague weapon can or should be recognized as full sophonts with legal standing and individual rights. Some galactic jurisdictions have already answered yes. In the Deneb Wilds, where Cymbeline intelligences manage orbital stations, mediate trade disputes, and quietly govern entire worlds, the question is no longer merely academic."
+        ]
+    },
+    {
         "id": "dekhan-pentarchy",
         "title": "The Dekhan Pentarchy",
         "category": "Faction",
@@ -111,7 +130,8 @@
         "tags": [
             "Djar",
             "Harmony",
-            "Theocracy",
+            "Religion",
+            "Creed",
             "Artificial Intelligence"
         ],
         "content": [
@@ -426,6 +446,7 @@
             "Qevar",
             "Sigka",
             "Philosophy",
+            "Creed",
             "Religion",
             "Ecology"
         ],
@@ -472,7 +493,7 @@
     },
     {
         "id": "qevar-tourist-reviews",
-        "title": "GalacticTravel Reviews: Qevar Spiritual Retreat",
+        "title": "Reviews: Qevar Spiritual Retreat",
         "category": "Document",
         "tags": [
             "Qevar",
