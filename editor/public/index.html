@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackals of the Bight - Data Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <h1>Jackals of the Bight <span>Editor</span></h1>
+            </div>
+            <nav class="tabs">
+                <button class="tab-btn active" data-tab="articles">Articles</button>
+                <button class="tab-btn" data-tab="worlds">Worlds</button>
+                <button class="tab-btn" data-tab="distantCategories">Distant</button>
+            </nav>
+            <div class="header-actions">
+                <button id="save-all-btn" class="primary-btn">Save to Disk</button>
+                <div id="status-message" class="status-message"></div>
+            </div>
+        </header>
+
+        <main class="app-main">
+            <aside class="sidebar">
+                <div class="sidebar-header" style="flex-wrap: wrap; gap: 0.5rem;">
+                    <input type="text" id="search-input" placeholder="Search..." class="search-input" style="flex: 1 1 100%;">
+                    
+                    <select id="category-filter" class="search-input" style="flex: 1 1 100%; display: none;">
+                        <option value="">All Categories</option>
+                    </select>
+                    
+                    <div style="display: flex; gap: 0.5rem; width: 100%;">
+                        <button id="sort-list-btn" class="action-btn" title="Sort Alphabetically" style="flex: 1;">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h4"></path></svg>
+                        </button>
+                        <button id="wordcloud-btn" class="action-btn" title="Toggle Tag Cloud" style="flex: 1; display: none;">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M17.5 19c2.5 0 4.5-2 4.5-4.5 0-2.4-1.9-4.4-4.3-4.5-0.3-3.6-3.3-6.5-7.2-6.5-3.3 0-6.1 2.2-7 5.2-2.1 0.4-3.5 2.2-3.5 4.3 0 2.5 2 4.5 4.5 4.5h13z"></path></svg>
+                        </button>
+                        <button id="new-item-btn" class="action-btn" title="Create New" style="flex: 1;">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            New
+                        </button>
+                    </div>
+                </div>
+                <!-- Wordcloud -->
+                <div id="wordcloud-container" class="hidden"></div>
+                <div class="item-list-container">
+                    <ul id="item-list" class="item-list">
+                        <!-- Items populated by JS -->
+                    </ul>
+                </div>
+            </aside>
+
+            <section class="editor-content">
+                <div id="welcome-state" class="empty-state active">
+                    <svg viewBox="0 0 24 24" width="64" height="64" stroke="currentColor" stroke-width="1" fill="none" opacity="0.3"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    <h2>Select an item to edit</h2>
+                    <p>Choose an article or world from the sidebar, or create a new one.</p>
+                </div>
+
+                <div id="editor-form-state" class="form-container">
+                    <div class="form-header">
+                        <h2 id="form-title">Edit Item</h2>
+                        <button id="delete-item-btn" class="danger-btn">Delete</button>
+                    </div>
+                    <form id="data-form" class="data-form">
+                        <!-- Form fields populated by JS -->
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Saved successfully!</div>
+
+    <script src="app.js"></script>
+</body>
+</html>

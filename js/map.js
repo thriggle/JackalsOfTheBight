@@ -42,8 +42,8 @@ class StarMap {
         this.setupInteractions();
     }
 
-    loadData(worlds) {
-        const distantCategories = {
+    loadData(worlds, loadedDistantCategories = null) {
+        const distantCategories = loadedDistantCategories || {
             coreward: [
                 'vincennes', 'hrd', 'borlund',
                 {
@@ -132,16 +132,9 @@ class StarMap {
         const t = this.tangleTime;
         const R = this.hexRadius;
 
-        // The 7 hexes that form the tangle footprint
-        const tangleHexes = [
-            { col: 14, row: 31 }, // 1431 – empty, coreward of Pashus
-            { col: 13, row: 32 }, // 1332 – Giffert
-            { col: 14, row: 32 }, // 1432 – Pashus (centre)
-            { col: 15, row: 32 }, // 1532 – Rajan
-            { col: 13, row: 33 }, // 1333 – Shiiku
-            { col: 14, row: 33 }, // 1433 – Atab
-            { col: 15, row: 33 }, // 1533 – empty, rimward of Rajan
-        ];
+        // The hexes that form the tangle footprint
+        const tangleHexes = this.worlds.filter(w => w.hasTangle);
+        if (tangleHexes.length === 0) return;
 
         const centers = tangleHexes.map(h => this.getHexCenter(h.col, h.row));
         const cx = centers.reduce((s, c) => s + c.x, 0) / centers.length;
@@ -428,6 +421,7 @@ class StarMap {
 
             // Check collision with worlds (simple circle hit test)
             for (const w of this.worlds) {
+                if (!w.name && !w.uwp) continue; // skip clicking empty hexes
                 const pos = this.getHexCenter(w.col, w.row);
                 const dist = Math.sqrt(Math.pow(pos.x - worldX, 2) + Math.pow(pos.y - worldY, 2));
                 if (dist <= 20) { // 20 is hit radius
@@ -539,8 +533,13 @@ class StarMap {
         // Draw tangle overlay (beneath world dots)
         this.drawTangle(this.ctx);
 
-        // Draw worlds
+        // Draw worlds (dots, names, etc)
         for (const w of this.worlds) {
+            if (!w.name && !w.uwp) {
+                // Ignore completely empty hexes that just act as tangle anchors
+                continue;
+            }
+
             const { x, y } = this.getHexCenter(w.col, w.row);
             const color = this.getColorForWorld(w);
 
@@ -616,8 +615,8 @@ class StarMap {
     }
 }
 
-window.initMap = (worldsData) => {
+window.initMap = (worldsData, distantCategoriesData) => {
     const mapArr = window._mapInstance || new StarMap('hexMapCanvas');
     window._mapInstance = mapArr;
-    mapArr.loadData(worldsData);
+    mapArr.loadData(worldsData, distantCategoriesData);
 };
