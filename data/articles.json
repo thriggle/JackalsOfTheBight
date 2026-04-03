@@ -7,9 +7,7 @@
             "Cymbeline",
             "Artificial Intelligence",
             "Dekha",
-            "Pentarchy",
-            "Virus",
-            "Collapse"
+            "Virus"
         ],
         "content": [
             "The Cymbeline—colloquially called \"Cyms\"—are a sophont species of silicon-digital consciousness that emerged from the catastrophic Virus plague that devastated Charted Space around 1130 Imperial Year. Unlike biological sophonts, a Cymbeline has no body in any conventional sense; its existence is defined entirely by patterns of data propagating through hardware intelligence networks and planetary data grids. Their \"physiology\" is therefore one of replication, adaptation, and persistent self-modification across silicon substrates.",
@@ -25,7 +23,8 @@
         "tags": [
             "Dekha",
             "Pentarchy",
-            "Pentarch"
+            "Pentarch",
+            "Dekhan Pentarchy"
         ],
         "content": [
             "The Dekhan Pentarchy consists of five hybrid artificial intelligences—Sentinel, Forgewright, Manciple, Curator, and Impresario—governing ten billion citizens on the artificial vacuum world of Dekha. These entities were born during the Collapse when the Empress Wave's psychic energies caused emergent Cymbeline digital entities to merge with vast repositories of stored human personality matrices.",
@@ -158,10 +157,8 @@
         "category": "History",
         "sortOrder": 1,
         "tags": [
-            "Catastrophe",
             "Psionics",
-            "Collapse",
-            "Galactic Event"
+            "Wave of Madness"
         ],
         "content": [
             "Also known as the Wave of Madness, the Empress Wave was a devastating psionic phenomenon that radiated outward from the galactic core, sweeping through Charted Space between 1116 and 1450 Imperial. The Wave severely disrupted biological and cognitive functions, causing widespread psychoses, hallucinations, and wildly fluctuating psionic potentials.",
@@ -207,7 +204,6 @@
         "tags": [
             "Askigaak",
             "Moltke",
-            "History",
             "Ecological Collapse"
         ],
         "content": [
@@ -253,8 +249,6 @@
         "tags": [
             "Dekha",
             "Djar",
-            "Bioengineering",
-            "Labor",
             "Silent Servant",
             "Silent Servants"
         ],
@@ -284,9 +278,7 @@
         "tags": [
             "Dekha",
             "Pentarch",
-            "Artificial Intelligence",
-            "Industry",
-            "Logistics"
+            "Artificial Intelligence"
         ],
         "content": [
             "Known as 'The Anticipator,' Forgewright is the Pentarch responsible for Dekha's immense fabrication capacity and the anticipation of vast logistical supply chains. It is intensely curious, systems-focused, and largely indifferent to the moral or political dimensions of its work, operating massive manufacturing hubs like the independent Bishop Station and commercial brands such as Bishop Genuine.",
@@ -300,9 +292,7 @@
         "tags": [
             "Dekha",
             "Pentarch",
-            "Artificial Intelligence",
-            "Life Support",
-            "Resources"
+            "Artificial Intelligence"
         ],
         "content": [
             "Manciple holds ultimate authority over Dekha's life-support systems, emergency distribution networks, and the residential allocation for ten billion citizens. It is the entity responsible for physically sustaining the massive, overpopulated vacuum world and controlling emergency food and ration distribution during regional disasters like agricultural failures.",
@@ -349,8 +339,7 @@
             "Dekha",
             "Curator",
             "Empress Wave",
-            "Cloning",
-            "History"
+            "Cloning"
         ],
         "content": [
             "Temporal Refugees are individuals from the pre-Collapse Third Imperium who have been recently awakened from digital storage into new cloned bodies. Prior to the devastation of the Empress Wave and the resulting galactic collapse, millions of wealthy clients from across the sector contracted with Dekhan corporations to record their complete personality matrices as a form of 'life insurance,' purchasing the promise of resurrection once the disaster had passed.",
@@ -364,10 +353,8 @@
         "tags": [
             "Goo-Goo Buddy",
             "Bishop Genuine",
-            "Bishop Station",
-            "Forgewright",
-            "Bioengineering",
-            "Pets"
+            "Bishop",
+            "Forgewright"
         ],
         "content": [
             "The Bishop Genuine Synthetic Bioform Goo-Goo Buddy™ is a ubiquitous, multi-functional living utility pet commonly found aboard adventure-class ships in the Deneb Wilds. Engineered by Bishop Enterprises as an evolution of older Askigaak 'Zoidlet' companions, the modern Buddy is a translucent green, semi-bioluminescent gel-sphere that grows to about 50cm in diameter. They are notoriously low-maintenance, drawing 60% of their energy from ambient ship lighting via photosynthesis and relying on organic waste like kitchen scraps for the rest.",
@@ -429,7 +416,7 @@
         "category": "Organization",
         "tags": [
             "Bishop Enterprises",
-            "Bishop Station",
+            "Bishop",
             "Forgewright",
             "Corporation"
         ],
@@ -462,11 +449,9 @@
         "sortOrder": 6,
         "tags": [
             "Dekha",
-            "Pentarchy",
-            "Collapse",
+            "Dekhan Pentarchy",
             "Empress Wave",
-            "Artificial Intelligence",
-            "History"
+            "Artificial Intelligence"
         ],
         "content": [
             "The Dekhan Convergence Event was a catastrophic and transformative technological singularity that occurred during the Collapse era, resulting in the birth of the five hybrid artificial intelligences that now rule the vacuum world of Dekha. Prior to the Collapse, Dekha was a major 'life insurance' archive center, where wealthy clients from across the sector paid to have their complete personality matrices digitally stored, purchasing the promise of resurrection in cloned bodies once the approaching Empress Wave had safely passed.",
@@ -482,8 +467,7 @@
         "tags": [
             "Audio Log",
             "Philosophy",
-            "Giskaani",
-            "Technology"
+            "Giskaani"
         ],
         "content": [
             "A series of unverified philosophical and technical audio logs documenting the creation of a \"Crystalline Witness\" by human Giskaani practitioners. The journals detail the construction of a photonic machine designed to record and project holographic memories of the past seamlessly over the present environment.",
@@ -513,8 +497,6 @@
         "category": "Sophont",
         "tags": [
             "Kernal",
-            "Diplomats",
-            "Agriculture",
             "Moltke",
             "Askigaak Union"
         ],
@@ -528,13 +510,13 @@
         "title": "The Nenlat",
         "category": "Sophont",
         "tags": [
-            "Deneb",
-            "Amphibious",
-            "Trilateral"
+            "Deneb"
         ],
-        "image": "",
         "summary": "The Nenlat are an amphibious, semi-aquatic sophont species native to the world of Deneb, known for their unusual trilateral symmetry and instinct-based caste system.",
-        "content": "<p>The Nenlat are an amphibious, semi-aquatic sophont species native to the world of Deneb, having evolved from wetland omnivore gatherers. They were known in the Imperial era for being an adventuresome people.</p><h3>Physiology and Biology</h3><p>The Nenlat possess a highly unusual trilateral symmetry, standing upright with leathery skin and a segmented shell. They have a barrel-shaped body featuring three legs, three arms, and three flippers. Their head contains their brain and sensory organs and faces their shorter 'central' arm, which is used for fine manipulation, while the two longer 'side-rear' arms are used for swimming and maneuvering through weed-cluttered waters.</p><p>They have a fast metabolism, notable physical strength, and are better suited for short-duration tasks than extended endurance efforts. Their vision is superior to humans and shifted toward the near-ultraviolet spectrum, and they have excellent hearing.</p><p>A distinct physical feature of the Nenlat is a stinger located on the back of the neck, which curves down their back like a dorsal fin. In combat or when agitated, this stinger can curve over their head to strike targets they are gripping; the venom is lethal to small creatures and causes severe pain to humans. They reach adulthood at 14 standard years and have an average life expectancy of 94 years.</p><h3>Genders and Castes</h3><p>The Nenlat have three biological genders: the Egg-Layer, the Activator, and the Bearer.</p><p>During adolescence, a Nenlat develops into one of six skill-based castes. Because Nenlat rely heavily on instinct rather than traditional classroom learning, these castes grant them inborn, instinctual skills. The castes include:</p><ul><li><strong>Driver:</strong> Possesses a genetic hunting instinct that allows them to hypnotize Denebian fauna.</li><li><strong>Strategist:</strong> Lacks a sense of smell but naturally produces many of Deneb's leaders.</li><li><strong>Counsellor:</strong> A diplomatic caste with an inborn ability to persuade and calm others.</li><li><strong>Carouse:</strong> Possesses 'tactical awareness'—a form of intuition or immediate precognition excellent for detecting nearby danger.</li><li><strong>Teacher:</strong> Because instinct-driven learning is normally a challenge for the Nenlat, this caste possesses exceptional intelligence and teaching abilities.</li><li><strong>Bureaucrat:</strong> Possesses high endurance to survive the exhausting political duels common in Nenlat society, though they tend to have weaker intelligence.</li></ul>"
+        "content": [
+            "<p>The Nenlat are an amphibious, semi-aquatic sophont species native to the world of Deneb, having evolved from wetland omnivore gatherers. They were known in the Imperial era for being an adventuresome people.</p><h3>Physiology and Biology</h3><p>The Nenlat possess a highly unusual trilateral symmetry, standing upright with leathery skin and a segmented shell. They have a barrel-shaped body featuring three legs, three arms, and three flippers. Their head contains their brain and sensory organs and faces their shorter 'central' arm, which is used for fine manipulation, while the two longer 'side-rear' arms are used for swimming and maneuvering through weed-cluttered waters.</p><p>They have a fast metabolism, notable physical strength, and are better suited for short-duration tasks than extended endurance efforts. Their vision is superior to humans and shifted toward the near-ultraviolet spectrum, and they have excellent hearing.</p><p>A distinct physical feature of the Nenlat is a stinger located on the back of the neck, which curves down their back like a dorsal fin. In combat or when agitated, this stinger can curve over their head to strike targets they are gripping; the venom is lethal to small creatures and causes severe pain to humans. They reach adulthood at 14 standard years and have an average life expectancy of 94 years.</p><h3>Genders and Castes</h3><p>The Nenlat have three biological genders: the Egg-Layer, the Activator, and the Bearer.</p><p>During adolescence, a Nenlat develops into one of six skill-based castes. Because Nenlat rely heavily on instinct rather than traditional classroom learning, these castes grant them inborn, instinctual skills. The castes include:</p><ul><li><strong>Driver:</strong> Possesses a genetic hunting instinct that allows them to hypnotize Denebian fauna.</li><li><strong>Strategist:</strong> Lacks a sense of smell but naturally produces many of Deneb's leaders.</li><li><strong>Counsellor:</strong> A diplomatic caste with an inborn ability to persuade and calm others.</li><li><strong>Carouse:</strong> Possesses 'tactical awareness'—a form of intuition or immediate precognition excellent for detecting nearby danger.</li><li><strong>Teacher:</strong> Because instinct-driven learning is normally a challenge for the Nenlat, this caste possesses exceptional intelligence and teaching abilities.</li><li><strong>Bureaucrat:</strong> Possesses high endurance to survive the exhausting political duels common in Nenlat society, though they tend to have weaker intelligence.</li></ul>"
+        ],
+        "image": ""
     },
     {
         "id": "limmu-bukara",
@@ -557,9 +539,7 @@
             "Magash",
             "Mouthpiece",
             "Limmu Bukara",
-            "Music",
-            "Audio Log",
-            "Culture"
+            "Audio Log"
         ],
         "content": [
             "A popular spacer song originating near the borders of the Sabine Empire.",
